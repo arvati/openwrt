@@ -235,6 +235,9 @@ ramips_board_detect() {
 	*"Nexx WT3020")
 		name="wt3020"
 		;;
+	*"U-35WF")
+		name="u35wf"
+		;;
 	*"NW718")
 		name="nw718"
 		;;
