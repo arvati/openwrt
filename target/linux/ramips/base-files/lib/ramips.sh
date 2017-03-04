@@ -409,6 +409,9 @@ ramips_board_detect() {
 	*"UR-336UN")
 		name="ur-336un"
 		;;
+	*"U-35WF")
+		name="u35wf"
+		;;
 	*"V11ST-FE")
 		name="v11st-fe"
 		;;
