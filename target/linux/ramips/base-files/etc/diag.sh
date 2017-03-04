@@ -228,6 +228,9 @@ get_status_led() {
 	ur-336un)
 		status_led="ur336:green:wps"
 		;;
+	u35wf)
+		status_led="u35wf:red:wifi"
+		;;
 	x5)
 		status_led="x5:green:power"
 		;;
