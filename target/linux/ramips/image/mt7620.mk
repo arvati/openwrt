@@ -94,7 +94,11 @@ define Device/u35wf
   IMAGES += factory.bin
   IMAGE/factory.bin := $$(IMAGE/sysupgrade.bin)
   DEVICE_TITLE := Kimax U-35WF (16MB)
-  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-cfg80211 kmod-leds-gpio kmod-gpio-button-hotplug kmod-leds-gpio kmod-ledtrig-usbdev kmod-mac80211 kmod-mt76 kmod-rt2800-lib kmod-rt2800-mmio kmod-rt2800-pci kmod-rt2800-soc kmod-scsi-core kmod-sdhci-mt7620 kmod-ide-core kmod-ide-generic kmod-scsi-generic kmod-ata-core
+  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ohci kmod-usb-storage kmod-usb-storage-extras kmod-cfg80211 \
+			kmod-leds-gpio kmod-gpio-button-hotplug kmod-leds-gpio kmod-ledtrig-usbdev kmod-mac80211   \
+			kmod-mt76 kmod-rt2800-lib kmod-rt2800-mmio kmod-rt2800-pci kmod-rt2800-soc kmod-scsi-core  \
+			kmod-sdhci-mt7620 kmod-ide-core kmod-ide-generic kmod-scsi-generic kmod-ata-core \
+			kmod-sdhci kmod-i2c-core kmod-i2c-ralink
 endef
 TARGET_DEVICES += u35wf
 
