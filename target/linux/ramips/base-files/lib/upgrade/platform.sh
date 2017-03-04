@@ -121,6 +121,7 @@ platform_check_image() {
 	tiny-ac|\
 	ur-326n4g|\
 	ur-336un|\
+	u35wf |\
 	v22rw-2x2|\
 	vocore|\
 	w150m|\
