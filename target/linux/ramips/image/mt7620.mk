@@ -104,7 +104,7 @@ define Device/wrh-300cr
   IMAGES += factory.bin
   IMAGE/factory.bin := $$(IMAGE/sysupgrade.bin) | elecom-header
   DEVICE_TITLE := Elecom WRH-300CR 
-  DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ohci
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
 TARGET_DEVICES += wrh-300cr
 
