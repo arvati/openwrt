@@ -9,7 +9,6 @@
 /logs
 /feeds
 /feeds.conf
-/files
 /package/feeds
 /package/openwrt-packages
 key-build*
