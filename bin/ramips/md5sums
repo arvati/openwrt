@@ -1,4 +1,5 @@
-43530435f1fcda87e8b4245fea134b84 *openwrt-15.05.1-ramips-mt7620-root.squashfs
-a95ea971e7e4d3efe8fde4ba954e718b *openwrt-15.05.1-ramips-mt7620-uImage.bin
-8df4a60161e68fabf136fab607aba516 *openwrt-15.05.1-ramips-mt7620-vmlinux.bin
-5c903f5d9cc301173fa20b5e7fc468f6 *openwrt-15.05.1-ramips-mt7620-vmlinux.elf
+e0cc67625375bf8c53c6562572b90ccd *openwrt-15.05.1-ramips-mt7620-root.squashfs
+c11bfb0f3fd5b3402eb33d2452a7de87 *openwrt-15.05.1-ramips-mt7620-u35wf-squashfs-sysupgrade.bin
+6c6a44a8884b82718670621bb90df5e5 *openwrt-15.05.1-ramips-mt7620-uImage.bin
+018bd0250a554d77edbdd35d69886f17 *openwrt-15.05.1-ramips-mt7620-vmlinux.bin
+5091720abc2e938b40fdb7d083bc81fe *openwrt-15.05.1-ramips-mt7620-vmlinux.elf

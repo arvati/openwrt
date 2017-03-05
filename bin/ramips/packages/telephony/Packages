@@ -1,6 +1,6 @@
 Package: kmod-dahdi-dummy
 Version: 3.18.45+2.10.2-2
-Depends: kernel (=3.18.45-1-0dba4bb76298bf68dd0301f425293706), kmod-dahdi
+Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-dahdi
 Source: feeds/telephony/libs/dahdi-linux
 License: GPL-2.0
 LicenseFiles: LICENSE
@@ -9,47 +9,47 @@ Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
 Installed-Size: 2271
 Filename: kmod-dahdi-dummy_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 3174
-MD5Sum: 6cbba29ab57a139de8174eef09c4e8bd
-SHA256sum: 855688ebc7c3bcad1abcb048aa86c3f0a46a2bf925de2b36b35ba15ff8984e7d
+Size: 3168
+MD5Sum: a4064eea97d163c9945093e316cd9106
+SHA256sum: b0daa309d170cec755f443eb5204f3c86bd54908c71ab7c9cc08cf62945e95fb
 Description:  This package contains the dummy DAHDI driver providing only DAHDI timing
  without any real telephony hardware.
 
 Package: kmod-dahdi-echocan-oslec
 Version: 3.18.45+2.10.2-2
-Depends: kernel (=3.18.45-1-0dba4bb76298bf68dd0301f425293706), kmod-dahdi, kmod-echo
+Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-dahdi, kmod-echo
 Source: feeds/telephony/libs/dahdi-linux
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 1470
+Installed-Size: 1469
 Filename: kmod-dahdi-echocan-oslec_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 2386
-MD5Sum: 6a8ad6b0fc38b1ffaec0707616b162b0
-SHA256sum: f44a8093bbb72d8d924deb5ca5d9bcb39e4acd31b37ae0a9ef85523bb0595158
+Size: 2388
+MD5Sum: 4ce569c07b6a66dcf2c3cb7fae0eef53
+SHA256sum: 5d16ee38f9db1442dce80b16df185c36c0251d3e4f4142f6bb20e6b3d5eddc06
 Description:  This package contains DAHDI OSLEC echo canceller support.
 
 Package: kmod-dahdi-hfcs
 Version: 3.18.45+2.10.2-2
-Depends: kernel (=3.18.45-1-0dba4bb76298bf68dd0301f425293706), kmod-dahdi
+Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-dahdi
 Source: feeds/telephony/libs/dahdi-linux
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 9776
+Installed-Size: 9775
 Filename: kmod-dahdi-hfcs_3.18.45+2.10.2-2_ramips_24kec.ipk
 Size: 10674
-MD5Sum: 85e9f95f833edbe65aefc16f2f4d0fc4
-SHA256sum: 307fc09e002673b9abe141785035b3406dc03370e32fb512caf8bc2656ef27a2
+MD5Sum: bdb6a5dd9dec2b2b97f19ddb4fdf7907
+SHA256sum: 5305e7118ebb7823defebdd3e699e7278d803126f195d3b78d018e429ebb54fd
 Description:  This package contains DAHDI driver for HFC-S based PCI BRI adapters.
 
 Package: kmod-dahdi
 Version: 3.18.45+2.10.2-2
-Depends: kernel (=3.18.45-1-0dba4bb76298bf68dd0301f425293706), kmod-lib-crc-ccitt
+Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-lib-crc-ccitt
 Source: feeds/telephony/libs/dahdi-linux
 License: GPL-2.0
 LicenseFiles: LICENSE
@@ -58,8 +58,8 @@ Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
 Installed-Size: 56774
 Filename: kmod-dahdi_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 57477
-MD5Sum: f5e308a05872d1f8cb3bd541a6b84c40
-SHA256sum: 991d2b715d52c6d160000892495be6f00fd4682def2d0b525da1de9a0ee8ecfb
+Size: 57494
+MD5Sum: ec99813d81c838f16be8c70fd3b0398d
+SHA256sum: a72b8e27c72e762e72f93a328872b0cc3a869b1eec18973350ea132d610334c1
 Description:  This package contains DAHDI basic infrastructure.
 
