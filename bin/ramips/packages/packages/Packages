@@ -6,11 +6,11 @@ License: GPL-2.0+
 LicenseFiles: COPYING
 Section: net
 Architecture: ramips_24kec
-Installed-Size: 8979
+Installed-Size: 8983
 Filename: bridge_1.5-3_ramips_24kec.ipk
-Size: 9725
-MD5Sum: f7aec2a490befe5b3c09c0df4c611004
-SHA256sum: 03b13aebd897a0c3e581b17633e7647de4906b0e6785d27242d4b4452342c72a
+Size: 9729
+MD5Sum: 0e54a46c13c1e63fd787b86d42187981
+SHA256sum: 3e96b48342d0f985e2eb81f047015ec4dc9c9ac5cad1aad6a3cdef78fe93f24a
 Description:  Manage ethernet bridging: a way to connect networks together to
  form a larger network.
 
@@ -23,11 +23,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: Daniel Golle <daniel@makrotopia.org>
 Architecture: ramips_24kec
-Installed-Size: 1339587
+Installed-Size: 1339603
 Filename: btrfs-progs_3.19.1-3_ramips_24kec.ipk
-Size: 1337755
-MD5Sum: 739888ae782d53492b486d49d2ee1c05
-SHA256sum: f1b12107e35e7ac4d01dc79dcce91a050056ab3bd6f87c8d49032a01d4f1926e
+Size: 1337533
+MD5Sum: 121d35285dc7bd7d31997d9b53d700f1
+SHA256sum: 27f7ea8f5d2ef2d26dd5392cd378045fe67fc8944d6f78054388b56cf60236b8
 Description:  Btrfs is a new copy on write filesystem for Linux aimed at implementing
  advanced features while focusing on fault tolerance, repair and easy
  administration. Initially developed by Oracle, Btrfs is licensed under the
@@ -41,11 +41,11 @@ License: AFL-2.1
 Section: utils
 Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 92863
+Installed-Size: 92871
 Filename: dbus_1.9.14-1_ramips_24kec.ipk
-Size: 93195
-MD5Sum: 6e09230186143bcc4b311e31cd6048e8
-SHA256sum: 5fdb25e2a49df023b31cd9c072dc6268c0fcd6fb5ea71eb2af8c6b9224824126
+Size: 93193
+MD5Sum: b160b413a4690bf401e77a12a2f0b341
+SHA256sum: b5d877faacfafc94c170a6290edbc5547cda8f570bfa207a3ac0ab0ebad3ae86
 Description:  Simple interprocess messaging system (daemon)
 
 Package: ddns-scripts
@@ -55,11 +55,11 @@ License: GPL-2.0
 Section: net
 Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
 Architecture: all
-Installed-Size: 14772
+Installed-Size: 14781
 Filename: ddns-scripts_2.7.6-13_all.ipk
-Size: 15871
-MD5Sum: a8d86f541a8eb40efca6042e7b331be8
-SHA256sum: 9e8fdaa57c635f43fcb532960bef7cbcdc63ddc3e389f1d96bcc56ecf508a547
+Size: 15867
+MD5Sum: a62022522c3e628f85f71af573ee3185
+SHA256sum: 38b702fbc0f92ec6acc6f412cb570ba78fce11029e6b2cdd2d74a8917279091c
 Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
 
 Package: dosfsck
@@ -71,11 +71,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: David Bonnes <david.bonnes@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 25528
+Installed-Size: 25530
 Filename: dosfsck_3.0.28-1_ramips_24kec.ipk
-Size: 26287
-MD5Sum: 713da42cedb51e5a1113a13e083edc40
-SHA256sum: c344e36801ba79720b75e6bcbc3e7dcdd1556de455b502ca24f76d60111ad4ad
+Size: 26303
+MD5Sum: a199c7a60b5cf18f84c49608f24f314e
+SHA256sum: c004496fce019936de92c3737b117c5dc37e6209e1e377c19d118e1595bc0c7f
 Description:  Utilities to create and check MS-DOS FAT filesystems.
  (fsck.vfat and fsck.fat for checking integrity of FAT volumes)
 
@@ -88,11 +88,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: David Bonnes <david.bonnes@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 24200
+Installed-Size: 24201
 Filename: dosfslabel_3.0.28-1_ramips_24kec.ipk
-Size: 24926
-MD5Sum: d441f1d5ad3f280a7b46964ef31eac8c
-SHA256sum: e13bf9ffddcabeb7d3687fa87bdd7690cb31301286f228c3e2b6bf4e2251bc5e
+Size: 24922
+MD5Sum: e11c31633d613fad878082d922b660bb
+SHA256sum: 56641008e5eedfa08f7d7e9d5bb53701694e37eb7a5d014dd0b090d478bef9f7
 Description:  Utilities to create and check MS-DOS FAT filesystems.
  (fatlabel for reading and writing labels of FAT volumes)
 
@@ -104,11 +104,11 @@ License: BSD-2c
 LicenseFiles: COPYING
 Section: utils
 Architecture: ramips_24kec
-Installed-Size: 127698
+Installed-Size: 127700
 Filename: file_5.25-1_ramips_24kec.ipk
-Size: 128447
-MD5Sum: 82e4bc1cd12f3ed7c3da09229dee0883
-SHA256sum: c14ee8d9a17d229045d85d1c32726dd1915b44111d1cbb8ef58f2cd9de123f8e
+Size: 128453
+MD5Sum: 0e62c81c06705ead35531021ab954f4d
+SHA256sum: 82e4150749105b892c8bf9a3fc0ba0afb16ef23539a01a9904ed5c7b92ce993d
 Description:  utility
 
 Package: hd-idle
@@ -119,11 +119,11 @@ License: GPL-2.0
 Section: utils
 Maintainer: Lim Guo Wei <limguowei@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 4846
+Installed-Size: 4840
 Filename: hd-idle_1.04-1_ramips_24kec.ipk
-Size: 5625
-MD5Sum: 456c6aed61914e1325080e18db6e2ea9
-SHA256sum: fd60bc9904d3cdcccc48b98ff5544b952a6e6f2da8a7dfd73ae4b6759b7e71b0
+Size: 5616
+MD5Sum: 60bd1abaef77d06918e66a7c0cd726f4
+SHA256sum: 916f05d5f25953ccfdc5a6180c7e6b83f84edf2a419e4a0964565a147734d796
 Description:  hd-idle is a utility program for spinning-down external disks after a period of idle time.
 
 Package: hdparm
@@ -134,11 +134,11 @@ License: BSD-Style Open Source License
 Section: utils
 Maintainer: Richard Kunze <richard.kunze@web.de>
 Architecture: ramips_24kec
-Installed-Size: 42424
+Installed-Size: 42426
 Filename: hdparm_9.45-1_ramips_24kec.ipk
-Size: 43137
-MD5Sum: 6103e539977f4b2928fdd8ccdbec65fa
-SHA256sum: e6ee10b0a34dfdcff9661bd19edf1d2d30d61ba95d33bf339e569730b77c1ca6
+Size: 43155
+MD5Sum: 59284cefb40f038c4608ac7f6af72fc1
+SHA256sum: c94715f1ff0cca6bf4469572c0164dd83337a37faec323adc4ffee69a8f64c7c
 Description:  get/set SATA/IDE device parameters
 
 Package: kmod-fs-exfat
@@ -150,11 +150,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Bruno Randolf <br1@einfach.org>
 Architecture: ramips_24kec
-Installed-Size: 45561
+Installed-Size: 45557
 Filename: kmod-fs-exfat_3.18.45+git-20150301-1_ramips_24kec.ipk
-Size: 46444
-MD5Sum: 82ac316c051e88120fd3e37139d82679
-SHA256sum: ab9b27721adda98b36150b9b478f95ac72b3b70369d80535f921436847bcaf54
+Size: 46456
+MD5Sum: dc501ae67adc9336f3933566b63b0583
+SHA256sum: 9db92b2b22075591d2941a6337f526a6babb697ba4dc79e4dec006eb099463b6
 Description:  Kernel module for ExFAT Filesytems
 
 Package: kmod-openvswitch
@@ -165,11 +165,11 @@ License: Apache-2.0
 LicenseFiles: COPYING
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 47093
+Installed-Size: 47095
 Filename: kmod-openvswitch_3.18.45+2.3.90-58be9c9fd732b5bdd3d4c2e9b8cc2313f570094d_ramips_24kec.ipk
-Size: 47829
-MD5Sum: 032895ac9adfaae4e056583e9c30b9d1
-SHA256sum: 923e67160df6431a4c9d0f893f154de2fe1f63a344ef814f03fe231b870a30ae
+Size: 47808
+MD5Sum: bf4ba9b28cfb2b8944f3ca929e867bc7
+SHA256sum: 0e415ff563a933b2ee6d88597106f97337f28ad0c8dd5780776f7a5906a6d869
 Description:  This package contains the Open vSwitch kernel moodule and bridge compat
  module. Furthermore, it supports OpenFlow.
 
@@ -181,11 +181,11 @@ License: GPLv2+
 Section: kernel
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Architecture: ramips_24kec
-Installed-Size: 5103
+Installed-Size: 5105
 Filename: kmod-siit_3.18.45+1.2-1_ramips_24kec.ipk
-Size: 5939
-MD5Sum: f96a88602af28d030ffa0f23ae76e7da
-SHA256sum: a16981fe5e45c52b7e386dbe530699abffb12da868d08b0a34f8482698eadae3
+Size: 5941
+MD5Sum: aaf98022f2920df683c0dffdcc95787d
+SHA256sum: 316077516349979559f4c5d2ca171dad794559ab5b3bab98b35de404799c0011
 Description:  Stateless IP ICMP Translation Algorithm
 
 Package: kmod-usb-serial-dmx_usb_module
@@ -196,11 +196,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Martijn Zilverschoon <martijn@friedzombie.com>
 Architecture: ramips_24kec
-Installed-Size: 4739
+Installed-Size: 4742
 Filename: kmod-usb-serial-dmx_usb_module_3.18.45+0.1.20130818-0.1_ramips_24kec.ipk
-Size: 5718
-MD5Sum: 60831ffdc12ec1ac6243da480ec86a52
-SHA256sum: 5d0ee82d725278c74ce1fe7c0cd309270ec5349e5e33df20c51a699d1f0dcd55
+Size: 5715
+MD5Sum: 1e82ca187ac1a3fedaa51c001fcbb6ad
+SHA256sum: 9846c19b98f2203da1ab34ed0bd7a53e919e5f713d1f869d46e408db60a373f2
 Description:  Open DMX USB is an open USB to DMX dongle hardware design developed by Enttec.
  The Open in Open DMX USB refers to the fact that everybody is free to use the
  design and produce its own USB DMX Dongle without paying any licenses.
@@ -214,11 +214,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: Jeff Waugh <jdub@bethesignal.org>
 Architecture: ramips_24kec
-Installed-Size: 53730
+Installed-Size: 53731
 Filename: kmod_20-1_ramips_24kec.ipk
-Size: 54519
-MD5Sum: 62319d4359d2aa50682b39d9f292a5eb
-SHA256sum: 1f093f9dbefea6b7fddd74df437dbdd7d826c34d3092ce956a70b90057bda123
+Size: 54528
+MD5Sum: fcb8eb2c07d8d90085fac35b9cd1cabb
+SHA256sum: 1034e7ef0e797915f3418137fd72084207c23303e5dd2d8e7168642a3df487af
 Description:  Linux kernel module handling
  kmod is a set of tools to handle common tasks with Linux kernel modules like
  insert, remove, list, check properties, resolve dependencies and aliases.
@@ -232,11 +232,11 @@ LicenseFiles: doc/COPYING doc/COPYING.LGPL
 Section: libs
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 6466
+Installed-Size: 6462
 Filename: libattr_20150220-1_ramips_24kec.ipk
-Size: 7278
-MD5Sum: e07679d24fda645138ec811f41a89d39
-SHA256sum: bdc30a5bb6aa380cc94eef206288e8379b13ec0fd0ea40be9013646c307126af
+Size: 7273
+MD5Sum: 4b62ea350a4fae85558d4f171152e5a7
+SHA256sum: 551aef737b02f874596cdb9ed6a58d0e049163fc80fe02ac98f0fdad8966c226
 Description:  Extended attributes support
  This package provides libattr
 
@@ -248,11 +248,11 @@ License: AFL-2.1
 Section: utils
 Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 102830
+Installed-Size: 102826
 Filename: libdbus_1.9.14-1_ramips_24kec.ipk
-Size: 103633
-MD5Sum: f3698e0d3ef430711f59c398e68b034c
-SHA256sum: 0e96cf98ba6476fc3a89e4aa50db5bcafa7d014ab7d100d76445f805c87092fc
+Size: 103630
+MD5Sum: 9aa6e99a8c0685de92b825f0f7e43638
+SHA256sum: 0e2adc3dd0efa83a67f6086f9ffe98d4a91b02d419ebce08c8d43116449162b3
 Description:  Simple interprocess messaging system (library)
 
 Package: libdevmapper
@@ -265,9 +265,9 @@ Maintainer: Daniel Golle <daniel@makrotopia.org>
 Architecture: ramips_24kec
 Installed-Size: 94820
 Filename: libdevmapper_2.02.119-2_ramips_24kec.ipk
-Size: 95698
-MD5Sum: 949e55d00cd06249dc876faa793db1c4
-SHA256sum: ee17b4767ebeb78c89df8a6e98d5bbb4803a786e9b7d37ae0513f3c3791f444d
+Size: 95707
+MD5Sum: 7c84e64b8170c7d6ec39350c2802dae7
+SHA256sum: ed08f4de941a6b10916378316401b7d6208f4ef8ae45079c55919bb05976ca1b
 Description:  The device-mapper is a component of the 2.6 linux kernel that supports logical
  volume management. It is required by LVM2 and EVMS.
 
@@ -280,9 +280,9 @@ Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 86231
 Filename: libevent_1.4.15-1_ramips_24kec.ipk
-Size: 87139
-MD5Sum: 8f5fc1cb97b5e426ec288643279f3178
-SHA256sum: c19ddcb8b5bca2ece070198cdf10be4b2e4a4d402e76d4b64a8e365739ea55c8
+Size: 87152
+MD5Sum: a75bc896e3f1a0112f15f14e380c3010
+SHA256sum: f9dfc1344f94b5e83521203db664deb9060860fe46230ce7ffe22e3f070e6cf6
 Description:  The libevent API provides a mechanism to execute a callback function
  when a specific event occurs on a file descriptor or after a timeout
  has been reached. Furthermore, libevent also support callbacks due
@@ -302,11 +302,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 52655
+Installed-Size: 52646
 Filename: libexpat_2.1.0-3_ramips_24kec.ipk
-Size: 53251
-MD5Sum: 95360322da3f697563898dbb73bbc054
-SHA256sum: feedfac5acdfdb1923c5a4b749b4dcd9d5f1027c78522ee24782036f64a4a389
+Size: 53261
+MD5Sum: fb85620c421cb104781d3ffb2ccec158
+SHA256sum: 636240fdd540aa8cf0f7db6749f80516351047138e4b510ebce94e3b55ee87a8
 Description:  A fast, non-validating, stream-oriented XML parsing library.
 
 Package: libf2fs
@@ -317,11 +317,11 @@ License: GPLv2
 Section: libs
 Maintainer: Luka Perkov <luka@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4382
+Installed-Size: 4381
 Filename: libf2fs_1.4.0-1_ramips_24kec.ipk
-Size: 5103
-MD5Sum: 4a945cf739e757ef2f1edf76603ad90f
-SHA256sum: 5a17bfb39458df4ea22f3b31fb2ce184813ca25dfecaa48e1579e3275a4ead0e
+Size: 5099
+MD5Sum: 89c435e0c3933aa3f093cfd54addd03a
+SHA256sum: 8bb65c8e5e919da70d4a09ee99ac913424cdafb892838f6c5ad8e7bd650c1039
 Description:  Library for Flash-Friendly File System (F2FS) tools
 
 Package: libffi
@@ -333,11 +333,11 @@ LicenseFiles: LICENSE
 Section: libs
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
-Installed-Size: 5310
+Installed-Size: 5308
 Filename: libffi_3.0.13-1_ramips_24kec.ipk
-Size: 6304
-MD5Sum: 7be7675f6faf3a4dcea803d8bd952477
-SHA256sum: 2d23bfa7e5043fa2559cca349a360d652681ab5f1be1361f73623fa37221b1a5
+Size: 6302
+MD5Sum: 58aad13d992d937f46ea4ac4359e02e1
+SHA256sum: ca6e95d5c5124e08b44a9042a3289d368cedf9aadc32b210af3335a50beabfa0
 Description:  The libffi library provides a portable, high level programming interface to
  various calling conventions. This allows a programmer to call any function
  specified by a call interface description at run-time.
@@ -358,11 +358,11 @@ LicenseFiles: COPYING.LIB
 Section: libs
 Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 10254
+Installed-Size: 10255
 Filename: libftdi_0.20-3_ramips_24kec.ipk
-Size: 11173
-MD5Sum: 932ce8bd5ab7699cd2e3a110bbeaf9b3
-SHA256sum: d1134e7627f50d1d028e23c724276ff2314ba297fde6120e04e6ed632c98c4f7
+Size: 11177
+MD5Sum: 4dab3fad345e0b9e3fe4e1c95ad6099d
+SHA256sum: 12556a6442145fdbd7dc8c65f9ae08142ee4ebfe040950b5d17b40c965de03bb
 Description:  libFTDI - FTDI USB driver with bitbang mode
  libFTDI is an open source library to talk to FTDI chips: FT232BM, FT245BM, FT2232C, FT2232H, FT4232H, FT2232D and FT245R, including the popular bitbang mode. 
  The library is linked with your program in userspace, no kernel driver required.
@@ -374,11 +374,11 @@ Source: feeds/packages/libs/libgcrypt
 Section: libs
 Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ramips_24kec
-Installed-Size: 288613
+Installed-Size: 288614
 Filename: libgcrypt_1.6.1-1_ramips_24kec.ipk
-Size: 287737
-MD5Sum: cb4c14163a584bd60b7504e5a46584e0
-SHA256sum: d1b5c5f6c88edbebdfaaddac785375babd655c0aba0cdc68a13b176a2cbcdf45
+Size: 287714
+MD5Sum: 710d1b8364e02a87c02d7fec83c7068e
+SHA256sum: 8777c4d5ee788c75b77bd6ab2935429d3493f16c5895be1dfd0596eb5246bcac
 Description:  This is a general purpose cryptographic library based on the code from
  GnuPG. It provides functions for all cryptograhic building blocks:
  symmetric ciphers (AES, DES, Arcfour, CAST5), hash algorithms (MD5, SHA-1,
@@ -396,11 +396,11 @@ License: LGPLv2.1+
 Section: libs
 Maintainer: Nikos Mavrogiannopoulos <nmav@gnutls.org>
 Architecture: ramips_24kec
-Installed-Size: 308953
+Installed-Size: 308956
 Filename: libgnutls_3.4.15-1_ramips_24kec.ipk
-Size: 308768
-MD5Sum: 1095eade4c4dd7babd5c387e3990f4b2
-SHA256sum: 0881679de51dc89f69847eea5f7d987dcc2a59564b65256a66eb8ada5293288f
+Size: 308776
+MD5Sum: 01c59219e4aa24ba46a93f6e5ac03388
+SHA256sum: 8e5e12f51ed59f539b1bd41057b0496a5463bd50c105515fbf556b417a935c3c
 Description:  GnuTLS is a secure communications library implementing the SSL, TLS
  and DTLS protocols and technologies around them. It provides a simple
  C language application programming interface (API) to access the secure
@@ -418,9 +418,9 @@ Maintainer: W. Michael Petullo <mike@flyn.org>
 Architecture: ramips_24kec
 Installed-Size: 5713
 Filename: libgpg-error_1.12-1_ramips_24kec.ipk
-Size: 6569
-MD5Sum: 522da418b4b8c5a5c77ee9b04e38f19b
-SHA256sum: a14b5723b94b0168fb044e1c86529258dfdec31331cf1bdd307d65ac1f0cc701
+Size: 6572
+MD5Sum: f910e4f6408aad54383555d11b7845f6
+SHA256sum: d8e5de5445849eb38bd49c67d3ac145a414532c5da18687638752af7adda6666
 Description:  An helper library for common error codes and descriptions.
  This is a library that defines common error values for all GnuPG
  components. Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
@@ -436,11 +436,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Nicolas Thill <nico@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 143846
+Installed-Size: 143844
 Filename: libical_1.0-1_ramips_24kec.ipk
-Size: 143105
-MD5Sum: 99bd51aa42a1b3520a30da7e57e23740
-SHA256sum: 98f266bbcbd05c6de49ef93d677a036c14d9d7bc034a8843e647290b5ba771e2
+Size: 143079
+MD5Sum: 6de4c8584dbd470cf5704f07b0a0b99e
+SHA256sum: b806d9bc6bb9d7a440b0a94b53e9e591b79c0e3764927e80b0e50ab6f4046659
 Description:  This package provides a a read/write library of classes for object oriented
  languages (Initial goals of PHP and Python) that implement and enforce the iCal
  standard (RFC 2445).
@@ -454,11 +454,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Nicolas Thill <nico@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 54252
+Installed-Size: 54251
 Filename: liblzma_5.2.1-2_ramips_24kec.ipk
-Size: 55035
-MD5Sum: 606d33e1b565f51d0239739926ec4287
-SHA256sum: b667d0f4ed86177f51d26c55446778d12dfaad9c73d53a311b4f6356657d09c0
+Size: 55042
+MD5Sum: b58c5fab765d30346422b166e72adb5e
+SHA256sum: 635b15739d32323815914b8ab485a0de16c1562c1054377dcff1ecf3c67d39a9
 Description:  liblzma library from XZ Utils
 
 Package: libmagic
@@ -469,11 +469,11 @@ License: BSD-2c
 LicenseFiles: COPYING
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 108016
+Installed-Size: 108014
 Filename: libmagic_5.25-1_ramips_24kec.ipk
-Size: 108547
-MD5Sum: 2d1c8e0f2a781706747f909d420c1e85
-SHA256sum: 55b93cf9cf0a3d9fb962911893fb4a435f2fabeaa00146913bf351e8e09cb679
+Size: 108565
+MD5Sum: ef56bf78c5e9a86992d5189310346757
+SHA256sum: c75e25a89390a31af95b831d00f53cd0ba01a35f6878820c7556ca95dabc521d
 Description:  library
 
 Package: libpcre
@@ -485,11 +485,11 @@ LicenseFiles: LICENCE
 Section: libs
 Maintainer: Thomas Heil <heil@terminal-consulting.de>
 Architecture: ramips_24kec
-Installed-Size: 83799
+Installed-Size: 83789
 Filename: libpcre_8.39-1_ramips_24kec.ipk
-Size: 84541
-MD5Sum: dedeb09c301719058a0761776e362d45
-SHA256sum: 130399015b801aa98da7b61137d931ead44cc4d7ffe20502be3f6381d649ba58
+Size: 84532
+MD5Sum: df464e749b06d5194eac89def99123cd
+SHA256sum: cd1d0fed5d9731fada32e692eb5268ca96712465f413e4d7869d62b35146d146
 Description:  A Perl Compatible Regular Expression library
 
 Package: libwrap
@@ -500,11 +500,11 @@ License: BSD
 Section: libs
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
-Installed-Size: 10806
+Installed-Size: 10804
 Filename: libwrap_7.6-1_ramips_24kec.ipk
-Size: 11540
-MD5Sum: 7d36c237e222ec3eda8c224011735faf
-SHA256sum: bc15d84c87da71e5412d6d5eb9e6e3056dab1d583d3ae4ecc923c10c7af488b8
+Size: 11545
+MD5Sum: af4735f40cdf3b0729a9455537182ae7
+SHA256sum: b93bacabad536ab82ea02fa3779a38af005ee91d14514101094e38820f77de14
 Description:  Security wrapper library for TCP services
 
 Package: libxml2
@@ -516,11 +516,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Michael Heimpold <mhei@heimpold.de>
 Architecture: ramips_24kec
-Installed-Size: 474875
+Installed-Size: 474876
 Filename: libxml2_2.9.2-3_ramips_24kec.ipk
-Size: 473012
-MD5Sum: d8afe8062bc6b45d45284aacef4016c0
-SHA256sum: 15e79f0d2077a53b9f9ec6ce6893b613ac474c4530e0c07fe55c5502a81bbdd4
+Size: 472987
+MD5Sum: 36738dcdaef7beab6ec7cff7406c0d07
+SHA256sum: fc54b011a475ff40ca4ed42849ba1d1f5788d7d9b02021f668cd882d3ab6ab5e
 Description:  A library for manipulating XML and HTML resources.
 
 Package: mkdosfs
@@ -532,11 +532,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: David Bonnes <david.bonnes@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 12191
+Installed-Size: 12192
 Filename: mkdosfs_3.0.28-1_ramips_24kec.ipk
-Size: 13006
-MD5Sum: 309fb61ab388687bbbd0eec2238bc51a
-SHA256sum: 71883751bf79947d400f26bb48360070708aaa51d2683c656dfc833a6a8494f3
+Size: 13001
+MD5Sum: 8c86f4c674d168d0763ac3a6715c4e9c
+SHA256sum: b2a036e6660e2fd4926d881df663a9e5850b93057af6f5fad21239366b2d3783
 Description:  Utilities to create and check MS-DOS FAT filesystems.
  (mkfs.vfat and mkfs.fat for creating FAT volumes)
 
@@ -547,11 +547,11 @@ Source: feeds/packages/net/nfs-kernel-server
 Section: net
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
-Installed-Size: 12726
+Installed-Size: 12728
 Filename: nfs-kernel-server-utils_1.3.2-3_ramips_24kec.ipk
-Size: 13419
-MD5Sum: ed0f9dc129e4c732effebdd51fb8ba1b
-SHA256sum: 5444d87a7b29bc752ad65b72d8340475c50e852f5bfeae21484e93c1f279943b
+Size: 13423
+MD5Sum: 408d93c6e81f03780a3b4660337d43d9
+SHA256sum: 15699a5f3efeb47d7a5a646455ab5344aa9d873fb698af0f9a0266e6729e09e0
 Description:  NFS server utils
 
 Package: nfs-kernel-server
@@ -561,11 +561,11 @@ Source: feeds/packages/net/nfs-kernel-server
 Section: net
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
-Installed-Size: 98492
+Installed-Size: 98496
 Filename: nfs-kernel-server_1.3.2-3_ramips_24kec.ipk
-Size: 99138
-MD5Sum: 95cca1205c0290fa9f819619942dbd07
-SHA256sum: dbaff3a1d5522bc82277604473623acc14c01872cded7a8d4a7456d2010e08dc
+Size: 99177
+MD5Sum: 7e0256d4e417fedd1c3d00a15e7726ff
+SHA256sum: dfa8971ed81d5f7da43b2fdbbab5a1b0c15ba95bd94544e77afe6327177361dc
 Description:  Kernel NFS server support
 
 Package: nfs-utils
@@ -577,9 +577,9 @@ Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
 Installed-Size: 41347
 Filename: nfs-utils_1.3.2-3_ramips_24kec.ipk
-Size: 42043
-MD5Sum: 03d74c17d9d2907df20f9a78810608b5
-SHA256sum: 83fef594fe7bcb71fdc91112cdea8164182c82b6887a7ed602ffc2fbbe047ba8
+Size: 42057
+MD5Sum: 6e21ed3da92e192d5eda52d8b64ec5d8
+SHA256sum: d999d742c0684eb65e5fc1481c079b0cb76354b6b15ca0c108e85239a9f377b9
 Description:  Updated mount.nfs command - allows mounting nfs4 volumes
 
 Package: ntfs-3g
@@ -591,11 +591,11 @@ LicenseFiles: COPYING COPYING.LIB
 Section: utils
 Maintainer: Bud <wrt_buddhay@gmx.net>
 Architecture: ramips_24kec
-Installed-Size: 175734
+Installed-Size: 175736
 Filename: ntfs-3g_2014.2.15-1-fuseint_ramips_24kec.ipk
-Size: 176814
-MD5Sum: 383c6e347347568acbdfbfd225534693
-SHA256sum: f2a2128905060624a69cf320ecfb6dea5ad11b17251945a0538382c37a8bc6ee
+Size: 176809
+MD5Sum: a835641e66053afa3bb6e39fed336731
+SHA256sum: 74ccbeb1da94a1cfb7e955fc9ed02edda116b85641f63252b76524e9df07f9d2
 Description:  Ntfs-3g is a NTFS driver, which can create, remove, rename,
  move files, directories, hard links, and streams. It can read
  and write files, including streams and sparse files. It can
@@ -616,11 +616,11 @@ License: GPL-2.0
 Section: net
 Maintainer: Ted Hess <thess@kitschensync.net>
 Architecture: ramips_24kec
-Installed-Size: 12208
+Installed-Size: 12210
 Filename: ntpclient_2010_365-1_ramips_24kec.ipk
-Size: 12959
-MD5Sum: 9bac2bd04e8d672472bec0b5616c8010
-SHA256sum: cc70915bee4d97a723bb7e19dfc7221307801f97ae859fd24497ef991b2d3aa1
+Size: 12964
+MD5Sum: 7385eb3d63fc8169637b48aa4892c4e1
+SHA256sum: bd251911b7c9ecb2ba493bf1e64b592e2950358da7cfa6e6a7c1633deb3b017e
 Description:  NTP client for setting system time from NTP servers.
 
 Package: openconnect
@@ -633,9 +633,9 @@ Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 Architecture: ramips_24kec
 Installed-Size: 77657
 Filename: openconnect_7.06-5_ramips_24kec.ipk
-Size: 78144
-MD5Sum: a4264020dcbac0bc8fc4f88e7b914933
-SHA256sum: 91a728b350ae178b8c45c8555a4bf595ca0258e26630f2f09df930cbc044cbf7
+Size: 78145
+MD5Sum: 9afb95b61277878c65ab9adf9e1d5927
+SHA256sum: fa75a487a1123cc3032e2e754b49ca42756cb3cfe5ea06fb60bd57b02a2d1e5a
 Description:  A VPN client compatible with Cisco's AnyConnect SSL VPN and ocserv.
  
  OpenConnect is a client that follows the Cisco's AnyConnect SSL VPN protocol,
@@ -653,11 +653,11 @@ Section: net
 Require-User: rpc=65533:rpc=65533
 Maintainer: Peter Wagner <tripolar@gmx.at>
 Architecture: ramips_24kec
-Installed-Size: 6891
+Installed-Size: 6895
 Filename: portmap_6.0-4_ramips_24kec.ipk
 Size: 7730
-MD5Sum: 518a8a506a39bc1cda624a0990824105
-SHA256sum: fd1c02ae578b2d62440726f4cdbc3320ee42a99193a54b921db37cdb353f526e
+MD5Sum: 576e9b9ffb4d9f62c6742d4e61f8490c
+SHA256sum: f4f9d19cd1ee62b94a862ce5131be1ad09b40b01083aa665e57e679ff71cfbe9
 Description:  Portmap is a server that converts RPC (Remote Procedure Call) program
  numbers into DARPA protocol port numbers.
 
@@ -670,11 +670,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 153265
+Installed-Size: 153266
 Filename: rsync_3.1.1-2_ramips_24kec.ipk
-Size: 153974
-MD5Sum: fcca2776c0a2203f5c7815865c29aece
-SHA256sum: b07e6e1758360481e6d491cb4cf0a32be534ca9b1800f600999a77acc308f06c
+Size: 153992
+MD5Sum: a1f378c41311d8d31e4671a8b99d88ad
+SHA256sum: 1647c712523c6458d027d4c5ce862479a31f5dce17f45c76763863f55798dcf5
 Description:  rsync is a program that allows files to be copied to and from remote machines
  in much the same way as rcp. It has many more options than rcp, and uses the
  rsync remote-update protocol to greatly speed up file transfers when the
@@ -692,11 +692,11 @@ LicenseFiles: COPYING
 Section: net
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 576
+Installed-Size: 577
 Filename: rsyncd_3.1.1-2_ramips_24kec.ipk
-Size: 1387
-MD5Sum: 664dfd3787b5b5509c71a906d9a45017
-SHA256sum: 45dca061f46892eaf1132a509bb03bc31578f61d000da23c98f8ae6bf3409387
+Size: 1383
+MD5Sum: 5ee61ddb7a07ed6b8fd2e38f4e746474
+SHA256sum: cd34cc9dd6a958b33739acd1fcab737a9c0771ee57a3d76c9f7cf84f079e1265
 Description:  rsyncd is a configuration file and initscript to utilize rsync as a daemon. It
  uses the same binary as rsync.
 
@@ -709,11 +709,11 @@ LicenseFiles: COPYING
 Section: utils
 Maintainer: Maxim Storchak <m.storchak@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 164032
+Installed-Size: 164030
 Filename: smartmontools_6.3-1_ramips_24kec.ipk
-Size: 164803
-MD5Sum: 2893abf1feee2623415fe9f4f59fcd38
-SHA256sum: b4f7c340f88f177212146dcdee3a209d28d2bd3e45bd115b78763df11c6583a3
+Size: 164769
+MD5Sum: f6271f878adb34a5bebf65b65036902d
+SHA256sum: 211e23300974095decb44fb7624511474f45a356395e598f906058603af7479f
 Description:  smartmontools contains utility programs (smartctl) to
  control/monitor storage systems using the Self-Monitoring, Analysis
  and Reporting Technology System (S.M.A.R.T.) built into most modern
@@ -726,11 +726,11 @@ Source: feeds/packages/net/transmission
 Section: net
 Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
 Architecture: ramips_24kec
-Installed-Size: 190272
+Installed-Size: 190271
 Filename: transmission-daemon_2.84-3_ramips_24kec.ipk
-Size: 190487
-MD5Sum: 1497ba233350a136512529c61248dd3e
-SHA256sum: dc00ff79755280f2684cbdbe7a8fa81c67235baa55b379f813376b5dc2422cc0
+Size: 190519
+MD5Sum: 37564ea4f4cccd1f37ba1b89dcdbad75
+SHA256sum: 33c1e6b255eae0c4d53973b0e16a1cf83d83ef348f89059324cf39d0fda44f38
 Description:  Transmission is a simple BitTorrent client.
  It features a very simple, intuitive interface
  on top on an efficient, cross-platform back-end.
@@ -743,11 +743,11 @@ Source: feeds/packages/net/transmission
 Section: net
 Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
 Architecture: ramips_24kec
-Installed-Size: 205649
+Installed-Size: 205660
 Filename: transmission-web_2.84-3_ramips_24kec.ipk
-Size: 206503
-MD5Sum: 46205fd65a7507c072f312b27bc2d315
-SHA256sum: e39592ed4d6f2f9b7b31b62c4a5cf46072f7dcd92902f1f0f6db6256aefc2169
+Size: 206285
+MD5Sum: 6c11c0087f73ab1f08a71be06c5e831c
+SHA256sum: 2fe06fe68d62b862df8d38756740330340d1c355a81a3a401e72ae6d5464ed2b
 Description:  Webinterface resources for transmission.
 
 Package: vpnc-scripts
@@ -757,11 +757,11 @@ Source: feeds/packages/net/vpnc-scripts
 Section: net
 Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 Architecture: ramips_24kec
-Installed-Size: 2283
+Installed-Size: 2278
 Filename: vpnc-scripts_20151220-1_ramips_24kec.ipk
 Size: 3060
-MD5Sum: 36dcab6c3498d71f6b20c5b6bc34959b
-SHA256sum: 46231850ed65545055fc4b6d7a4bca5f61f6f2e325d198cc81d4eadc0f148e48
+MD5Sum: c6fd411828f11a709699167a7f771944
+SHA256sum: 9c587cb974d69d263bee53b97138c944fce8eb9686a48dfb3cd1511843cfb82c
 Description:  This package contains the vpnc-script which is used by vpnc
  and OpenConnect to configure the tunnel interface.
 
@@ -773,10 +773,10 @@ License: Public Domain
 Section: utils
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Architecture: ramips_24kec
-Installed-Size: 17025
+Installed-Size: 17024
 Filename: zoneinfo-simple_2015d-1_ramips_24kec.ipk
-Size: 17623
-MD5Sum: b013f275092de6707d65db55ac99181a
-SHA256sum: f20d8b907ed0ddf71379d71404906cf2f21350f85ff6468ba00caf7dc620f283
+Size: 17657
+MD5Sum: d662dbd123a2754d6a14f86a1be04f28
+SHA256sum: 8121cef805b742ca8d2819adaf472b330524cc66f2ae8fe26cfcfdf6a5c016fa
 Description:  Zone Information (simple)
 

@@ -1,6 +1,5 @@
-SHA256(openwrt-15.05.1-ramips-mt7620-root.squashfs)= 6223c2dc92dc9e202bad07ea43665477f9a3cfddfed4f762ac7a73bcf5bdd5cd
-SHA256(openwrt-15.05.1-ramips-mt7620-u35wf-squashfs-sysupgrade.bin)= c97e4aa981720e72fdc8a29d0ffb4459c07664b0f747d5d63075f0c2e6cb66f7
-SHA256(openwrt-15.05.1-ramips-mt7620-uImage.bin)= eab41c6d09206a28ac5751017ada30c310190f91cade4c33d7615f378dc9037e
-SHA256(openwrt-15.05.1-ramips-mt7620-vmlinux.bin)= 515e4c7785d2f33c609fcbb6bed8469cffa6eadad7d9fb3dfb7b796e9fd91ba7
-SHA256(openwrt-15.05.1-ramips-mt7620-vmlinux.elf)= eef7ad2f9238ddc1b1decd8eb2a1819b9cde9b7fe939a61828c203c1020c6831
-SHA256(sha256sums)= e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+SHA256(openwrt-15.05.1-ramips-mt7620-root.squashfs)= 7c71edc98c760766b794191c4e900c1c49c6c44cd6d94490385d20095b08497c
+SHA256(openwrt-15.05.1-ramips-mt7620-u35wf-squashfs-sysupgrade.bin)= f7e247fed6724290f9e0a02eca9907a95cb2794ba521b40947a47273f011d321
+SHA256(openwrt-15.05.1-ramips-mt7620-uImage.bin)= 2ff00a9cc42f6acf13c2a8781a9583c0ddaf4487fc86360203bc0f0ac2c571e8
+SHA256(openwrt-15.05.1-ramips-mt7620-vmlinux.bin)= 7a1e53557f96e01a23f11283552ebceffa56d1fae0e52d6e799619c082524513
+SHA256(openwrt-15.05.1-ramips-mt7620-vmlinux.elf)= 48bc1781b82ddc17747897609a148e1771f605902b3c26ccd6f8c9464c771d3c

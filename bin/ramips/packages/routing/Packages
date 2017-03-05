@@ -6,11 +6,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Marek Lindner <mareklindner@neomailbox.ch>
 Architecture: ramips_24kec
-Installed-Size: 70603
+Installed-Size: 70599
 Filename: kmod-batman-adv_3.18.45+2016.1-3_ramips_24kec.ipk
-Size: 71509
-MD5Sum: a0cfd1fa0a4ad9f1b406ba241bd5219a
-SHA256sum: aa34bcca0734f8a80e49729d442c285eba8125a613e89a93a9e9b82594865347
+Size: 71488
+MD5Sum: d13ce583b994c329342e068b459cd8e0
+SHA256sum: 656ed604080520a7e2b6a5d05d52673e247e127b0ed45dc5fecceabfad95f859
 Description:  B.A.T.M.A.N. advanced is a kernel module which allows to
  build layer 2 mesh networks. This package builds
  version 2016.1 of the kernel module.
@@ -23,11 +23,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Steven Barth <cyrus@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 14868
+Installed-Size: 14869
 Filename: kmod-nat46_3.18.45+6-1_ramips_24kec.ipk
-Size: 15687
-MD5Sum: 3a6a6899681de67ff653f39ee8a7a0d8
-SHA256sum: bedbff02bdea4a2017447991e4da3b9acb42a544b87d1d3c886938b72ea17c20
+Size: 15696
+MD5Sum: c0d8246084cf735b2eb2151540ec19f0
+SHA256sum: 7f454947329ae65b46ec101d9a67bc966b858a0e0fcfb0a94dab1e4229165626
 Description:  Stateless NAT46 translation kernel module
 
 Package: miniupnpd
@@ -38,10 +38,10 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Markus Stenberg <fingon@iki.fi>
 Architecture: ramips_24kec
-Installed-Size: 51833
+Installed-Size: 51831
 Filename: miniupnpd_2.0-1_ramips_24kec.ipk
-Size: 52694
-MD5Sum: 69ea9c0e8a2559725ee1c1cd30ac1b41
-SHA256sum: 1517af8476e432badbd6c2514d71e445f53306a8d4eccaca9ab14bacbde526d2
+Size: 52684
+MD5Sum: a6721d919af6901194e260a4aacae3e2
+SHA256sum: 683f14bfdc859755d53a1c5db9bab997bb0404b04d4e1a38e46222efe7c426de
 Description:  Lightweight UPnP IGD, NAT-PMP & PCP daemon
 

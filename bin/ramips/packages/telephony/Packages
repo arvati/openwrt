@@ -9,9 +9,9 @@ Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
 Installed-Size: 2272
 Filename: kmod-dahdi-dummy_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 3169
-MD5Sum: ee6f25e3462c6775300b60e70f23f5fa
-SHA256sum: 63958e54d0cf259006a3237640c2aa785d580b8aef42e778e1fc143115a753eb
+Size: 3171
+MD5Sum: 1531dcc980a7f0e1babea00cb3ead73a
+SHA256sum: 8f1f8d52f38683cb8fca90eceea3c65edb77fe171768d790e06d14d67f826c19
 Description:  This package contains the dummy DAHDI driver providing only DAHDI timing
  without any real telephony hardware.
 
@@ -24,11 +24,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 1470
+Installed-Size: 1471
 Filename: kmod-dahdi-echocan-oslec_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 2387
-MD5Sum: 3cb3f72bf10b3e0b47a287eb6aabfed2
-SHA256sum: 408681b095e0f36d9b62924208fe13bbc31fe7debb1a9aa70c8223e745783670
+Size: 2386
+MD5Sum: 599d0364a47b7dfb41164f97cffeee11
+SHA256sum: c6ecb688b3134aed936100f11ae0671ede4918bf1b355044583b07ab3f86ae13
 Description:  This package contains DAHDI OSLEC echo canceller support.
 
 Package: kmod-dahdi-hfcs
@@ -40,11 +40,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 9777
+Installed-Size: 9778
 Filename: kmod-dahdi-hfcs_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 10677
-MD5Sum: ba0f4bd1158e17d911f2cc8225285b95
-SHA256sum: adb27e5139f6e2dcac08727c4f66be72c6e009c0ef2cd8819a6722575578e707
+Size: 10679
+MD5Sum: 7b9d1b1839b50b1bb677c10ca608cdd8
+SHA256sum: af17b6aab043bba1af6a8094c72f6c68192b83f2fa737a55994b055af5104282
 Description:  This package contains DAHDI driver for HFC-S based PCI BRI adapters.
 
 Package: kmod-dahdi
@@ -56,10 +56,10 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 56773
+Installed-Size: 56772
 Filename: kmod-dahdi_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 57460
-MD5Sum: 24a74354725afa0c36b3652b32a68441
-SHA256sum: 67c80590c2204bb50a041b1601b840ef799621795a87867496f95d60175c573d
+Size: 57477
+MD5Sum: fd966fdab76bc0cd0d1a4c139212b4ab
+SHA256sum: b0c79596620f13ba4b11006a4ca546ab1da2726ab182a043ff5f3ddc76d10724
 Description:  This package contains DAHDI basic infrastructure.
 
