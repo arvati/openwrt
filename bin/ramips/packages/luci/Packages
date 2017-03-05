@@ -1,3 +1,18 @@
+Package: luci-app-ddns
+Version: 2.2.5-1
+Depends: libc, luci-mod-admin-full, ddns-scripts
+Source: feeds/luci/applications/luci-app-ddns
+License: Apache-2.0
+Section: luci
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Architecture: all
+Installed-Size: 24446
+Filename: luci-app-ddns_2.2.5-1_all.ipk
+Size: 25251
+MD5Sum: fdbd77d2244229a0eb338572d630bda2
+SHA256sum: 8b36d3745eebfa6ff8dcd475fc9153153e81faec38f7c7355d53dbe193c12878
+Description:  LuCI Support for Dynamic DNS Client (ddns-scripts)
+
 Package: luci-app-firewall
 Version: git-17.013.32081-d89b022-1
 Depends: libc, firewall
@@ -10,6 +25,58 @@ Size: 11211
 MD5Sum: f507e16fff81a551bfd1a5efee7f5f04
 SHA256sum: 7d7806c0a634ba810f3c3942d766aef40bd5b8fda5df7ac59a7e21e3b4d69183
 Description:  Firewall and Portforwarding application
+
+Package: luci-app-hd-idle
+Version: git-17.013.32081-d89b022-1
+Depends: libc, hd-idle
+Source: feeds/luci/applications/luci-app-hd-idle
+Section: luci
+Architecture: all
+Installed-Size: 1054
+Filename: luci-app-hd-idle_git-17.013.32081-d89b022-1_all.ipk
+Size: 1841
+MD5Sum: d4bf104b28d85eac8eeedb863ef1e4fb
+SHA256sum: e6b50897910a67469893c64e6a42ef793f2c36f96c83a092562d3451f0f38c07
+Description:  Hard Disk Idle Spin-Down module
+
+Package: luci-app-samba
+Version: git-17.013.32081-d89b022-1
+Depends: libc, samba36-server
+Source: feeds/luci/applications/luci-app-samba
+Section: luci
+Architecture: all
+Installed-Size: 1361
+Filename: luci-app-samba_git-17.013.32081-d89b022-1_all.ipk
+Size: 2090
+MD5Sum: e25436f95902f6316d29c187c4947219
+SHA256sum: 043215b06a5212e20f3e90afe045ff5c8b3aeaa5f15b0714eee75adbd0efa513
+Description:  Network Shares - Samba SMB/CIFS module
+
+Package: luci-app-transmission
+Version: git-17.013.32081-d89b022-1
+Depends: libc, transmission-daemon
+Source: feeds/luci/applications/luci-app-transmission
+Section: luci
+Architecture: all
+Installed-Size: 3399
+Filename: luci-app-transmission_git-17.013.32081-d89b022-1_all.ipk
+Size: 4151
+MD5Sum: 24e2ad90a0ba9e1d97f20416529211a8
+SHA256sum: cf3c5ef451b5c05e318cafcdaef4c280f8b42f79f1577ca58d4e43fca06d33c0
+Description:  LuCI Support for Transmission
+
+Package: luci-app-upnp
+Version: git-17.013.32081-d89b022-1
+Depends: libc, miniupnpd
+Source: feeds/luci/applications/luci-app-upnp
+Section: luci
+Architecture: all
+Installed-Size: 3223
+Filename: luci-app-upnp_git-17.013.32081-d89b022-1_all.ipk
+Size: 3944
+MD5Sum: 026f38a1741591ce0c7d8d68b0260a0b
+SHA256sum: 1df541ed4a62ccfc64845b847ea7ea9397ddad1a166eb23c46f4b005a16e2427
+Description:  Universal Plug & Play configuration module
 
 Package: luci-base
 Version: git-17.013.32081-d89b022-1
@@ -63,6 +130,51 @@ MD5Sum: f81ee1f5ff06bbd71ceb4c7bc6f8fb8e
 SHA256sum: 7d47686851defa55b1289a1592ed0a33e72d42a1e38eb3333d6384bd0aaf534c
 Description:  Translation for luci-base - Português (Portuguese)
 
+Package: luci-i18n-ddns-en
+Version: 2.2.5-1
+Depends: libc, luci-app-ddns
+Source: feeds/luci/applications/luci-app-ddns
+License: Apache-2.0
+Section: luci
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Architecture: all
+Installed-Size: 302
+Filename: luci-i18n-ddns-en_2.2.5-1_all.ipk
+Size: 1117
+MD5Sum: 628bba82284ab6e6edd09013c8f24ec0
+SHA256sum: 0403f522e19c66a2ac979ed92af0f4f2075caa93348c31e687d160c005fb5ccb
+Description:  Translation for luci-app-ddns - English
+
+Package: luci-i18n-ddns-pt-br
+Version: 2.2.5-1
+Depends: libc, luci-app-ddns
+Source: feeds/luci/applications/luci-app-ddns
+License: Apache-2.0
+Section: luci
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Architecture: all
+Installed-Size: 629
+Filename: luci-i18n-ddns-pt-br_2.2.5-1_all.ipk
+Size: 1476
+MD5Sum: badc370afc1052d6d2104030ca347357
+SHA256sum: 0565ec3582e310a3f1d8be8edf74cc176e083cb0b38d6a8ceaf859ab94f0c9bc
+Description:  Translation for luci-app-ddns - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-ddns-pt
+Version: 2.2.5-1
+Depends: libc, luci-app-ddns
+Source: feeds/luci/applications/luci-app-ddns
+License: Apache-2.0
+Section: luci
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Architecture: all
+Installed-Size: 597
+Filename: luci-i18n-ddns-pt_2.2.5-1_all.ipk
+Size: 1433
+MD5Sum: 78b45e49f58b28ba6fe562a752de1d95
+SHA256sum: 016e875d97c0b5206f4c4270e68868f19c27316a5de8706b0bd4bafb0d25392b
+Description:  Translation for luci-app-ddns - Português (Portuguese)
+
 Package: luci-i18n-firewall-en
 Version: git-17.013.32081-d89b022-1
 Depends: libc, luci-app-firewall
@@ -102,17 +214,173 @@ MD5Sum: f48a98c6b261263e15cb2885df6cab96
 SHA256sum: 0dcfe9d07addbe8a6e8d4fd308ec0d102c951e2c3ddd9c336f931452d967035c
 Description:  Translation for luci-app-firewall - Português (Portuguese)
 
+Package: luci-i18n-hd-idle-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-hd-idle
+Source: feeds/luci/applications/luci-app-hd-idle
+Section: luci
+Architecture: all
+Installed-Size: 305
+Filename: luci-i18n-hd-idle-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1080
+MD5Sum: a5db07ce0764aa60034f7e0450e12b02
+SHA256sum: c42b0ef4f286f89fe6b725aa9b510a36ca285ce1830e3efe65c0fd4463a50d3a
+Description:  Translation for luci-app-hd-idle - English
+
+Package: luci-i18n-hd-idle-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-hd-idle
+Source: feeds/luci/applications/luci-app-hd-idle
+Section: luci
+Architecture: all
+Installed-Size: 696
+Filename: luci-i18n-hd-idle-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 1511
+MD5Sum: 499aebe6f8dd0800291f3d88a1d2db50
+SHA256sum: 9181092c298e20321a728da81cd01d53d7c31701cf12717cfff670f769597f49
+Description:  Translation for luci-app-hd-idle - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-hd-idle-pt
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-hd-idle
+Source: feeds/luci/applications/luci-app-hd-idle
+Section: luci
+Architecture: all
+Installed-Size: 610
+Filename: luci-i18n-hd-idle-pt_git-17.013.32081-d89b022-1_all.ipk
+Size: 1402
+MD5Sum: c6f4d910fdcb65594ced32a3e6a25cd3
+SHA256sum: b36e459f5028cf89083af8e1c4c32a09a6d941efd3dde721f79ec95877042f00
+Description:  Translation for luci-app-hd-idle - Português (Portuguese)
+
+Package: luci-i18n-samba-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-samba
+Source: feeds/luci/applications/luci-app-samba
+Section: luci
+Architecture: all
+Installed-Size: 610
+Filename: luci-i18n-samba-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1389
+MD5Sum: 683bd45b63a70b220f7aec3644685679
+SHA256sum: 7c17849138dd104b6de740cba07bdfb16c3002d5e7047687bdcf644072af3bd2
+Description:  Translation for luci-app-samba - English
+
+Package: luci-i18n-samba-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-samba
+Source: feeds/luci/applications/luci-app-samba
+Section: luci
+Architecture: all
+Installed-Size: 1096
+Filename: luci-i18n-samba-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 1909
+MD5Sum: 562f05dc6d4d994c341680a8f397b32c
+SHA256sum: 4ce8b20e6f7fe254e0da0f3bfe0082a4468b2007783bd9e385495bc9c25565b3
+Description:  Translation for luci-app-samba - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-samba-pt
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-samba
+Source: feeds/luci/applications/luci-app-samba
+Section: luci
+Architecture: all
+Installed-Size: 1073
+Filename: luci-i18n-samba-pt_git-17.013.32081-d89b022-1_all.ipk
+Size: 1871
+MD5Sum: 51b0de472a27ee826603d3c85d08f1b3
+SHA256sum: 38c05087d933b325c039b11c689b4bab8e62a1f2a1d90e9be6327ad6ed84a85d
+Description:  Translation for luci-app-samba - Português (Portuguese)
+
+Package: luci-i18n-transmission-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-transmission
+Source: feeds/luci/applications/luci-app-transmission
+Section: luci
+Architecture: all
+Installed-Size: 308
+Filename: luci-i18n-transmission-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1088
+MD5Sum: 16d901aeff8e85231b27d09dba9bad7c
+SHA256sum: 87248c54baba55c4217ea18198604d3fcbbc8b899b44f641bcdd390e77565255
+Description:  Translation for luci-app-transmission - English
+
+Package: luci-i18n-transmission-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-transmission
+Source: feeds/luci/applications/luci-app-transmission
+Section: luci
+Architecture: all
+Installed-Size: 2825
+Filename: luci-i18n-transmission-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 3612
+MD5Sum: 18996669db1efde57666af8c1af1c293
+SHA256sum: e39c589aecfa9713e2caea9751e6ede3a594709d4090f7ed047f6d41f8b90b89
+Description:  Translation for luci-app-transmission - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-transmission-pt
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-transmission
+Source: feeds/luci/applications/luci-app-transmission
+Section: luci
+Architecture: all
+Installed-Size: 1008
+Filename: luci-i18n-transmission-pt_git-17.013.32081-d89b022-1_all.ipk
+Size: 1810
+MD5Sum: e7d92716cefd0c78362fc9869fbc23be
+SHA256sum: 4a40a9e706cbafeed5866267fe9f1cdc1f53391750658d4c76274d5066c1a3fe
+Description:  Translation for luci-app-transmission - Português (Portuguese)
+
+Package: luci-i18n-upnp-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-upnp
+Source: feeds/luci/applications/luci-app-upnp
+Section: luci
+Architecture: all
+Installed-Size: 303
+Filename: luci-i18n-upnp-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1077
+MD5Sum: 657c46a01230b002971f0a50a51e459b
+SHA256sum: 903f5f102431561e727e213f9b160425ecfdb6714d3c408e153255898d93a285
+Description:  Translation for luci-app-upnp - English
+
+Package: luci-i18n-upnp-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-upnp
+Source: feeds/luci/applications/luci-app-upnp
+Section: luci
+Architecture: all
+Installed-Size: 1677
+Filename: luci-i18n-upnp-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 2497
+MD5Sum: be10950d2d39dc93a1a69544ed792834
+SHA256sum: b50bc84e38a05f620211e91db569f648310877a3daf836276dd5cd485a062a46
+Description:  Translation for luci-app-upnp - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-upnp-pt
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-upnp
+Source: feeds/luci/applications/luci-app-upnp
+Section: luci
+Architecture: all
+Installed-Size: 445
+Filename: luci-i18n-upnp-pt_git-17.013.32081-d89b022-1_all.ipk
+Size: 1230
+MD5Sum: a759cc92d4232a0536e87357bc3cae15
+SHA256sum: 64f02b4cb12f8c83583b1c566d6e9d80c0de4b5af56c0957b9d3e46c4d2bb53d
+Description:  Translation for luci-app-upnp - Português (Portuguese)
+
 Package: luci-lib-ip
 Version: git-17.013.32081-d89b022-1
 Depends: libc, liblua, libnl-tiny
 Source: feeds/luci/libs/luci-lib-ip
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 9387
+Installed-Size: 9389
 Filename: luci-lib-ip_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 10102
-MD5Sum: c894bcb6fa39c555fcfacb7d07ba2304
-SHA256sum: e7209151ebc873dd2f1fe7c859654d57fd4708a87e9c000c11a478cfff8580eb
+Size: 10103
+MD5Sum: a2d4e1840c9e1b673b403cc6ed15ef6d
+SHA256sum: c07a895a6a3384d42542476b66857e60585619d88c8bc129716e7411d2230451
 Description:  Lua library for IP calculation and routing information
 
 Package: luci-lib-nixio
@@ -121,11 +389,11 @@ Depends: libc, liblua
 Source: feeds/luci/libs/luci-lib-nixio
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 29185
+Installed-Size: 29182
 Filename: luci-lib-nixio_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 29753
-MD5Sum: 8b154e1bd8e0bf7b23ab137ca2b1065e
-SHA256sum: 5638abbaf7db14ffe62824f165c5f98ab62739764c03e457e2c644f2c8ff0048
+Size: 29783
+MD5Sum: aca66a4885d98d2083cc75a036101024
+SHA256sum: 1765a2c6716a2ff7003803a9610ec6c3fab214a0f3d2f9303012f400965d827f
 Description:  NIXIO POSIX library
 
 Package: luci-mod-admin-full

@@ -2390,10 +2390,10 @@ CONFIG_PACKAGE_kmod-leds-gpio=y
 CONFIG_PACKAGE_kmod-leds-pca963x=m
 CONFIG_PACKAGE_kmod-ledtrig-default-on=y
 CONFIG_PACKAGE_kmod-ledtrig-gpio=y
-CONFIG_PACKAGE_kmod-ledtrig-heartbeat=y
+CONFIG_PACKAGE_kmod-ledtrig-heartbeat=m
 CONFIG_PACKAGE_kmod-ledtrig-morse=m
 CONFIG_PACKAGE_kmod-ledtrig-netdev=y
-CONFIG_PACKAGE_kmod-ledtrig-netfilter=y
+CONFIG_PACKAGE_kmod-ledtrig-netfilter=m
 CONFIG_PACKAGE_kmod-ledtrig-oneshot=m
 CONFIG_PACKAGE_kmod-ledtrig-timer=m
 CONFIG_PACKAGE_kmod-ledtrig-transient=y
@@ -2447,7 +2447,7 @@ CONFIG_PACKAGE_kmod-ebtables=m
 CONFIG_PACKAGE_kmod-ebtables-ipv4=m
 CONFIG_PACKAGE_kmod-ebtables-ipv6=m
 CONFIG_PACKAGE_kmod-ebtables-watchers=m
-CONFIG_PACKAGE_kmod-ip6tables=y
+CONFIG_PACKAGE_kmod-ip6tables=m
 CONFIG_PACKAGE_kmod-ip6tables-extra=m
 CONFIG_PACKAGE_kmod-ipt-account=m
 CONFIG_PACKAGE_kmod-ipt-chaos=m
@@ -2498,9 +2498,9 @@ CONFIG_PACKAGE_kmod-nf-conntrack=y
 CONFIG_PACKAGE_kmod-nf-conntrack-netlink=m
 CONFIG_PACKAGE_kmod-nf-conntrack6=y
 CONFIG_PACKAGE_kmod-nf-ipt=y
-CONFIG_PACKAGE_kmod-nf-ipt6=y
+CONFIG_PACKAGE_kmod-nf-ipt6=m
 CONFIG_PACKAGE_kmod-nf-nat=y
-CONFIG_PACKAGE_kmod-nf-nat6=y
+CONFIG_PACKAGE_kmod-nf-nat6=m
 CONFIG_PACKAGE_kmod-nf-nathelper=y
 CONFIG_PACKAGE_kmod-nf-nathelper-extra=m
 CONFIG_PACKAGE_kmod-nfnetlink=y
@@ -2631,7 +2631,7 @@ CONFIG_PACKAGE_kmod-vxlan=m
 #
 CONFIG_PACKAGE_kmod-6lowpan=m
 CONFIG_PACKAGE_kmod-bcma=m
-CONFIG_PACKAGE_kmod-bluetooth=y
+CONFIG_PACKAGE_kmod-bluetooth=m
 CONFIG_PACKAGE_kmod-bluetooth_6lowpan=m
 CONFIG_PACKAGE_kmod-button-hotplug=m
 CONFIG_PACKAGE_kmod-echo=m
@@ -2952,7 +2952,7 @@ CONFIG_PACKAGE_kmod-rtl8192de=y
 CONFIG_PACKAGE_kmod-rtl8192se=y
 CONFIG_PACKAGE_kmod-rtl8xxxu=y
 CONFIG_PACKAGE_kmod-rtlwifi=y
-CONFIG_PACKAGE_RTLWIFI_DEBUG=y
+# CONFIG_PACKAGE_RTLWIFI_DEBUG is not set
 CONFIG_PACKAGE_kmod-rtlwifi-pci=y
 CONFIG_PACKAGE_kmod-rtlwifi-usb=y
 CONFIG_PACKAGE_kmod-zd1211rw=m
@@ -4565,7 +4565,7 @@ CONFIG_PACKAGE_wwan=m
 # Editors
 #
 # CONFIG_PACKAGE_joe is not set
-CONFIG_PACKAGE_nano=y
+# CONFIG_PACKAGE_nano is not set
 # CONFIG_PACKAGE_vim is not set
 # CONFIG_PACKAGE_vim-full is not set
 # CONFIG_PACKAGE_vim-help is not set

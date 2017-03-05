@@ -48,6 +48,20 @@ MD5Sum: 6e09230186143bcc4b311e31cd6048e8
 SHA256sum: 5fdb25e2a49df023b31cd9c072dc6268c0fcd6fb5ea71eb2af8c6b9224824126
 Description:  Simple interprocess messaging system (daemon)
 
+Package: ddns-scripts
+Version: 2.7.6-13
+Source: feeds/packages/net/ddns-scripts
+License: GPL-2.0
+Section: net
+Maintainer: Christian Schoenebeck <christian.schoenebeck@gmail.com>
+Architecture: all
+Installed-Size: 14772
+Filename: ddns-scripts_2.7.6-13_all.ipk
+Size: 15871
+MD5Sum: a8d86f541a8eb40efca6042e7b331be8
+SHA256sum: 9e8fdaa57c635f43fcb532960bef7cbcdc63ddc3e389f1d96bcc56ecf508a547
+Description:  Dynamic DNS Client scripts (with IPv6 support) - Info: http://wiki.openwrt.org/doc/howto/ddns.client
+
 Package: dosfsck
 Version: 3.0.28-1
 Depends: libc
@@ -136,11 +150,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Bruno Randolf <br1@einfach.org>
 Architecture: ramips_24kec
-Installed-Size: 45563
+Installed-Size: 45561
 Filename: kmod-fs-exfat_3.18.45+git-20150301-1_ramips_24kec.ipk
-Size: 46447
-MD5Sum: 13d535cf43b1abed0f37d31054f2a4b1
-SHA256sum: 5138c8db7cc4641fd0abf43013acc9de70e78bfda4df8aa9c16827c0da3edc8b
+Size: 46444
+MD5Sum: 82ac316c051e88120fd3e37139d82679
+SHA256sum: ab9b27721adda98b36150b9b478f95ac72b3b70369d80535f921436847bcaf54
 Description:  Kernel module for ExFAT Filesytems
 
 Package: kmod-openvswitch
@@ -151,11 +165,11 @@ License: Apache-2.0
 LicenseFiles: COPYING
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 47098
+Installed-Size: 47093
 Filename: kmod-openvswitch_3.18.45+2.3.90-58be9c9fd732b5bdd3d4c2e9b8cc2313f570094d_ramips_24kec.ipk
-Size: 47819
-MD5Sum: 3548e25a67f7c1e8eb1587424fd769eb
-SHA256sum: 1f2bf1c5537f8e8c7a207cc80496a9d5c4ace9a2260e25ebb8dff4ebec34fdd0
+Size: 47829
+MD5Sum: 032895ac9adfaae4e056583e9c30b9d1
+SHA256sum: 923e67160df6431a4c9d0f893f154de2fe1f63a344ef814f03fe231b870a30ae
 Description:  This package contains the Open vSwitch kernel moodule and bridge compat
  module. Furthermore, it supports OpenFlow.
 
@@ -167,11 +181,11 @@ License: GPLv2+
 Section: kernel
 Maintainer: Vladimir Ulrich <admin@evl.su>
 Architecture: ramips_24kec
-Installed-Size: 5100
+Installed-Size: 5103
 Filename: kmod-siit_3.18.45+1.2-1_ramips_24kec.ipk
-Size: 5937
-MD5Sum: 16392ff3f8919f69294ef02938ee0bc0
-SHA256sum: d023477b7b193a9a0fc7f1b221fc799be449af862571be79b9e983dec991310e
+Size: 5939
+MD5Sum: f96a88602af28d030ffa0f23ae76e7da
+SHA256sum: a16981fe5e45c52b7e386dbe530699abffb12da868d08b0a34f8482698eadae3
 Description:  Stateless IP ICMP Translation Algorithm
 
 Package: kmod-usb-serial-dmx_usb_module
@@ -182,11 +196,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Martijn Zilverschoon <martijn@friedzombie.com>
 Architecture: ramips_24kec
-Installed-Size: 4741
+Installed-Size: 4739
 Filename: kmod-usb-serial-dmx_usb_module_3.18.45+0.1.20130818-0.1_ramips_24kec.ipk
-Size: 5717
-MD5Sum: bd9c38bc3c5f9558b5d701a9137031b1
-SHA256sum: fc29ab2981c51a080f54598e308191c72bfd74f8cec1c8c22c6fbae2de534755
+Size: 5718
+MD5Sum: 60831ffdc12ec1ac6243da480ec86a52
+SHA256sum: 5d0ee82d725278c74ce1fe7c0cd309270ec5349e5e33df20c51a699d1f0dcd55
 Description:  Open DMX USB is an open USB to DMX dongle hardware design developed by Enttec.
  The Open in Open DMX USB refers to the fact that everybody is free to use the
  design and produce its own USB DMX Dongle without paying any licenses.
@@ -619,9 +633,9 @@ Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
 Architecture: ramips_24kec
 Installed-Size: 77657
 Filename: openconnect_7.06-5_ramips_24kec.ipk
-Size: 78178
-MD5Sum: 3fb35088155edaab5f81a672b18e4573
-SHA256sum: 6f9b7859e5089eb9362b63e507724fa5d3a2736e3db11b7d7f532f20c0a4f47d
+Size: 78144
+MD5Sum: a4264020dcbac0bc8fc4f88e7b914933
+SHA256sum: 91a728b350ae178b8c45c8555a4bf595ca0258e26630f2f09df930cbc044cbf7
 Description:  A VPN client compatible with Cisco's AnyConnect SSL VPN and ocserv.
  
  OpenConnect is a client that follows the Cisco's AnyConnect SSL VPN protocol,
@@ -647,6 +661,45 @@ SHA256sum: fd1c02ae578b2d62440726f4cdbc3320ee42a99193a54b921db37cdb353f526e
 Description:  Portmap is a server that converts RPC (Remote Procedure Call) program
  numbers into DARPA protocol port numbers.
 
+Package: rsync
+Version: 3.1.1-2
+Depends: libc, libpopt, zlib
+Source: feeds/packages/net/rsync
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Maxim Storchak <m.storchak@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 153265
+Filename: rsync_3.1.1-2_ramips_24kec.ipk
+Size: 153974
+MD5Sum: fcca2776c0a2203f5c7815865c29aece
+SHA256sum: b07e6e1758360481e6d491cb4cf0a32be534ca9b1800f600999a77acc308f06c
+Description:  rsync is a program that allows files to be copied to and from remote machines
+ in much the same way as rcp. It has many more options than rcp, and uses the
+ rsync remote-update protocol to greatly speed up file transfers when the
+ destination file already exists.
+ 
+ The rsync remote-update protocol allows rsync to transfer just the differences
+ between two sets of files across the network link.
+
+Package: rsyncd
+Version: 3.1.1-2
+Depends: libc, rsync
+Source: feeds/packages/net/rsync
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Maxim Storchak <m.storchak@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 576
+Filename: rsyncd_3.1.1-2_ramips_24kec.ipk
+Size: 1387
+MD5Sum: 664dfd3787b5b5509c71a906d9a45017
+SHA256sum: 45dca061f46892eaf1132a509bb03bc31578f61d000da23c98f8ae6bf3409387
+Description:  rsyncd is a configuration file and initscript to utilize rsync as a daemon. It
+ uses the same binary as rsync.
+
 Package: smartmontools
 Version: 6.3-1
 Depends: libc, uclibcxx
@@ -666,6 +719,37 @@ Description:  smartmontools contains utility programs (smartctl) to
  and Reporting Technology System (S.M.A.R.T.) built into most modern
  ATA and SCSI disks. It is derived from smartsuite.
 
+Package: transmission-daemon
+Version: 2.84-3
+Depends: libc, libcurl, libopenssl, libpthread, libevent2, librt
+Source: feeds/packages/net/transmission
+Section: net
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Architecture: ramips_24kec
+Installed-Size: 190272
+Filename: transmission-daemon_2.84-3_ramips_24kec.ipk
+Size: 190487
+MD5Sum: 1497ba233350a136512529c61248dd3e
+SHA256sum: dc00ff79755280f2684cbdbe7a8fa81c67235baa55b379f813376b5dc2422cc0
+Description:  Transmission is a simple BitTorrent client.
+ It features a very simple, intuitive interface
+ on top on an efficient, cross-platform back-end.
+ This package contains the daemon itself.
+
+Package: transmission-web
+Version: 2.84-3
+Depends: libc, transmission-daemon
+Source: feeds/packages/net/transmission
+Section: net
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Architecture: ramips_24kec
+Installed-Size: 205649
+Filename: transmission-web_2.84-3_ramips_24kec.ipk
+Size: 206503
+MD5Sum: 46205fd65a7507c072f312b27bc2d315
+SHA256sum: e39592ed4d6f2f9b7b31b62c4a5cf46072f7dcd92902f1f0f6db6256aefc2169
+Description:  Webinterface resources for transmission.
+
 Package: vpnc-scripts
 Version: 20151220-1
 Depends: libc
@@ -680,4 +764,19 @@ MD5Sum: 36dcab6c3498d71f6b20c5b6bc34959b
 SHA256sum: 46231850ed65545055fc4b6d7a4bca5f61f6f2e325d198cc81d4eadc0f148e48
 Description:  This package contains the vpnc-script which is used by vpnc
  and OpenConnect to configure the tunnel interface.
+
+Package: zoneinfo-simple
+Version: 2015d-1
+Depends: libc
+Source: feeds/packages/utils/zoneinfo
+License: Public Domain
+Section: utils
+Maintainer: Vladimir Ulrich <admin@evl.su>
+Architecture: ramips_24kec
+Installed-Size: 17025
+Filename: zoneinfo-simple_2015d-1_ramips_24kec.ipk
+Size: 17623
+MD5Sum: b013f275092de6707d65db55ac99181a
+SHA256sum: f20d8b907ed0ddf71379d71404906cf2f21350f85ff6468ba00caf7dc620f283
+Description:  Zone Information (simple)
 

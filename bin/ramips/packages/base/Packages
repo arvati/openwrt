@@ -188,6 +188,40 @@ Description:  comgt is a scripting language interpreter useful for establishing
  communications on serial lines and through PCMCIA modems as well as GPRS 
  and 3G datacards.
 
+Package: curl
+Version: 7.40.0-3.2
+Depends: libc, libcurl
+Source: package/network/utils/curl
+License: MIT
+LicenseFiles: COPYING
+Section: net
+Maintainer: Imre Kaloz <kaloz@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 38166
+Filename: curl_7.40.0-3.2_ramips_24kec.ipk
+Size: 38947
+MD5Sum: eca060763d5ae81d81e81e3289053e13
+SHA256sum: 251df93ee8f8348497f912c084df5343482bc9456b422ce01640ab7e850ec66b
+Description:  A client-side URL transfer utility
+
+Package: dnsmasq-full
+Version: 2.73-1
+Depends: libc, libnettle, kmod-ipt-ipset
+Source: package/network/services/dnsmasq
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 115427
+Filename: dnsmasq-full_2.73-1_ramips_24kec.ipk
+Size: 115909
+MD5Sum: df368a96443c67d1cd3bab1fa55500d9
+SHA256sum: 5445010cd732b7b99f8ed426c519159ce3e7e9cb6fa62166ae172576af0a3ecb
+Description:  It is intended to provide coupled DNS and DHCP service to a LAN.
+ 
+ This is a fully configurable variant with DHCPv6, DNSSEC, Authroitative DNS and
+ IPset support enabled by default.
+
 Package: dnsmasq
 Version: 2.73-1
 Depends: libc
@@ -348,11 +382,11 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 153665
+Installed-Size: 153663
 Filename: hostapd-mini_2015-03-25-1_ramips_24kec.ipk
-Size: 154386
-MD5Sum: a59375b2495a2e9047b5f28e41f23610
-SHA256sum: e6089acfa66b960e938e7fa801ce658a799483bbe8a8cd6d3d38571029a168d9
+Size: 154380
+MD5Sum: 418d7d6d4650100a733b775491cac4ad
+SHA256sum: 7de3951e29ce25105bb449dd1bff47e7da5bc69e281c0cbab5c031530e8e4bb4
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator (WPA-PSK only).
 
 Package: hostapd-utils
@@ -380,11 +414,11 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 258326
+Installed-Size: 258327
 Filename: hostapd_2015-03-25-1_ramips_24kec.ipk
-Size: 258753
-MD5Sum: df4160e2c848f87d8c2de68e132de7cb
-SHA256sum: beca96e98989d80b5e618b375a6adec1e3606c6a1be09ffad7f2ea18b00aabe1
+Size: 258762
+MD5Sum: cbfc8f4c33d113753ed04e26bfbb4a0b
+SHA256sum: 5fdd80cdd3157445166a963b738df71b25bd6042df510c34e6bcc151cdd21363
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
 
@@ -642,11 +676,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 12580
+Installed-Size: 12579
 Filename: kmod-adm8211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 13390
-MD5Sum: 615052c8b91f9f67e4da60b314711040
-SHA256sum: 1eddb4c598ba4dc191d62824910becf7687749aa99b69a71c8cf6a57ce1cce44
+Size: 13392
+MD5Sum: ff667c7df5edbf3c4053538864b7cdf2
+SHA256sum: 0d6217870ac337fb641539ec60737fd6d43bc05de5aacfb78c8bb04ceb461bfd
 Description:  ADMTek 8211 support
 
 Package: kmod-aoe
@@ -853,11 +887,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 131046
+Installed-Size: 131047
 Filename: kmod-ath10k_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 130730
-MD5Sum: 42dab97fbd56ec4f4ebc28fbcb010018
-SHA256sum: fdc42cb90b5529a2f9d9eb0c4668708961cf36f3dc0338a6bfea7ca281d30104
+Size: 130712
+MD5Sum: cb6d41533dd2dc717f6f96d0b7a72fff
+SHA256sum: 49ddafdcb5d6b4fa7c0af3ad9724ee95dae470aad5b1e5117029207c9c3410bc
 Description:  This module adds support for wireless adapters based on
  Atheros IEEE 802.11ac family of chipsets. For now only
  PCI is supported.
@@ -869,11 +903,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 78912
+Installed-Size: 78908
 Filename: kmod-ath5k_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 79236
-MD5Sum: 1509506cd8101a61312194fef13e16c5
-SHA256sum: b32d8169c33c2c6e31ba889442ae4ea8cd9efdf595c16f002e4eadb25efbe468
+Size: 79221
+MD5Sum: c807aa4f7a005720e6907a99c5bf1398
+SHA256sum: 4c6475746191824464c7ff99e1f9beb52fc05696aa3b436edb2d196a8273d899
 Description:  This module adds support for wireless adapters based on
  Atheros 5xxx chipset.
 
@@ -884,11 +918,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 126298
+Installed-Size: 126300
 Filename: kmod-ath9k-common_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 124278
-MD5Sum: 86af074e71ca9a2ec6681decb3b2abc0
-SHA256sum: fd723f2e555b7d0c20d378dd9bcb0411f7b5db7e797e479b6efae71dc094bdc4
+Size: 124220
+MD5Sum: 5d5f586ebf1086a519a73c154d4aa901
+SHA256sum: 31a5b41e21eef70db5902ae06aaf0af21734906ec19006f26ab6575a83a38af0
 Description:  Atheros 802.11n wireless devices (common code for ath9k and ath9k_htc)
 
 Package: kmod-ath9k-htc
@@ -898,11 +932,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 34342
+Installed-Size: 34339
 Filename: kmod-ath9k-htc_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 35219
-MD5Sum: 735e6d503ac92029857388fe4c7e614e
-SHA256sum: 8b004c8e7cfa7f981355fd56dfcae89e0d2f96a7e8a8f96402cf6da9e0f4cc9a
+Size: 35216
+MD5Sum: ee2cbe3ba525808ee14e7f215ed5b9d7
+SHA256sum: bb5a2bec13f0047aa673e909406e7c2c3611aaf137aae11189bc9f7d2c08b3de
 Description:  This module adds support for wireless adapters based on
  Atheros USB AR9271 and AR7010 family of chipsets.
 
@@ -913,11 +947,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 54692
+Installed-Size: 54689
 Filename: kmod-ath9k_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 55327
-MD5Sum: e3ba3358dd578154456a5c533b3d3db5
-SHA256sum: 9663e201155f49b167adff247283f513598078f72e4ad6010f17263906bca9ba
+Size: 55326
+MD5Sum: 6b0886443a838446383a2add51a81a86
+SHA256sum: cd436a1c3c82fb6a095d17de6505fbee6557d98a3876e73e201bb0d31f2409af
 Description:  This module adds support for wireless adapters based on
  Atheros IEEE 802.11n AR5008 and AR9001 family of chipsets.
 
@@ -928,11 +962,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 12757
+Installed-Size: 12755
 Filename: kmod-ath_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 13438
-MD5Sum: bacda2407c66d16c93ee357e45016a0e
-SHA256sum: 4fb61661cec6b1f2212613b08de9ae220d830d6438ede71d3657a8eedaef3bd3
+Size: 13434
+MD5Sum: b15f4ba27a702383b5223b494e9e4f46
+SHA256sum: f436fb63e9cc0bb0ef4c3224ba93806db76e48cc05fd8e28ddb58c9a3f2e0880
 Description:  This module contains some common parts needed by Atheros Wireless drivers.
 
 Package: kmod-atl1
@@ -1047,11 +1081,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 288583
+Installed-Size: 288593
 Filename: kmod-b43_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 285102
-MD5Sum: 7edf551efa45ca7f8954995522aa7422
-SHA256sum: 8bf15645712b2c19773a9f147b4dcf0f44633610231b892b72692a6f39ab17d3
+Size: 285190
+MD5Sum: be1ef34799c54ed83fbd10c051118b4a
+SHA256sum: 37e3057f59aaf6411ae747593ef7a8a0de0fb950b0d2b5d48633a5856af8be29
 Description:  Kernel module for Broadcom 43xx wireless support (mac80211 stack) new
 
 Package: kmod-b43legacy
@@ -1061,11 +1095,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 48520
+Installed-Size: 48517
 Filename: kmod-b43legacy_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 49338
-MD5Sum: 28f2fa815ee6a50b62de153b8f71625f
-SHA256sum: 99658146797e73ffeae2d206aeaccf7176d55a1263fb597d3065b00beacc836b
+Size: 49335
+MD5Sum: 29f9cc21460a36d193f005b9dee5596a
+SHA256sum: 5c62ecb5101cb5e3d49e814fdaa4120fa8af3e66de69eb31ee7e30951f623369
 Description:  Kernel module for Broadcom 43xx-legacy wireless support (mac80211 stack) new
 
 Package: kmod-b44
@@ -1165,11 +1199,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 112646
+Installed-Size: 112645
 Filename: kmod-brcmfmac_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 113112
-MD5Sum: 3a2810782e1131c7df16ccc567100631
-SHA256sum: a17110873af552c316d6cb4d4ebd5fe7810d51fc066442f21ca80bc868a3686c
+Size: 113123
+MD5Sum: de85cb4a5ae841c3608fbc9448b18985
+SHA256sum: 18aa4b4a5baf48de473c69c84e06e36151d879b194630eb88efe161ca33d0fcb
 Description:  Kernel module for Broadcom IEEE802.11n USB Wireless cards
 
 Package: kmod-brcmsmac
@@ -1179,11 +1213,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 218659
+Installed-Size: 218663
 Filename: kmod-brcmsmac_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 215219
-MD5Sum: ca008e64b64004a3ce5eef8423a1cb8c
-SHA256sum: 413c8bfa243435b2b2f9ed90505fd4cc7680cb8d3f0d778f68cc7373067ac2ea
+Size: 215259
+MD5Sum: d9b0e948b9e25380edc4e909ccf8e15f
+SHA256sum: c4dc1a1ea755503d14605751aae449dfe2dfcc76403eb757bacb4831334a484a
 Description:  Kernel module for Broadcom IEEE802.11n PCIe Wireless cards
 
 Package: kmod-brcmutil
@@ -1193,11 +1227,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3691
+Installed-Size: 3690
 Filename: kmod-brcmutil_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 4537
-MD5Sum: d86b03d13d3f741d8a8ed1f4d75b1ad0
-SHA256sum: e3b1fc24d4357a0d8095affde43f0c8f41d9290836894eeae4e646a483ce77ec
+Size: 4536
+MD5Sum: 641641bde76f532eab41e3664b86ec62
+SHA256sum: bb99aadaab81fbd90ea243e59ea03eff752e296c999279386dd707e9be2ed283
 Description:  This module contains some common parts needed by Broadcom Wireless drivers brcmsmac and brcmfmac.
 
 Package: kmod-bridge
@@ -1223,9 +1257,9 @@ Section: kernel
 Architecture: ramips_24kec
 Installed-Size: 2894
 Filename: kmod-button-hotplug_3.18.45-3_ramips_24kec.ipk
-Size: 3713
-MD5Sum: 713853f54a0c1b0dc71525207755f9ef
-SHA256sum: ce5aaa0c182e5a71e41d9ac93c45f545e00d41277114aeb1d44700f46b9da2a1
+Size: 3716
+MD5Sum: 8aa87301e7e393313ef77a8f78c06967
+SHA256sum: 96fb177aa151a51a0d67d75e0b0d69d1d48d6c142d94d8b21c73b3b707c56da8
 Description:  Kernel module to generate button uevent-s from input subsystem events.
  If your device uses GPIO buttons, see gpio-button-hotplug.
 
@@ -1478,11 +1512,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 49528
+Installed-Size: 49527
 Filename: kmod-carl9170_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 50270
-MD5Sum: 99d9db98f8f35c2af6c4352a63d2d0de
-SHA256sum: 6b7441f2b8318b2be623cd37a18a57faae3509d9a526380045cc004a8e40dc7b
+Size: 50262
+MD5Sum: 759b50b1bdbd5e24a6be8ff79b31d09c
+SHA256sum: 29a43d95ec816b5c2c9a8a7f407061bdf6b5536333391f01cad3d181c17f8c5e
 Description:  Driver for Atheros AR9170 USB sticks
 
 Package: kmod-cfg80211
@@ -1492,11 +1526,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 131122
+Installed-Size: 131115
 Filename: kmod-cfg80211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 131684
-MD5Sum: 22224a7eb6789835eed3cfb842ccc8bd
-SHA256sum: 69f3f6702ba33c1c99be638f36bd9d3a8808f8f3637a979a5c9e6f5c45690dec
+Size: 131657
+MD5Sum: 68c1ea9e8b29a6d7c8481d4549401aea
+SHA256sum: c078ee1bc9c02a0278ff6202c276119521b369f27d41cb813987ef84cf20c590
 Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
 
 Package: kmod-crypto-aead
@@ -2759,11 +2793,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
 Source: package/kernel/gpio-button-hotplug
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 5392
+Installed-Size: 5394
 Filename: kmod-gpio-button-hotplug_3.18.45-1_ramips_24kec.ipk
-Size: 6340
-MD5Sum: 632af0798dcf30451e4017e3ebade175
-SHA256sum: 2f36713b91bb82305fb0eb6774cabba5288b7b715e086f28aad070e4ebf68dd5
+Size: 6341
+MD5Sum: 6019a6408b1294928b6bfada46a25d6a
+SHA256sum: ee51e53311a5fe756d0f59a5dba633aa1599892815f7118248151773fda1ffe3
 Description:  This is a replacement for the following in-kernel drivers:
  1) gpio_keys (KEYBOARD_GPIO)
  2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
@@ -2887,9 +2921,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 2422
 Filename: kmod-hermes-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 3251
-MD5Sum: 34b351c4eb71bf82dbe886b80f88f6d4
-SHA256sum: 550d6278be55ae004336af13fba7fc175c686bc6bcb88cca2f5c95fdf6514d5b
+Size: 3244
+MD5Sum: 0d30d9e25474c926b7ad499ae6c9690b
+SHA256sum: d42af7d95232a4936a7a98c127a36b9921750676c706c2fef1e3ed1b76b37b9d
 Description:  Kernel modules for Intersil Prism 2.5 PCI support
 
 Package: kmod-hermes-plx
@@ -2901,9 +2935,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 2943
 Filename: kmod-hermes-plx_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 3762
-MD5Sum: c09ff6987e95c68b849adfcbc24fd76d
-SHA256sum: 15bad6497b180a9cc19b4c3f7ae67033af803ed75ab73d5864d5df3609dbe523
+Size: 3758
+MD5Sum: e14e3367027b34f99a2c5910554c91f5
+SHA256sum: e672178b760c0658e3971224c0dbff69aef690f36e60cfe84a60b4ea5a1d0c7e
 Description:  Kernel modules for Hermes in PLX9052 based PCI adaptors
 
 Package: kmod-hermes
@@ -2913,11 +2947,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 33194
+Installed-Size: 33201
 Filename: kmod-hermes_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 34041
-MD5Sum: 29761ea146b4f082fad55ade414ce92d
-SHA256sum: 699da7f14ad4572e5f465dd67b359e26185299702b9d4ba81d9f27665d3f5947
+Size: 34059
+MD5Sum: 992812e598d9eb296fc9383cb985ebaa
+SHA256sum: acffc152de337e727bc42a59243d687bcd6f9ae98bcdf64938c00fc6e34cdee2
 Description:  Kernel support for Hermes 802.11b chipsets
 
 Package: kmod-hfcmulti
@@ -2988,11 +3022,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-hostap
 Source: package/kernel/hostap-driver
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 25299
+Installed-Size: 25300
 Filename: kmod-hostap-pci_3.18.45-ramips-2_ramips_24kec.ipk
-Size: 26037
-MD5Sum: 48df52c855da89325b87b9c90900ed5b
-SHA256sum: c766dc7f037c16133a53920add3e2febf0f57ea50a6d3d417050313839965355
+Size: 26040
+MD5Sum: f63a93eeb298401cbb8ada4210d99238
+SHA256sum: 4f19755ddcf80c5925d9ec9dc24f98a25e875508eaa2e3ad8d881114c104c335
 Description:  Host AP is a driver for 802.11b wireless cards based on Intersil 
  Prism2/2.5/3 chipset. It supports so called Host AP mode that allows the 
  card to act as an IEEE 802.11 access point.
@@ -3004,11 +3038,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-hostap
 Source: package/kernel/hostap-driver
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 27350
+Installed-Size: 27351
 Filename: kmod-hostap-plx_3.18.45-ramips-2_ramips_24kec.ipk
 Size: 28209
-MD5Sum: 8273420befe2ddbc173dc13adb5b0aed
-SHA256sum: 34374b92109b140a0ee426bf6f8c741805d4157c617ee0b6339e2f28131e59a0
+MD5Sum: 15a0831f00075ce8bff6d477e03a6670
+SHA256sum: 1e86e52c18dbaa892c485c05573665851d24793b465a9014537c64032ad17883
 Description:  Host AP is a driver for 802.11b wireless cards based on Intersil 
  Prism2/2.5/3 chipset. It supports so called Host AP mode that allows the 
  card to act as an IEEE 802.11 access point.
@@ -3023,9 +3057,9 @@ Section: kernel
 Architecture: ramips_24kec
 Installed-Size: 56425
 Filename: kmod-hostap_3.18.45-ramips-2_ramips_24kec.ipk
-Size: 57120
-MD5Sum: 76956710e6a68c747ef7d6dd0db4d66c
-SHA256sum: e0419c4407f35c30a7cf90a191fc73d2b1db5529edc616d41a2f51c6e40b57a2
+Size: 57132
+MD5Sum: 21e30fe78078b36ad2b3ab1f65cfd352
+SHA256sum: 8fb79e9b52fcad4bed62bf27695a9addfeaa53c4704dc005cdfb3800b0ff89d5
 Description:  Host AP is a driver for 802.11b wireless cards based on Intersil 
  Prism2/2.5/3 chipset. It supports so called Host AP mode that allows the 
  card to act as an IEEE 802.11 access point.
@@ -3354,11 +3388,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-i2c-core, km
 Source: package/kernel/i2c-gpio-custom
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 1654
+Installed-Size: 1653
 Filename: kmod-i2c-gpio-custom_3.18.45-2_ramips_24kec.ipk
-Size: 2401
-MD5Sum: 41fa1a3d43379e5b15959c16b7230ba2
-SHA256sum: c3adfee2dddfc02108ff406ff9e24891586523b966dc52d1693c68644526842e
+Size: 2400
+MD5Sum: 4475813d5466fe95f697b5688b206265
+SHA256sum: ff1320e68663fd8a3034a09dafa7c80ae3583d31c017cbe5dbd8c6d662cba1f7
 Description:  Kernel module for register a custom i2c-gpio platform device.
 
 Package: kmod-i2c-gpio
@@ -3934,9 +3968,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 8800
 Filename: kmod-ipt-account_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 9654
-MD5Sum: c1ac37536012a3b08cf556cc564aefaa
-SHA256sum: e8b540d1d65dbbb73728766155c46d009ce05a0146511c0758184651b78eb5cd
+Size: 9639
+MD5Sum: 8d3b3d7bd193a6681f246982d0e1bbb9
+SHA256sum: 8da8f02ababa57be853fa965c6246d7152fe0bc93e15949acc165a49e3a6ae1f
 Description:  ACCOUNT netfilter module
 
 Package: kmod-ipt-chaos
@@ -3947,11 +3981,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2326
+Installed-Size: 2328
 Filename: kmod-ipt-chaos_3.18.45+2.5-1_ramips_24kec.ipk
 Size: 3176
-MD5Sum: 92243e6b9aed9dcda7c4f0d00a7da203
-SHA256sum: 1ba83e453f888b5f3f97e62c9e626b71e89390792f0a773890fba0dec14642e6
+MD5Sum: 990f7805e909c7ba7e4a2e786534c574
+SHA256sum: d817c5fe5066d0e13eacbbaf74eaec782c3867651416a15ffe092b2f77eff959
 Description:  CHAOS netfilter module
 
 Package: kmod-ipt-cluster
@@ -4012,11 +4046,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 817
+Installed-Size: 822
 Filename: kmod-ipt-compat-xtables_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 1689
-MD5Sum: 64c205b73d246d14b6eb44051794eb4e
-SHA256sum: 7599dbc63c05a5b6d760145a4c50e1ea376a0434f447b4552702f8a63edd1766
+Size: 1688
+MD5Sum: 18d802c42f6d63df70e4a3baaaf98dbc
+SHA256sum: 3c03495b91bf6f6c10a14e9cef3b884425163c1d8dc398531fa7a2f36965b60a
 Description:  API compatibilty layer netfilter module
 
 Package: kmod-ipt-condition
@@ -4027,11 +4061,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2486
+Installed-Size: 2490
 Filename: kmod-ipt-condition_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3311
-MD5Sum: fb7004b211757388acccf3f3e678f7fe
-SHA256sum: f2a371382394e8514eaf7ed094547f95264888b9612963d3ed7232d96a0047fc
+Size: 3314
+MD5Sum: 4c809423cf134d6d749b9a22e6f4def7
+SHA256sum: abc679f9a16d07552dfa3e7c5a4e0aa1455f8896f9678028cafab8db1ae9a05d
 Description:  Condition netfilter module
 
 Package: kmod-ipt-conntrack-extra
@@ -4107,11 +4141,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 1898
+Installed-Size: 1900
 Filename: kmod-ipt-delude_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 2778
-MD5Sum: 67d04d1daa405cd88931542d52718727
-SHA256sum: 884d2e2faadf9535cf4c59ddac67e30914392f1f479a39416bff35cbd0300166
+Size: 2782
+MD5Sum: 962f5efcda7349bfe184d22c4af02c32
+SHA256sum: 9a82bd478d4e0473c0a39a4bbb4c249824d7f8342d0bf7018d24a2cd687e4089
 Description:  DELUDE netfilter module
 
 Package: kmod-ipt-dhcpmac
@@ -4124,9 +4158,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 1601
 Filename: kmod-ipt-dhcpmac_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 2474
-MD5Sum: f4d31e2a335ca4249c2282bbfa6feddf
-SHA256sum: cd6654b3c18b8ba8523d4f65d57f37a74a06ec57706c3480e93804c38493add7
+Size: 2479
+MD5Sum: 8e92bc976d576e8f31d19ea0ac3c2065
+SHA256sum: 4f5ab7466211c5c50a4aa9b98c31ba86294a680418dabd153f0fabb455d5f279
 Description:  DHCPMAC netfilter module
 
 Package: kmod-ipt-dnetmap
@@ -4137,11 +4171,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 7740
+Installed-Size: 7741
 Filename: kmod-ipt-dnetmap_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 8606
-MD5Sum: cac2b9f8d2b787cc5b194cd3f798d2f1
-SHA256sum: f60b884d2b4c4eeb75136bd2c1fad371f61fc6390536c8987b7e2e874d32f4b9
+Size: 8611
+MD5Sum: 345587c1c30af2d3537a3a5c7ffa3c08
+SHA256sum: c2a9b8e5f11fed1e2a1027fc4ed352fbe053fc2693b9120a9e451d08fbc48890
 Description:  DNETMAP netfilter module
 
 Package: kmod-ipt-extra
@@ -4190,11 +4224,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 1285
+Installed-Size: 1284
 Filename: kmod-ipt-fuzzy_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 2146
-MD5Sum: 4f49001de272342fc3f305b00d0dad56
-SHA256sum: 4fbfc3ccd89a62c5fe31f566a87c4570581e5104f1fa6b69484377a871fa2d60
+Size: 2143
+MD5Sum: d8b13c721397a052caf17a7bcb9fce16
+SHA256sum: 85a446360bc605e7a7659e14f77b14447a528eab917816a6b7f320221efc3fc6
 Description:  fuzzy netfilter module
 
 Package: kmod-ipt-geoip
@@ -4207,9 +4241,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 2847
 Filename: kmod-ipt-geoip_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3676
-MD5Sum: b69378d2c6e00bb97aa1e877055d1ed1
-SHA256sum: 0bedfe3066e45c39be0636e16921f50174d3fc8f25924be7f7951e852fc7fa2f
+Size: 3670
+MD5Sum: 7d2460a4ffe2eff6ce9460c64a2e8fc7
+SHA256sum: ef2cf13bca1ca4b79f2ad2a4a47b98465b9834d6c4ad1575c4515424149e6cea
 Description:  geoip netfilter module
 
 Package: kmod-ipt-hashlimit
@@ -4238,8 +4272,8 @@ Architecture: ramips_24kec
 Installed-Size: 1116
 Filename: kmod-ipt-iface_3.18.45+2.5-1_ramips_24kec.ipk
 Size: 1982
-MD5Sum: 6d013aba494e301688a07425f8739bc6
-SHA256sum: dd4c5e81bd7d1a8f0e495b7a16a282c08b41e402742395a069c652e654fc5f4f
+MD5Sum: 9ef8db83627d153ae00532b1d2bb21f9
+SHA256sum: 5f28a9599970f3c5e515a8402c5d997f3ccc8e429a7b49879fb7da796da14151
 Description:  iface netfilter module
 
 Package: kmod-ipt-ipmark
@@ -4250,11 +4284,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 1120
+Installed-Size: 1119
 Filename: kmod-ipt-ipmark_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 1987
-MD5Sum: ed5c2325a1d01ebdce67cda4cd68fccd
-SHA256sum: 7d025190063032052f035e087dccc44b067825f606af4254eb2e5f886ef31bb8
+Size: 1983
+MD5Sum: 821cdcd9a294b3ee8e9eb39f2d2f993a
+SHA256sum: c4fef1f04bca471447f73702c99e1c11f0274726bb54dfdfa67401ea7d842124
 Description:  IPMARK netfilter module
 
 Package: kmod-ipt-ipopt
@@ -4292,11 +4326,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 5184
+Installed-Size: 5185
 Filename: kmod-ipt-ipp2p_3.18.45+2.5-1_ramips_24kec.ipk
 Size: 6025
-MD5Sum: d9eb7ce1fb95d070e56b4bd9ca82a390
-SHA256sum: a8409adc650a3cfd98674182f892da63848c77ad48e60f59de29a8a5ea6656c1
+MD5Sum: ac5157a2c4fa98bf6da9936180ff7695
+SHA256sum: ef98004461a18c70607319f19cbf82a7b73b15e4d3f6225276627ef3c632ea39
 Description:  IPP2P netfilter module
 
 Package: kmod-ipt-iprange
@@ -4360,9 +4394,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 950
 Filename: kmod-ipt-ipv4options_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 1805
-MD5Sum: 1e3248422025838130e5d81a9c8486bf
-SHA256sum: bc685846dec3dea942064d0a358f5f9062f41c9580b414c8d1184c815588cc88
+Size: 1806
+MD5Sum: dea4e12c4b8c8b7693492ffd843b6cdb
+SHA256sum: 83b1d59693ed038a022b4a37ae5b9266c69fda5d24ab532f4564e469598e4fa1
 Description:  ipv4options netfilter module
 
 Package: kmod-ipt-led
@@ -4388,11 +4422,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2147
+Installed-Size: 2148
 Filename: kmod-ipt-length2_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3018
-MD5Sum: a42da688065f1108a195885977b8f095
-SHA256sum: de7570558bcee7b4bf50d8b9687ecda8a86ea7a53a998b0100159b68456294d6
+Size: 3019
+MD5Sum: 83f8edb151171bc6e73e8108eb6f9cae
+SHA256sum: dd96a887c46e5a81ffefe9e8992364108b4155812330621cf045d197ea99210b
 Description:  length2 netfilter module
 
 Package: kmod-ipt-logmark
@@ -4403,11 +4437,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2281
+Installed-Size: 2278
 Filename: kmod-ipt-logmark_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3112
-MD5Sum: bf05dfbde58080dc6c5d7b45fccca0f2
-SHA256sum: 3b75f9bcc328f2e15ac50e0d4d84e547fdf1d802d636ce08e58894c8d2f04f8f
+Size: 3118
+MD5Sum: 2761967f788f6e44cb1b22d412491a44
+SHA256sum: 2707845a24db32a4432bd80ba166f6ae2d9bd18e541c094d7a1b2a336e77e397
 Description:  LOGMARK netfilter module
 
 Package: kmod-ipt-lscan
@@ -4418,11 +4452,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 2153
+Installed-Size: 2154
 Filename: kmod-ipt-lscan_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 2970
-MD5Sum: 5501aaee098b8f931fa81166a6026290
-SHA256sum: 3260e2ff51dfe12bd7382da944bf1fb647bbce1924d8cc932595cadfc5b6c8e9
+Size: 2973
+MD5Sum: 20110472ea00296b567d658d4d15a7f0
+SHA256sum: 74c6d5467ad20ca9f452b1b503937b88f76db714dbf7ec4af390af84d6edccad
 Description:  lscan netfilter module
 
 Package: kmod-ipt-lua
@@ -4433,11 +4467,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 70202
+Installed-Size: 70203
 Filename: kmod-ipt-lua_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 70655
-MD5Sum: b053e0f49c7f90aab0421eb913cb98fe
-SHA256sum: c028613a3f249d4ff24ad20d962d34dd7435d1efe0b2bfa3dccf893f415e9a3d
+Size: 70674
+MD5Sum: 9b7d570163850ed0af18d319d984ceaa
+SHA256sum: f105e79317a16d85253b4255c75bfb1a9bb3f25d45ac213ffbeba9a44857c3bc
 Description:  Lua PacketScript netfilter module
 
 Package: kmod-ipt-nat-extra
@@ -4498,11 +4532,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 9511
+Installed-Size: 9514
 Filename: kmod-ipt-nathelper-rtsp_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 10406
-MD5Sum: 7a55be17cada7c68469c133fca90c894
-SHA256sum: 0eed51da5497cb12e8bf32af61401625e586864424be908842d9477cf47c0b95
+Size: 10401
+MD5Sum: 0204d1f0ab9405d135d537b785538202
+SHA256sum: 2b55493b652c18a9236773e4dcad829df136a8d1ef41938f3f2a0b0aa5276277
 Description:  RTSP Conntrack and NAT netfilter module
 
 Package: kmod-ipt-nflog
@@ -4547,11 +4581,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3098
+Installed-Size: 3099
 Filename: kmod-ipt-psd_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3919
-MD5Sum: 49e71aa650cfab42da754b4be3dd43a4
-SHA256sum: 630edc8815c8c453b9ed0e77f7d2dae861343781e9fcde040802f61e3de6752d
+Size: 3921
+MD5Sum: dace3eb8180f2f8730644d721b89ce20
+SHA256sum: 8a343b3382810565fa63a2f9d93b2393f9888e65e054b25569c06d8f4530b294
 Description:  psd netfilter module
 
 Package: kmod-ipt-quota2
@@ -4562,11 +4596,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3052
+Installed-Size: 3051
 Filename: kmod-ipt-quota2_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 3875
-MD5Sum: bb909c4e567ef8e3e32754f23a2fbe43
-SHA256sum: dbc95b9dd3cfa3556e820b5493f4f4feefea61cfaf99b746836698223273948f
+Size: 3882
+MD5Sum: 39415a163947ed059e0f4c2892906387
+SHA256sum: baa807637edf53be26ac74a3431bd02a3f6ff799fcf615cb68a88518703b6473
 Description:  quota2 netfilter module
 
 Package: kmod-ipt-sysrq
@@ -4579,9 +4613,9 @@ Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 3734
 Filename: kmod-ipt-sysrq_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 4564
-MD5Sum: 08b0fef5661a5576587c2f516716fe46
-SHA256sum: f846d8896b5994b7db364d5e81bcd5f9c69eaf09d63f5b41453bae6ddbc0156d
+Size: 4571
+MD5Sum: b4cac0f25a0c5d7225a820102b97fe5f
+SHA256sum: 4ef7eb2bd762f9f8862ea1dbb915cdbf0812c82db264c28761dcefa1fe5874c2
 Description:  SYSRQ netfilter module
 
 Package: kmod-ipt-tarpit
@@ -4592,11 +4626,11 @@ License: GPL-2.0
 Section: kernel
 Maintainer: Jo-Philipp Wich <jow@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4172
+Installed-Size: 4174
 Filename: kmod-ipt-tarpit_3.18.45+2.5-1_ramips_24kec.ipk
-Size: 5004
-MD5Sum: 5274974dbb56b2c98118bbd8b3cf2f1a
-SHA256sum: 17b27c957e90bad2e1ee0a41b407a9fa0867721ff9fe4ac1417ac734cf44251f
+Size: 5012
+MD5Sum: 76e9d0386eb1151b6a227a54d83d2214
+SHA256sum: 0b8198da7b24d4c53037b32091c3eff360229f0a3bd0a356da6f69150efdb39c
 Description:  TARPIT netfilter module
 
 Package: kmod-ipt-tee
@@ -4743,11 +4777,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 277333
+Installed-Size: 277341
 Filename: kmod-ipw2100_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 274487
-MD5Sum: c77cd3fba90301e833c828aba39b9fe0
-SHA256sum: 26e682662b0825e362b38e1632f13830496222ed177eb73f7f8b5644509d61dc
+Size: 274465
+MD5Sum: f178c8ab0ddd73283efbe10a95a18d72
+SHA256sum: 4bc6c4dc74117b35254dc3b1988c51cdd5c2a4778da1fb046059c46758ec46a8
 Description:  Kernel support for Intel IPW2100
  Includes:
  - ipw2100
@@ -4759,11 +4793,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 320304
+Installed-Size: 320316
 Filename: kmod-ipw2200_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 320680
-MD5Sum: 473b447638bf8f5cdf5700fa40ca6d1b
-SHA256sum: 2e7c17e8887c91185aea7780a69c5dab10699925394a119934eaa3ac8d4a4c90
+Size: 320661
+MD5Sum: 0403adb85e054564edd150d1b1cadd2d
+SHA256sum: 3a8437b652489d345c92aa00591a9a1a1cfc9cc4335ea5676f21e3f6244c6a3f
 Description:  Kernel support for Intel IPW2200
  Includes:
  - ipw2200
@@ -4790,11 +4824,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 25747
+Installed-Size: 25741
 Filename: kmod-iwl-legacy_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 26490
-MD5Sum: 1b56e52b6755c69e618e8942a6c1828f
-SHA256sum: 031f3584d7aeb89d4dc0f4fb2331fa88dbc99f1ddc8599cf8ef0e5b36a3f5885
+Size: 26485
+MD5Sum: 42f99e7e10063bf5857c38fde1d85460
+SHA256sum: 4be1a6a842181b8f1e64874ff843990ee6f5743116e901140edf0aa1ad43c7ae
 Description:  iwl-legacy kernel module for legacy Intel wireless support
 
 Package: kmod-iwl3945
@@ -4804,11 +4838,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 31306
+Installed-Size: 31307
 Filename: kmod-iwl3945_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 32103
-MD5Sum: e1e971302489bd13bf6d534490d1cf61
-SHA256sum: a772c1baf5b4a36f3265774a01f77ca1c876d9061adadde6b64d08813882d995
+Size: 32091
+MD5Sum: b8f5479696346a820c3ef8a913a27c3d
+SHA256sum: 8a62ef4ec28a81fdddc194100bb00f5e2505990e68e6408fb88e9837a49c41bc
 Description:  iwl3945 kernel module for Intel 3945 support
 
 Package: kmod-iwl4965
@@ -4818,11 +4852,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 51032
+Installed-Size: 51033
 Filename: kmod-iwl4965_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 51687
-MD5Sum: 85c7bc710385486fc1901c13944a2bfe
-SHA256sum: b30392997f7c44f9e067d4928c5996afd7317414b9f9cef0627fb25de1dc0271
+Size: 51694
+MD5Sum: e9d31486ba2016201c241e7bc91e43ae
+SHA256sum: bf1d8e7cd6c83e69526df1aad803a114e419c99a4e62adcb2524be91cabab840
 Description:  iwl4965 kernel module for Intel 4965 support
 
 Package: kmod-iwlwifi
@@ -4832,11 +4866,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 226198
+Installed-Size: 226197
 Filename: kmod-iwlwifi_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 226109
-MD5Sum: 4796e2c8638a147aa9e47c9ad1837b06
-SHA256sum: 540108f2c192f88c6b13b97c438c5f01f713da590682848743cbacbe907b2dc4
+Size: 226131
+MD5Sum: 0fbd5a3f1ee4336179df2776a763ea72
+SHA256sum: ab3143547aa0504de88126c7862af3d347e161002e1a5d0a88ce0093eec09d5d
 Description:  iwlwifi kernel module for
  Intel Wireless WiFi Link 6250AGN Adapter
  Intel 6000 Series Wi-Fi Adapters (6200AGN and 6300AGN)
@@ -5288,11 +5322,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 11568
+Installed-Size: 11571
 Filename: kmod-lib80211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 12457
-MD5Sum: 9c15e4c192e701947c3c8187abb93487
-SHA256sum: e174d980e5afe8a02f34a33b7ad1634a24ca521bfbe704d19854062ae37efbf1
+Size: 12460
+MD5Sum: 8a200b1cb092514dc848349ee221fb90
+SHA256sum: 6770f8f0faa0329448a6f87087fedf9aedcf22cb4e7516d3f23360ba6bd9dc37
 Description:  Kernel modules for 802.11 Networking stack
  Includes:
  - lib80211
@@ -5307,11 +5341,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 32854
+Installed-Size: 32853
 Filename: kmod-libertas-sdio_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 33694
-MD5Sum: 3fab50d5afa04c4a488552d628920198
-SHA256sum: 46801de9f694182f3ff95f901dd2decf1111adc9596f469e5eb822d23d7df35e
+Size: 33706
+MD5Sum: ab43e13833caf4dfe17fdda44a441cb7
+SHA256sum: 679fca8e05de455f9d4403c5937dddd6a6cf74c968447f15191255c37fed95d0
 Description:  Marvell 88W8686 Wireless Driver
 
 Package: kmod-libertas-spi
@@ -5323,9 +5357,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 32593
 Filename: kmod-libertas-spi_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 33424
-MD5Sum: 724154101efbf935f8cc81e717304485
-SHA256sum: 061b5e7c1eb93377d0b692a302533a86b6e2bc6be9691e83efa5d0a1a334bee4
+Size: 33431
+MD5Sum: dfb7e79202c545546484595759ed0abd
+SHA256sum: 2532dd055fbee4c1080f769a72f6d2a18710edca4cc57c1c9fe36980cb388ff7
 Description:  Marvell 88W8686 SPI Wireless Driver
 
 Package: kmod-libertas-usb
@@ -5335,11 +5369,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 31311
+Installed-Size: 31308
 Filename: kmod-libertas-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 32146
-MD5Sum: b2265ed9696bd9d8bbe9e4226d08dc38
-SHA256sum: ebe869d249c0ce2e8cd5274a25f0614a378b2b0c515c799bfac0b88d84a47ff6
+Size: 32143
+MD5Sum: b03674c8b2f59785afab2429394f9961
+SHA256sum: a3827b8ed1f9946c886665f3e8bc2b5919881b38ffb79359b4e5c02085bc8bcc
 Description:  Marvell 88W8015 Wireless Driver
 
 Package: kmod-libipw
@@ -5351,9 +5385,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 14674
 Filename: kmod-libipw_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 15499
-MD5Sum: 9a4bf241c75a07b654292245f031a8c3
-SHA256sum: db6fceea7c21500cac4b67229474084fbcfa7e60a046124fb7a5500a0388bd05
+Size: 15498
+MD5Sum: 46927113eb59caf1001917388afb0f24
+SHA256sum: 9ac964fefc31cef5e8247f3e90c697cf2c514f4ba615124295708a0ee1a3939f
 Description:  Hardware independent IEEE 802.11 networking stack for ipw2100 and ipw2200.
 
 Package: kmod-libphy
@@ -5408,11 +5442,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 19889
+Installed-Size: 19890
 Filename: kmod-mac80211-hwsim_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 20642
-MD5Sum: 1383dc74b4e372d34f0528d37398ccd1
-SHA256sum: 0118130490eca9d74013fe2f279570fb1c7d97dba14f13194197355444085e06
+Size: 20659
+MD5Sum: b52c59bd96a6f2fa35a70f168f4db9a6
+SHA256sum: 1c3aca32dc0fe34fbf3415cbd6767e93178f7cb398648a372ee3edfa683b7c3c
 Description:  mac80211 HW simulation device
 
 Package: kmod-mac80211
@@ -5422,11 +5456,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 229954
+Installed-Size: 229953
 Filename: kmod-mac80211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 229365
-MD5Sum: dd9ab72068fd61db5629200748b1959c
-SHA256sum: a342a5c8a79a991bea9fac3b805f8dd3e8eb6e7f52380f88d89285bde45eb255
+Size: 229359
+MD5Sum: 0152e86822f1f2fb2bfcee65f0623e31
+SHA256sum: 295e30681e9df6e09d6a73a337ab288ee035c7883fe701c9c252a8925f19bc51
 Description:  Generic IEEE 802.11 Networking Stack (mac80211)
 
 Package: kmod-macvlan
@@ -5597,11 +5631,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-mmc-spi, kmo
 Source: package/kernel/mmc_over_gpio
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 4369
+Installed-Size: 4372
 Filename: kmod-mmc-over-gpio_3.18.45-4_ramips_24kec.ipk
-Size: 5228
-MD5Sum: 82cdd09036a10d6c221fb3303dc50700
-SHA256sum: e17d0e9860409ec1c14cee2cdb7bf6b90da5a81f229ee80f097bf1228e06868f
+Size: 5233
+MD5Sum: 73ba488990a8d85e30d777fd850d3989
+SHA256sum: 165df334441abdfec13a28d954b84aa4f35051e5acc72f3f0df7a7f6aae49bf6
 Description:  Support for driving an MMC/SD card over GPIO pins via SPI.
 
 Package: kmod-mmc-spi
@@ -5658,9 +5692,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 30978
 Filename: kmod-mt7601u_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 31764
-MD5Sum: 79329ef95f2502776196d9b29c224e2b
-SHA256sum: b67fcbf8e85ba5886772dc8c01d829faee6c78fd05b92a53d6e1e959670cd89c
+Size: 31771
+MD5Sum: ba7e5e12021c0a3c2fe05b80370c465b
+SHA256sum: 79df4224633b7eaa520efb2366641ade25bf98a4a322cec8a6c59d6c02664446
 Description:  MT7601U-based USB dongles Wireless Driver
 
 Package: kmod-mt76
@@ -5671,11 +5705,11 @@ License: GPLv2
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 102290
+Installed-Size: 102298
 Filename: kmod-mt76_3.18.45+2016-03-03-1_ramips_24kec.ipk
-Size: 103229
-MD5Sum: 36df6b4f8f4ae586f513ba635cc137ab
-SHA256sum: 690c2ae0213c14ea0a2e630f5514caefce399ab0b60b9aca61842c28f5139a65
+Size: 103254
+MD5Sum: cc78c0c09c06ac4c746dc0be6d4e6b4f
+SHA256sum: 27b1770e3469bf4e990695407077367fd20f003f4ed0de278a2d4a152857760a
 Description:  MediaTek MT76x2 wireless driver
 
 Package: kmod-mtdtests
@@ -5700,11 +5734,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 134058
+Installed-Size: 134065
 Filename: kmod-mwifiex-pcie_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 133959
-MD5Sum: 630f52dcb04f30abed4cbdf20e97b5eb
-SHA256sum: f161270d3317385179d77f3dd2858d9dda052836c6b28013184c3780d39be9bb
+Size: 133981
+MD5Sum: 923b1ba5bf7acd97a8b3130e02add401
+SHA256sum: f08ea50464924c2a41308ba9b896e67521e7f0e8efa3b044c2b2ed66fc6f713d
 Description:  Kernel modules for Marvell 802.11n/802.11ac PCIe Wireless cards
 
 Package: kmod-mwl8k
@@ -5716,9 +5750,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 24534
 Filename: kmod-mwl8k_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 25332
-MD5Sum: 149fedfce456b3c258a6bb18f8423ec0
-SHA256sum: c597b6ad763dd6d414ff1cc5677a414a4631b8e40decc026cc3b1f97024ce88f
+Size: 25329
+MD5Sum: 630517337100cc89c41951345f9dafde
+SHA256sum: 6379f61ba78e740ca6f14b1fb0367587d590a14bdddc2d7eb2a61a4b51e0af48
 Description:  Kernel modules for Marvell TOPDOG 802.11 Wireless cards
 
 Package: kmod-natsemi
@@ -6392,11 +6426,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 18732
+Installed-Size: 18733
 Filename: kmod-p54-common_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 19458
-MD5Sum: 9b2631d1c22667d0b70f681f271f54ec
-SHA256sum: 1c5b7d49a7d648cb63a2252bd3208562e318d1f3a963ec4b7e9f26a5017c03a3
+Size: 19455
+MD5Sum: 79508b0b75519a5f6d9ff3b83f168c1b
+SHA256sum: bc56230b8d60b77a4f247ba812c4b33e914826cbe205ecaaceb17d56388fa3f7
 Description:  Prism54 Drivers (COMMON)
 
 Package: kmod-p54-pci
@@ -6406,11 +6440,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 28905
+Installed-Size: 28907
 Filename: kmod-p54-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
 Size: 29740
-MD5Sum: a2afaab9fdb2d0c20c98d8df632b24d5
-SHA256sum: eb8c3a37b6d9ec0fbced9cf6dab6a43d4198c6b53cfe4104423de602054e62c8
+MD5Sum: 1c69242ed05e7baddb5a4948fc7e9a7b
+SHA256sum: 10a65d73f755944fe61ae2da1a45ce976a3e8f2345c44c5e3049420a980945df
 Description:  Prism54 Drivers (PCI)
 
 Package: kmod-p54-usb
@@ -6420,11 +6454,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 31478
+Installed-Size: 31480
 Filename: kmod-p54-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 32297
-MD5Sum: 72172217383c919137807c999d30ba55
-SHA256sum: e657c9438bed553d42dc402d265e8ea41bc31f17c158f74b27afb9a9d5f3608b
+Size: 32299
+MD5Sum: a7a30c4871bf4f86a2928e9b37c8aa25
+SHA256sum: a5be498f2b018bd6e257a8139a86f9d39db02cc90563ea61af736151de35c4d7
 Description:  Prism54 Drivers (USB)
 
 Package: kmod-pcnet32
@@ -6694,11 +6728,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-input-gpio-e
 Source: package/kernel/rotary-gpio-custom
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 1652
+Installed-Size: 1653
 Filename: kmod-rotary-gpio-custom_3.18.45-1_ramips_24kec.ipk
-Size: 2411
-MD5Sum: da9521d734a06d2a9821ea6d610549b0
-SHA256sum: 508bffd5035e3f9ef41be027fdcf16715a332ce4235354156980a76415613fa1
+Size: 2418
+MD5Sum: f92cacab57d61f2d497d4eeee47d8d82
+SHA256sum: 333cf5ad2fda31611c3aa4c0a3268ad8eed68f855a3f6c6be7ad3839a9ee9278
 Description:  Kernel module for register a custom rotary-gpio-encoder platform device.
 
 Package: kmod-rt2400-pci
@@ -6710,9 +6744,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 7305
 Filename: kmod-rt2400-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 8155
-MD5Sum: 90dff3bbd034b44d595508b17a0bd745
-SHA256sum: 2dcb27dc4774c949a583a65e9bf8957bf449cb0514c22779238348363e55dbe5
+Size: 8158
+MD5Sum: 69db7dca823e22fdf32f07555c8347f9
+SHA256sum: e77c55cfa6226c750058132e41990711695a48c4cabf7df6439c5e79d05ed61c
 Description:  Ralink Drivers for RT2x00 cards (RT2400 PCI)
 
 Package: kmod-rt2500-pci
@@ -6724,9 +6758,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 8504
 Filename: kmod-rt2500-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 9333
-MD5Sum: 2f35d5d2e53d053225ae4bf3d94ca7b3
-SHA256sum: e9a5fb66e4925bcf53d8a36c61177d7bc270a2b5eb771ef88f60da838214d951
+Size: 9325
+MD5Sum: b7ce6806518d04044f69c830a9458ca7
+SHA256sum: e78393bc14fe88079090263bb3f4ea6ef818899a69c6350a0d0ca87367a6c1b8
 Description:  Ralink Drivers for RT2x00 cards (RT2500 PCI)
 
 Package: kmod-rt2500-usb
@@ -6736,11 +6770,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 9681
+Installed-Size: 9685
 Filename: kmod-rt2500-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 10517
-MD5Sum: b74e7580d25293358abeb292be79fdcd
-SHA256sum: a5ef09d2e84ba19e46742b71ed58032a39eeaa333d0c6f66de9cb1254ab4b29b
+Size: 10511
+MD5Sum: a344239c84d5cc9f5974975a61b163cd
+SHA256sum: 9c24e8890d2c51ae2e37675fb31fcabe4837f84837822efe0c4ea4ae4407a61a
 Description:  Ralink Drivers for RT2x00 cards (RT2500 USB)
 
 Package: kmod-rt2800-lib
@@ -6750,11 +6784,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 39425
+Installed-Size: 39422
 Filename: kmod-rt2800-lib_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 39434
-MD5Sum: c80ba04c43eb8635530f0a1e1b7d2f77
-SHA256sum: b2ebcbd055ff9e13810a1c99b71b93555d6e4b427aea7b9ac657ba7714952be5
+Size: 39432
+MD5Sum: a5f2fc25541b55b238fbe7c32ffec7e5
+SHA256sum: b3d8795440e31fcde45550705df36ef10f314348dd728f05ebba7f26039c9ae0
 Description:  Ralink Drivers for RT2x00 cards (rt2800 LIB)
 
 Package: kmod-rt2800-mmio
@@ -6764,11 +6798,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4232
+Installed-Size: 4234
 Filename: kmod-rt2800-mmio_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 5002
-MD5Sum: ace071d63303779aba7d87b80eeb1da1
-SHA256sum: f4aff58a82e539bc0269847b5eeb9afd21513fa50ef874f1983f902bc657da9d
+Size: 5006
+MD5Sum: 3e7176dfce019994ca7c62a94f7a9704
+SHA256sum: a2aa0e3bb1fa6260a599360ba243625b50c0c1bf21cf6362110a16c96a9762df
 Description:  Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx MMIO)
 
 Package: kmod-rt2800-pci
@@ -6778,11 +6812,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3657
+Installed-Size: 3654
 Filename: kmod-rt2800-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 4506
-MD5Sum: d6fe587022b6e2311e5a8747c11866b7
-SHA256sum: 2234527c64823d769ae889415ae1122f2eeb07595afbd0bd0ecf94534c6a9bb5
+Size: 4517
+MD5Sum: 9b35077c95bef5ab85a7d4c91ea5159e
+SHA256sum: 70ffc5a55ed6fa10bc25ecefad30b500f4872c733908353010887a02f1a5dfed
 Description:  Ralink Drivers for RT2x00 cards (RT2860 PCI)
 
 Package: kmod-rt2800-soc
@@ -6792,11 +6826,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4003
+Installed-Size: 4006
 Filename: kmod-rt2800-soc_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 4848
-MD5Sum: 3f86bfde028fd1fbb9beab3e4e837a10
-SHA256sum: a95c5da133963b1bb9293e34af0f9cac15a8e76b076d708c913eddd72d4ef5c5
+Size: 4856
+MD5Sum: c93c9675cf259a2140ca8f7dcd6df367
+SHA256sum: bbe71f54b22411e0688c1f07442968ae9552abed6acec63d37cb6f5e80def619
 Description:  Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx SoC)
 
 Package: kmod-rt2800-usb
@@ -6806,11 +6840,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 8247
+Installed-Size: 8248
 Filename: kmod-rt2800-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 9154
-MD5Sum: 7aff50966f12389f9b47ed68e5965ae5
-SHA256sum: 85831b6bff8134a8347bb0736bef8ef24ea177f34ddfcefe1231a926cf5fd7b3
+Size: 9147
+MD5Sum: 28614220850928a55c9071f2d3595b81
+SHA256sum: b11db31507425cbe0ed18aeee5f55106b19462b0a2a606ce6c995e267dd3f04e
 Description:  Ralink Drivers for RT2x00 cards (RT2870 USB)
 
 Package: kmod-rt2x00-lib
@@ -6820,11 +6854,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 21333
+Installed-Size: 21332
 Filename: kmod-rt2x00-lib_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 22060
-MD5Sum: 037d59516c5ab77104b5dc6d2bb4ad7f
-SHA256sum: b4fd8b15189065541e9521e5da34698e178f45a5bec1ddb29ca8193220128e10
+Size: 22069
+MD5Sum: ba0b2e7e8e104f2d7c718c4c9ae94f2c
+SHA256sum: 6944cb5015a775777f37ca2f60d098a03ab74e5f0c83e248f296c682497ded03
 Description:  Ralink Drivers for RT2x00 cards (LIB)
 
 Package: kmod-rt2x00-mmio
@@ -6834,11 +6868,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 1920
+Installed-Size: 1919
 Filename: kmod-rt2x00-mmio_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 2723
-MD5Sum: e72151afffcda84c5c2a8951550b1906
-SHA256sum: dbb9c4f7bc82485c8147472b70336bdaca4b580ba5ebee38cd1b29febdfc4c52
+Size: 2720
+MD5Sum: 2c0c19602b8d91b5f8013dce0a3bbf47
+SHA256sum: 9a18768b9337d5da10a852f1c64551bc6043cc064eb7a0a8f23723df6b9d309e
 Description:  Ralink Drivers for RT2x00 cards (MMIO)
 
 Package: kmod-rt2x00-pci
@@ -6848,11 +6882,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 1731
+Installed-Size: 1732
 Filename: kmod-rt2x00-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 2587
-MD5Sum: a71b71d5e4daa379b63e7278630707be
-SHA256sum: d475220f328b40a82f8e176c25142403d685808eeb7a3b53a501a3738e919b67
+Size: 2588
+MD5Sum: b1c346fc3b6b3a79f08292016869c150
+SHA256sum: 05a0560287975e32386f13067af8ee8fed58c2225ca4ae67d5b94115c2c50426
 Description:  Ralink Drivers for RT2x00 cards (PCI)
 
 Package: kmod-rt2x00-usb
@@ -6862,11 +6896,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 5800
+Installed-Size: 5801
 Filename: kmod-rt2x00-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 6640
-MD5Sum: c6854326c3165e56509d865f8d8ee943
-SHA256sum: 1ab7e311a3af43a48cbe34fa789679707a6a1c651a87eb086facc9bfd67804ac
+Size: 6651
+MD5Sum: 364c4fd1f09fef8d94716f136b2bf5b3
+SHA256sum: 4ce81a80ddcc3cc762b539d4a38aa16d04931249b460ddce8f6d82ec4ea7102e
 Description:  Ralink Drivers for RT2x00 cards (USB)
 
 Package: kmod-rt61-pci
@@ -6876,11 +6910,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 12207
+Installed-Size: 12206
 Filename: kmod-rt61-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
 Size: 13028
-MD5Sum: 20936b06d013bbf7c65a6033e9a010d2
-SHA256sum: ef06d1f433fe5e6e6416b6379352a07c229eb267ad5d05b75534c692f7669947
+MD5Sum: 3d0edb51454b36362ff27d3089fa6619
+SHA256sum: e462217dcc1a04319f4fde7b26c0208b422feed4a930b297f9db764cdc8018c5
 Description:  Ralink Drivers for RT2x00 cards (RT2x61 PCI)
 
 Package: kmod-rt73-usb
@@ -6890,11 +6924,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 11992
+Installed-Size: 11993
 Filename: kmod-rt73-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 12833
-MD5Sum: 3255476bc535e157c81d7b71976d7af3
-SHA256sum: 9155a705b1431c71ee8fee93928edbde9795cef5df37777420fb3b35c9bacd90
+Size: 12842
+MD5Sum: f62dddad6c2400993f52d09c10d38ad8
+SHA256sum: 554c4fad363d5341d6d8f4142053b2052a253a08b3fe73c217559b0256239d4c
 Description:  Ralink Drivers for RT2x00 cards (RT73 USB)
 
 Package: kmod-rtl8180
@@ -6904,11 +6938,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 19282
+Installed-Size: 19284
 Filename: kmod-rtl8180_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 20083
-MD5Sum: 689c29ed2e85cd2d29fac69e9a16310e
-SHA256sum: f0707f7900dc0ccc8459228543c4f7e8b1b61dee62bd970c7eec1055ccb80629
+Size: 20029
+MD5Sum: 401621df20f8142fe9af7f97891b407c
+SHA256sum: 6fba9767c7668a2a788bce10951dad96396913b7bddfe1f5774c50de5713ef7f
 Description:  Realtek Drivers for RTL818x devices (RTL8180 PCI)
 
 Package: kmod-rtl8187
@@ -6918,11 +6952,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 21353
+Installed-Size: 21354
 Filename: kmod-rtl8187_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 22130
-MD5Sum: be155f6ebe7791b208a198f0e56740fb
-SHA256sum: 157e1a8559bf60c766a04065c0aadec9b556429e0bb17d9993e074b2a6a38b01
+Size: 22128
+MD5Sum: f130d9250a4fa9a72dc443df1d17c807
+SHA256sum: 850162cfe78475e6e3e82de61970e2dc478c5ea9b7c4aae2b4ae4e0ff6e2f046
 Description:  Realtek Drivers for RTL818x devices (RTL8187 USB)
 
 Package: kmod-rtl8192c-common
@@ -6932,11 +6966,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 17456
+Installed-Size: 17458
 Filename: kmod-rtl8192c-common_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 18246
-MD5Sum: 6d16a15c555a131d6a01c4894d122ac8
-SHA256sum: 0e947f24447d28c9f732b94245f4a7821d60c6144dcc204f70de37e722aa68cf
+Size: 18248
+MD5Sum: e57cc39c8b6e4b6bedf9b601bd39860e
+SHA256sum: f21c482b26b9f2da77514e5b2c9e9126f490ed02f06dc5aac4aea67a21e749ed
 Description:  Realtek RTL8192CE/RTL8192CU common support module
 
 Package: kmod-rtl8192ce
@@ -6948,9 +6982,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 22563
 Filename: kmod-rtl8192ce_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 23421
-MD5Sum: cba2db2b929fe1654ef4fcc4a37c4a39
-SHA256sum: c4ed37fb1eda56efb2f35557ec19a50a17177c32872538716716e89a2b8ff6e5
+Size: 23415
+MD5Sum: e749082136a98a69fae57ef458adb881
+SHA256sum: 53a43ec8878cbad96a6a0897bbf46acf455d21210d4d52c023e84157514c5e3f
 Description:  Realtek RTL8192CE/RTL8188CE support
 
 Package: kmod-rtl8192cu
@@ -6960,11 +6994,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 25493
+Installed-Size: 25495
 Filename: kmod-rtl8192cu_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 26273
-MD5Sum: 1d8fb1783903ebf39b114b3beb74d3a4
-SHA256sum: 26fce6b63218e23c4682b752ebea9d91563056526b76c3f266395ad14ad881d4
+Size: 26281
+MD5Sum: ac8395900bb36ee6f5c648668ecf04b3
+SHA256sum: 71736665b3fa307ea0d6761f54722d9b5ada734c16daef0fbdd736073c134694
 Description:  Realtek RTL8192CU/RTL8188CU support
 
 Package: kmod-rtl8192de
@@ -6974,11 +7008,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 42893
+Installed-Size: 42892
 Filename: kmod-rtl8192de_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 43773
-MD5Sum: e97d9206cd72c39f1e9238bdfefd6f30
-SHA256sum: a04ce93f6d3f9286717419332c2a544443e8ac6cf48d92122afe2e1f82f38eeb
+Size: 43768
+MD5Sum: c3f8141f67dcb8a94c67126bd152bdf1
+SHA256sum: 5df200079d21049b92b0466b2ae8fef7fadde4b6e686063231c45773664f68c4
 Description:  Realtek RTL8192DE/RTL8188DE support
 
 Package: kmod-rtl8192se
@@ -6988,11 +7022,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 27260
+Installed-Size: 27261
 Filename: kmod-rtl8192se_3.18.45+2016-01-10-1_ramips_24kec.ipk
 Size: 28137
-MD5Sum: c9b64ae1d20615c7ffc3a67b89e21507
-SHA256sum: 66916be8f9bb60d2c0183a34efd76ba8c7dc2b6b01eda05482dcc575c3cf7985
+MD5Sum: d0d57a3ad34c267b74d3ca46278f9554
+SHA256sum: a95968d6a0a387dd2c7385f411091b8582f53ac69c147685d21fd415164ad955
 Description:  Realtek RTL8192SE/RTL8191SE support
 
 Package: kmod-rtl8xxxu
@@ -7004,9 +7038,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 29353
 Filename: kmod-rtl8xxxu_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 30593
-MD5Sum: d21ff82a8579eddcf5def6e08dd09aba
-SHA256sum: fd8102994ed1b5a6621e1821fbac7063c5ff48e0172b7e79d89a6d3a42854018
+Size: 30602
+MD5Sum: 27e2cb46a8d85af32fd927ddf46921d3
+SHA256sum: 51ca0a7bb93c262e4fa0dbb9f738701890c1a06828d339be6c73fe6f6b8d2950
 Description:  This is an alternative driver for various Realtek RTL8XXX
  parts written to utilize the Linux mac80211 stack.
  The driver is known to work with a number of RTL8723AU,
@@ -7036,11 +7070,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 10585
+Installed-Size: 10586
 Filename: kmod-rtlwifi-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 11421
-MD5Sum: 40636d69e90dac3ca2e59855c0ae2d85
-SHA256sum: a4b770470a22235fec4e74b63de3715497761b13156faae8ffad59c56f9d85a8
+Size: 11422
+MD5Sum: 1412522409d7391ede5734c7a1519389
+SHA256sum: d6f8764537f8532e02ec006a317584fb1397b97d16a97f792cb15fce6f3c3abb
 Description:  Realtek common driver part (PCI support)
 
 Package: kmod-rtlwifi-usb
@@ -7050,11 +7084,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 6754
+Installed-Size: 6757
 Filename: kmod-rtlwifi-usb_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 7639
-MD5Sum: b6ce70335f2c3f8199a5c1c824763f31
-SHA256sum: 547047025d47953e47e7274b8475377f3b2b04ce52e0db57d231ef795cd3c57d
+Size: 7644
+MD5Sum: e1ed1d0ec5f204083448a1dc27fea1b6
+SHA256sum: 4b59ce39b5435b0b68e8cfc5dc99391933ee7b8754ee2cd50c650c412e8f86ab
 Description:  Realtek common driver part (USB support)
 
 Package: kmod-rtlwifi
@@ -7064,11 +7098,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 26938
+Installed-Size: 26935
 Filename: kmod-rtlwifi_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 27702
-MD5Sum: c3e13dc0dd281f48470b9102cbce71d3
-SHA256sum: 3bee9538f434b01a07ff2e6d486e386dc8ac1f0e6223fb0f8245ad1df0f26b16
+Size: 27697
+MD5Sum: 8e6931491a8629b576abf7e164560be9
+SHA256sum: e33399c572bb0c3d4c1b3614e74e4b62ea82f966d36728961eb143e3cab7ecab
 Description:  Realtek common driver part
 
 Package: kmod-sched-connmark
@@ -7506,11 +7540,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-spi-bitbang,
 Source: package/kernel/spi-gpio-custom
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 2501
+Installed-Size: 2500
 Filename: kmod-spi-gpio-custom_3.18.45-1_ramips_24kec.ipk
-Size: 3267
-MD5Sum: 74f8eb5397199e94407895fd27be0943
-SHA256sum: 04dfeb9c95e7f3d91eb61cd5c596e48bf71d758f76e7e767fe49d9cf3afb8a18
+Size: 3265
+MD5Sum: 3826d79d515e60d7b415f7b7d42ce02c
+SHA256sum: 597fd4721ac2d4997cb778acc21e986f648470dcb1b453ba2b9d88758fda9866
 Description:  Kernel module for register a custom spi-gpio platform device.
 
 Package: kmod-spi-gpio-old
@@ -7684,11 +7718,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
 Source: package/kernel/trelay
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 2911
+Installed-Size: 2908
 Filename: kmod-trelay_3.18.45+0.1-1_ramips_24kec.ipk
-Size: 3882
-MD5Sum: d8260d0cfe1ca9db3d34e5fc0e1c51c7
-SHA256sum: dec7ad9bf85f7cc804070c0cfc91965ee15c03a4462bed7455b5a09ee2fad6b1
+Size: 3877
+MD5Sum: 19864c58a1942a0f4ec3648f17f2dfe7
+SHA256sum: 08bbe36537a1114389fc375c907f646ad1e386e0f34c7d51989d7882edba7196
 Description:  trelay relays ethernet packets between two devices (similar to a bridge), but
  without any MAC address checks. This makes it possible to bridge client mode
  or ad-hoc mode wifi devices to ethernet VLANs, assuming the remote end uses
@@ -9482,11 +9516,11 @@ Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-w1, kmod-w1-
 Source: package/kernel/w1-gpio-custom
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 1638
+Installed-Size: 1637
 Filename: kmod-w1-gpio-custom_3.18.45-3_ramips_24kec.ipk
-Size: 2390
-MD5Sum: ba34806fa4209befe0d6b99cb72fbae7
-SHA256sum: c856b75d0246519b68585d14d8c6929d4e34e0a486243769177289027e6692be
+Size: 2391
+MD5Sum: a2ea0980dc094880fc4f6c626c35a2de
+SHA256sum: e47bda367a3bf5011ee777436f3a84750e6376be676a00237add5bc5b8ba66d8
 Description:  Kernel module to register a custom w1-gpio platform device.
 
 Package: kmod-w1-master-ds2482
@@ -9648,11 +9682,11 @@ Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 38335
+Installed-Size: 38351
 Filename: kmod-zd1211rw_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 39156
-MD5Sum: 4061e5f63881e2849ecb70f1e2874113
-SHA256sum: 3243f4b1101bcdda01413ce8904bcc012078ae3a9e58cc2d3ae7a18bced674d2
+Size: 39172
+MD5Sum: ac8bebc95c4706e2f711df1e4e9c4017
+SHA256sum: 1f8869dc44f9b42fbe2b6adf80885ac43183e11ea8e2d707c3ac8d0eb63c3d13
 Description:  Zydas ZD1211 support
 
 Package: kmod-zram
@@ -10338,11 +10372,11 @@ License: ISC
 Section: libs
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3668
+Installed-Size: 3667
 Filename: libustream-polarssl_2015-07-09-c2d73c22618e8ee444e8d346695eca908ecb72d3_ramips_24kec.ipk
-Size: 4410
-MD5Sum: c3c8aba2ba5f323e2d316b6adbe5fe2b
-SHA256sum: 2dd103e6b256b40ebf81021ccb1268290eb2ae7f8c5c3d1fae62cd8d351b32d6
+Size: 4407
+MD5Sum: cf654069c88e60383b93de89b3039b6e
+SHA256sum: dd63c6daf9a1cd7336b93b24755536f89c91c4b902c3b767d49691dfcda40093
 Description:  ustream SSL Library (polarssl)
 
 Package: libuuid
@@ -10791,6 +10825,41 @@ MD5Sum: ad0392d2f7e41d2db2afaee4b4627c4b
 SHA256sum: f461232c5ea5a1d0d6f182bd83511ce782c2d702e957f25074942188e0348f9a
 Description:  RealTek RTL8192DE firmware
 
+Package: samba36-client
+Version: 3.6.25-5
+Depends: libc, libreadline, libncurses
+Source: package/network/services/samba36
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 432133
+Filename: samba36-client_3.6.25-5_ramips_24kec.ipk
+Size: 431499
+MD5Sum: 9d76ca7451241a3dfbaafc6a10732ee5
+SHA256sum: 289cc11a9c67cca9d5cceff84f52d21464bc7bc11351b64195d5f1adbea407a3
+Description:  Samba 3.6 SMB/CIFS client
+
+Package: samba36-server
+Version: 3.6.25-5
+Depends: libc
+Source: package/network/services/samba36
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 905542
+Filename: samba36-server_3.6.25-5_ramips_24kec.ipk
+Size: 893593
+MD5Sum: 7d8ce214f1c4d75f651dff68a45a8523
+SHA256sum: 69c921fab540a8710c325dc65a2dea787ab0ef127a5dad1f339528b8b215af2b
+Description:  The Samba software suite is a collection of programs that implements the
+ SMB protocol for UNIX systems, allowing you to serve files and printers to
+ Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+ to as the LanManager or Netbios protocol.
+
 Package: swap-utils
 Version: 2.25.2-4
 Depends: libc, libblkid
@@ -11089,11 +11158,11 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 407753
+Installed-Size: 407754
 Filename: wpad_2015-03-25-1_ramips_24kec.ipk
-Size: 408041
-MD5Sum: fbeee196c06c801cd8edae11efbd29e7
-SHA256sum: d44685ba128aac33cabe4b9dd9911955a7276a73f342c803dfbaf102d5c816ba
+Size: 408025
+MD5Sum: f405c1f3e71700d46ebc63d6c5b4f77f
+SHA256sum: 9398f7148bb7c98de2753d595711716f78ef028858eecf527cbf316aaa23d64a
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator and Supplicant
 

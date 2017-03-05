@@ -7,11 +7,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 2271
+Installed-Size: 2272
 Filename: kmod-dahdi-dummy_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 3168
-MD5Sum: a4064eea97d163c9945093e316cd9106
-SHA256sum: b0daa309d170cec755f443eb5204f3c86bd54908c71ab7c9cc08cf62945e95fb
+Size: 3169
+MD5Sum: ee6f25e3462c6775300b60e70f23f5fa
+SHA256sum: 63958e54d0cf259006a3237640c2aa785d580b8aef42e778e1fc143115a753eb
 Description:  This package contains the dummy DAHDI driver providing only DAHDI timing
  without any real telephony hardware.
 
@@ -24,11 +24,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 1469
+Installed-Size: 1470
 Filename: kmod-dahdi-echocan-oslec_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 2388
-MD5Sum: 4ce569c07b6a66dcf2c3cb7fae0eef53
-SHA256sum: 5d16ee38f9db1442dce80b16df185c36c0251d3e4f4142f6bb20e6b3d5eddc06
+Size: 2387
+MD5Sum: 3cb3f72bf10b3e0b47a287eb6aabfed2
+SHA256sum: 408681b095e0f36d9b62924208fe13bbc31fe7debb1a9aa70c8223e745783670
 Description:  This package contains DAHDI OSLEC echo canceller support.
 
 Package: kmod-dahdi-hfcs
@@ -40,11 +40,11 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 9775
+Installed-Size: 9777
 Filename: kmod-dahdi-hfcs_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 10674
-MD5Sum: bdb6a5dd9dec2b2b97f19ddb4fdf7907
-SHA256sum: 5305e7118ebb7823defebdd3e699e7278d803126f195d3b78d018e429ebb54fd
+Size: 10677
+MD5Sum: ba0f4bd1158e17d911f2cc8225285b95
+SHA256sum: adb27e5139f6e2dcac08727c4f66be72c6e009c0ef2cd8819a6722575578e707
 Description:  This package contains DAHDI driver for HFC-S based PCI BRI adapters.
 
 Package: kmod-dahdi
@@ -56,10 +56,10 @@ LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Vittorio Gambaletta <openwrt@vittgam.net>
 Architecture: ramips_24kec
-Installed-Size: 56774
+Installed-Size: 56773
 Filename: kmod-dahdi_3.18.45+2.10.2-2_ramips_24kec.ipk
-Size: 57494
-MD5Sum: ec99813d81c838f16be8c70fd3b0398d
-SHA256sum: a72b8e27c72e762e72f93a328872b0cc3a869b1eec18973350ea132d610334c1
+Size: 57460
+MD5Sum: 24a74354725afa0c36b3652b32a68441
+SHA256sum: 67c80590c2204bb50a041b1601b840ef799621795a87867496f95d60175c573d
 Description:  This package contains DAHDI basic infrastructure.
 
