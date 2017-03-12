@@ -1,0 +1,41 @@
+
+config wifi-device 'radio0'
+	option type 'mac80211'
+	option hwmode '11g'
+	option path '10180000.wmac'
+	option htmode 'HT20'
+	option disabled '0'
+	option channel '1'
+	option txpower '20'
+	option country '00'
+
+config wifi-iface
+	option ssid 'casa'
+	option encryption 'psk-mixed+tkip+ccmp'
+	option device 'radio0'
+	option mode 'sta'
+	option bssid '90:F6:52:57:57:F0'
+	option key 'wifipassword'
+	option network 'lan'
+	option wds '1'
+	option disabled '1'
+
+config wifi-iface
+	option device 'radio0'
+	option mode 'ap'
+	option encryption 'none'
+	option ssid 'kimax-u35wf'
+	option network 'service'
+	option wmm '0'
+	option disabled '0'
+
+config wifi-iface
+	option device 'radio0'
+	option mode 'ap'
+	option ssid 'kimax'
+	option network 'lan'
+	option wds '1'
+	option hidden '0'
+	option encryption 'psk-mixed+tkip+ccmp'
+	option key 'wifipassword'
+	option disabled '0'

@@ -30,8 +30,8 @@ installPackages()
 
     # CUSTOMIZE
     # install some more packages that don't need any extra steps
-    opkg install lua luci ppp-mod-pppoe screen mc zip unzip logrotate
-    opkg install luci-ssl base-files busybox ddns-scripts dnsmasq dropbear firewall fstools hostapd-common ip6tables iptables iptables-mod-ipopt iw jshn jsonfilter kernel kmod-ath kmod-ath9k kmod-ath9k-common kmod-cfg80211 kmod-crypto-aes kmod-crypto-arc4 kmod-crypto-core kmod-gpio-button-hotplug kmod-ip6tables kmod-ipt-conntrack kmod-ipt-core kmod-ipt-ipopt kmod-ipt-nat kmod-ipv6 kmod-ledtrig-usbdev kmod-lib-crc-ccitt kmod-mac80211 kmod-nf-conntrack kmod-nf-conntrack6 kmod-nf-ipt kmod-nf-ipt6 kmod-nf-nat kmod-nf-nathelper kmod-nls-base kmod-slhc kmod-usb-core kmod-usb2 libblobmsg-json libc libgcc libip4tc libip6tc libiwinfo libiwinfo-lua libjson-c libjson-script liblua libncurses libnl-tiny libpthread libubox libubus libubus-lua libuci libuci-lua libxtables luci-app-ddns luci-app-firewall luci-base luci-lib-ip luci-lib-nixio luci-mod-admin-full luci-proto-ipv6 luci-proto-ppp luci-theme-bootstrap mtd netifd odhcp6c odhcpd opkg procd rpcd swconfig terminfo uboot-envtools ubox ubus ubusd uci uhttpd uhttpd-mod-ubus usign wpad-mini
+#    opkg install lua luci ppp-mod-pppoe screen mc zip unzip logrotate
+#    opkg install luci-ssl base-files busybox ddns-scripts dnsmasq dropbear firewall fstools hostapd-common ip6tables iptables iptables-mod-ipopt iw jshn jsonfilter kernel kmod-ath kmod-ath9k kmod-ath9k-common kmod-cfg80211 kmod-crypto-aes kmod-crypto-arc4 kmod-crypto-core kmod-gpio-button-hotplug kmod-ip6tables kmod-ipt-conntrack kmod-ipt-core kmod-ipt-ipopt kmod-ipt-nat kmod-ipv6 kmod-ledtrig-usbdev kmod-lib-crc-ccitt kmod-mac80211 kmod-nf-conntrack kmod-nf-conntrack6 kmod-nf-ipt kmod-nf-ipt6 kmod-nf-nat kmod-nf-nathelper kmod-nls-base kmod-slhc kmod-usb-core kmod-usb2 libblobmsg-json libc libgcc libip4tc libip6tc libiwinfo libiwinfo-lua libjson-c libjson-script liblua libncurses libnl-tiny libpthread libubox libubus libubus-lua libuci libuci-lua libxtables luci-app-ddns luci-app-firewall luci-base luci-lib-ip luci-lib-nixio luci-mod-admin-full luci-proto-ipv6 luci-proto-ppp luci-theme-bootstrap mtd netifd odhcp6c odhcpd opkg procd rpcd swconfig terminfo uboot-envtools ubox ubus ubusd uci uhttpd uhttpd-mod-ubus usign wpad-mini
 
     #opkg install base-files ddns-scripts dnsmasq dropbear firewall iptables-mod-ipopt kmod-ipt-ipopt libncurses libpthread luci-app-ddns luci-base luci-theme-bootstrap odhcpd rpcd terminfo uboot-envtools uhttpd uhttpd-mod-ubus
 
@@ -44,11 +44,11 @@ installPackages()
 
     # install either more packages - now we have enough space
     #opkg install ppp ppp-mod-pppol2tp ppp-mod-pptp kmod-ppp kmod-pppoe wireless-tools iptables kmod-nf-nathelper-extra luci-proto-ppp
-    opkg install mount-utils swap-utils e2fsprogs fdisk
-    opkg install blkid kmod-usb-storage-extras
+#    opkg install mount-utils swap-utils e2fsprogs fdisk
+#    opkg install blkid kmod-usb-storage-extras
     #opkg install kmod-usb-uhci kmod-usb-ohci
     #opkg install kmod-mmc
-    opkg install kmod-loop kmod-fs-nfs-common kmod-fs-nfs kmod-fs-exportfs kmod-fs-cifs kmod-nls-utf8 nfs-utils nfs-kernel-server nfs-kernel-server-utils nfs-server unfs3 openssh-sftp-server
+#    opkg install kmod-loop kmod-fs-nfs-common kmod-fs-nfs kmod-fs-exportfs kmod-fs-cifs kmod-nls-utf8 nfs-utils nfs-kernel-server nfs-kernel-server-utils nfs-server unfs3 openssh-sftp-server
     #opkg install strongswan-default ip iptables-mod-nat-extra djbdns-tools
 
 }
@@ -69,7 +69,7 @@ autoprovisionStage2()
         # please note that stage2 requires internet connection to install packages and you most probably want to log in
         # on the GUI to set up a WAN connection. but on the other hand you don't want to end up using a publically
         # available default password anywhere, therefore the random here...
-        setRootPassword "kimax"
+#        setRootPassword "kimax"
 
         installPackages
 
@@ -89,8 +89,8 @@ EOF
 
         uci commit
         sync
-        reboot
+#        reboot
     fi
 }
 
-#autoprovisionStage2
+autoprovisionStage2

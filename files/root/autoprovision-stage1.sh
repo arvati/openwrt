@@ -91,7 +91,7 @@ setupExtroot()
     # let's write a new rc.local on the extroot that will shadow the one which is in the rom (to run stage2 instead of stage1)
     mkdir -p ${overlay_root}/etc/
     cat >${overlay_root}/etc/rc.local <<EOF
-/root/autoprovision-stage2.sh
+/root/autoprovision-stage2.sh & 
 exit 0
 EOF
 
@@ -123,15 +123,15 @@ autoprovisionStage1()
 #    signalAutoprovisionWorking # to make it flash in sync with the USB led
 #    signalFormatting
 
-    sleep 1
-    setupPendrivePartitions
+#    sleep 1
+#    setupPendrivePartitions
 
     sleep 1
     setupExtroot
 
     sync
 #    stopSignallingAnything
-    reboot
+#    reboot
 }
 
-#autoprovisionStage1
+autoprovisionStage1
