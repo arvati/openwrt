@@ -60,7 +60,6 @@ t
 1
 82
 w
-q
 EOF
     log "Finished partitioning /dev/sda using fdisk"
 
