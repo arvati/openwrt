@@ -33,6 +33,91 @@ Description:  Btrfs is a new copy on write filesystem for Linux aimed at impleme
  administration. Initially developed by Oracle, Btrfs is licensed under the
  GPL and open for contribution from anyone.
 
+Package: collectd-mod-interface
+Version: 5.4.2-3
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 2244
+Filename: collectd-mod-interface_5.4.2-3_ramips_24kec.ipk
+Size: 2975
+MD5Sum: 2ac82a780c48a24e116ec5cb82663a64
+SHA256sum: 349dc2c44dab74608a6a787ab4250693b63f0701479c031809490ddd167e0257
+Description:  network interfaces input plugin
+
+Package: collectd-mod-iwinfo
+Version: 5.4.2-3
+Depends: libc, collectd, libiwinfo
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 2766
+Filename: collectd-mod-iwinfo_5.4.2-3_ramips_24kec.ipk
+Size: 3507
+MD5Sum: cd8d3161ba8482452b92faa700411344
+SHA256sum: 67061842d82cde2a234caf496e0bc72e78313cb7be9c6191f7db7d71e0732404
+Description:  libiwinfo wireless statistics plugin
+
+Package: collectd-mod-load
+Version: 5.4.2-3
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 1978
+Filename: collectd-mod-load_5.4.2-3_ramips_24kec.ipk
+Size: 2715
+MD5Sum: 5978082b2da2a83c06e610ab41b04c8b
+SHA256sum: ef486389d460a6cb48b1de7d423530e468f74113a04e79fa099c0b9e43aa765e
+Description:  system load input plugin
+
+Package: collectd-mod-network
+Version: 5.4.2-3
+Depends: libc, collectd
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 13704
+Filename: collectd-mod-network_5.4.2-3_ramips_24kec.ipk
+Size: 14378
+MD5Sum: dde757dfed7be0aae973cc53268733d9
+SHA256sum: 06cb0bb1edc3aec99d19350edb14a0c447f32cd6dc7a7a654394ffbd3efacb5e
+Description:  network input/output plugin
+
+Package: collectd-mod-rrdtool
+Version: 5.4.2-3
+Depends: libc, collectd, librrd1
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 11084
+Filename: collectd-mod-rrdtool_5.4.2-3_ramips_24kec.ipk
+Size: 11777
+MD5Sum: abafdb9be2ba2b6fc70c725ada34d0ea
+SHA256sum: 7c5e6f88d7097d192c513e1a45bdcd0b69ccaf6dd9e921ca7acd62efb290ca32
+Description:  RRDtool output plugin
+
+Package: collectd
+Version: 5.4.2-3
+Depends: libc, libpthread, zlib, libltdl, libip4tc
+Source: feeds/packages/utils/collectd
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 57818
+Filename: collectd_5.4.2-3_ramips_24kec.ipk
+Size: 58711
+MD5Sum: ed9584816d4fd381271f04241622b3c2
+SHA256sum: 00b520a68ef611b7388c2590e8d15aa7d1e0a6dedce189b682ab97e70a51b934
+Description:  collectd is a small daemon which collects system information periodically
+ and provides mechanismns to store the values in a variety of ways.
+
 Package: dbus
 Version: 1.9.14-1
 Depends: libc, libexpat, libdbus
@@ -141,20 +226,38 @@ MD5Sum: 59284cefb40f038c4608ac7f6af72fc1
 SHA256sum: c94715f1ff0cca6bf4469572c0164dd83337a37faec323adc4ffee69a8f64c7c
 Description:  get/set SATA/IDE device parameters
 
+Package: htop
+Version: 1.0.3-1
+Depends: libc, libncurses
+Source: feeds/packages/admin/htop
+License: GPL-2.0
+LicenseFiles: COPYING
+Section: admin
+Maintainer: Etienne CHAMPETIER <champetier.etienne@gmail.com>
+Architecture: ramips_24kec
+Installed-Size: 49151
+Filename: htop_1.0.3-1_ramips_24kec.ipk
+Size: 49948
+MD5Sum: 4a8dcc6a402a914e763ed3be9ce148a6
+SHA256sum: 8fcb9da0ec37d8fb9044f6fb942bac2d4ae783fb11d8829ce69971e9401e3ff1
+Description:  Htop is an ncursed-based process viewer similar to top, but
+ it allows to scroll the list vertically and horizontally to
+ see all processes and their full command lines.
+
 Package: kmod-fs-exfat
 Version: 3.18.45+git-20150301-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: feeds/packages/kernel/exfat-nofuse
 License: GPL-2.0
 LicenseFiles: LICENSE
 Section: kernel
 Maintainer: Bruno Randolf <br1@einfach.org>
 Architecture: ramips_24kec
-Installed-Size: 45557
+Installed-Size: 45459
 Filename: kmod-fs-exfat_3.18.45+git-20150301-1_ramips_24kec.ipk
-Size: 46456
-MD5Sum: dc501ae67adc9336f3933566b63b0583
-SHA256sum: 9db92b2b22075591d2941a6337f526a6babb697ba4dc79e4dec006eb099463b6
+Size: 46285
+MD5Sum: 058da57432536767101362856abf9810
+SHA256sum: c62672c6a05732d96f6a5991bbcd74099795ddedebb3c0ce43f7e94b4be84fd0
 Description:  Kernel module for ExFAT Filesytems
 
 Package: kmod-openvswitch
@@ -492,6 +595,31 @@ MD5Sum: df464e749b06d5194eac89def99123cd
 SHA256sum: cd1d0fed5d9731fada32e692eb5268ca96712465f413e4d7869d62b35146d146
 Description:  A Perl Compatible Regular Expression library
 
+Package: librrd1
+Version: 1.0.50-2
+Depends: libc, zlib
+Source: feeds/packages/utils/rrdtool1
+Section: libs
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 135368
+Filename: librrd1_1.0.50-2_ramips_24kec.ipk
+Size: 136096
+MD5Sum: e95df3038fd2b2fa94f68e158751df01
+SHA256sum: 000a97e0645edbf055ed7ce4ca2c5ab691dd6281aaa90dc4264d6dc088a5ee0c
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains a shared library, used by other programs.
+
 Package: libwrap
 Version: 7.6-1
 Depends: libc
@@ -539,6 +667,23 @@ MD5Sum: 8c86f4c674d168d0763ac3a6715c4e9c
 SHA256sum: b2a036e6660e2fd4926d881df663a9e5850b93057af6f5fad21239366b2d3783
 Description:  Utilities to create and check MS-DOS FAT filesystems.
  (mkfs.vfat and mkfs.fat for creating FAT volumes)
+
+Package: nano
+Version: 2.5.3-1
+Depends: libc, libncurses
+Source: feeds/packages/utils/nano
+License: GPL-3.0+
+LicenseFiles: COPYING
+Section: utils
+Maintainer: Jonathan Bennett <JBennett@incomsystems.biz>
+Architecture: ramips_24kec
+Installed-Size: 28366
+Filename: nano_2.5.3-1_ramips_24kec.ipk
+Size: 29071
+MD5Sum: 9319472d331b7cd41aa76f5408b335ad
+SHA256sum: 35dded7721fe096b451476e1ff030a3f689f2577e76f7fe8d034611ba1bcdf7e
+Description:  GNU nano (Nano's ANOther editor, or Not ANOther editor) is an enhanced clone
+ of the Pico text editor.
 
 Package: nfs-kernel-server-utils
 Version: 1.3.2-3
@@ -661,6 +806,31 @@ SHA256sum: f4f9d19cd1ee62b94a862ce5131be1ad09b40b01083aa665e57e679ff71cfbe9
 Description:  Portmap is a server that converts RPC (Remote Procedure Call) program
  numbers into DARPA protocol port numbers.
 
+Package: rrdtool1
+Version: 1.0.50-2
+Depends: libc, librrd1
+Source: feeds/packages/utils/rrdtool1
+Section: utils
+Maintainer: Jo-Philipp Wich <jow@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 11177
+Filename: rrdtool1_1.0.50-2_ramips_24kec.ipk
+Size: 12287
+MD5Sum: f75a40bfd2283a806874c9207b96341d
+SHA256sum: aab9811caac6d11d73bc70e1d6559ec8551727ed9d1aedf3a32bd9f287e22b76
+Description:  RRD is the Acronym for Round Robin Database. RRD is a system to store and
+ display time-series data (i.e. network bandwidth, machine-room temperature,
+ server load average). It stores the data in a very compact way that will
+ not expand over time, and it presents useful graphs by processing the data
+ to enforce a certain data density. It can be used either via simple wrapper
+ scripts (from shell or Perl) or via frontends that poll network devices and
+ put friendly user interface on it.
+ 
+ This is version 1.0.x with cgilib-0.4, gd1.3 and libpng-1.0.9 linked into
+ librrd.so. The library is much smaller compared to the 1.2.x version with
+ separate dynamic linked libraries.
+ This package contains command line tools used to manage RRDs.
+
 Package: rsync
 Version: 3.1.1-2
 Depends: libc, libpopt, zlib
@@ -735,6 +905,20 @@ Description:  Transmission is a simple BitTorrent client.
  It features a very simple, intuitive interface
  on top on an efficient, cross-platform back-end.
  This package contains the daemon itself.
+
+Package: transmission-remote
+Version: 2.84-3
+Depends: libc, libcurl, libopenssl, libpthread, libevent2, librt
+Source: feeds/packages/net/transmission
+Section: net
+Maintainer: Cezary Jackiewicz <cezary@eko.one.pl>
+Architecture: ramips_24kec
+Installed-Size: 197295
+Filename: transmission-remote_2.84-3_ramips_24kec.ipk
+Size: 197710
+MD5Sum: 3af6d87666886eae039412dc22b5b27b
+SHA256sum: 0812c34307def4b24cfc5c5dc63e34f294b7a4404441280df3b59bf4cafac4b3
+Description:  CLI remote interface for transmission.
 
 Package: transmission-web
 Version: 2.84-3

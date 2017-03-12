@@ -19,11 +19,11 @@ Depends: libc, firewall
 Source: feeds/luci/applications/luci-app-firewall
 Section: luci
 Architecture: all
-Installed-Size: 10498
+Installed-Size: 9829
 Filename: luci-app-firewall_git-17.013.32081-d89b022-1_all.ipk
-Size: 11208
-MD5Sum: 0beedbb8832364dfb49138afb9c884cb
-SHA256sum: f6be4735c6e953b2ba45cdd87fd2832ebfe8aa6f8ad00e901b52af251a6c7bc1
+Size: 10554
+MD5Sum: cfd6f9d012d150637e24c0d1c0a74e55
+SHA256sum: 1be5cf748e8881ae99891dc6a3e08738bf4d7d10de502b8d5a7ce21e50d531a5
 Description:  Firewall and Portforwarding application
 
 Package: luci-app-hd-idle
@@ -32,12 +32,38 @@ Depends: libc, hd-idle
 Source: feeds/luci/applications/luci-app-hd-idle
 Section: luci
 Architecture: all
-Installed-Size: 1056
+Installed-Size: 953
 Filename: luci-app-hd-idle_git-17.013.32081-d89b022-1_all.ipk
-Size: 1842
-MD5Sum: d794444d4159773648a9e8b41c712cbb
-SHA256sum: a681fb7c30263c508db9f0dad355242b3ac18c1f7885bf21e014aaf972d6da63
+Size: 1747
+MD5Sum: 0fad9c85a21690c929eb6137776cd868
+SHA256sum: 3ef4a3686cea63729257b7e4c73f024448526b21820ed3b7d234c1cb09d4f4a1
 Description:  Hard Disk Idle Spin-Down module
+
+Package: luci-app-multiwan
+Version: git-17.013.32081-d89b022-1
+Depends: libc, multiwan
+Source: feeds/luci/applications/luci-app-multiwan
+Section: luci
+Architecture: all
+Installed-Size: 3020
+Filename: luci-app-multiwan_git-17.013.32081-d89b022-1_all.ipk
+Size: 3707
+MD5Sum: 27eff114e5a3a72ec10207596f06b5a6
+SHA256sum: 2a8ea64ceff63fefc2724af545e1cb2fb608ec6116f479bbcdb52c5975cb708d
+Description:  LuCI Support for the OpenWrt MultiWAN agent
+
+Package: luci-app-ntpc
+Version: git-17.013.32081-d89b022-1
+Depends: libc, ntpclient
+Source: feeds/luci/applications/luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 939
+Filename: luci-app-ntpc_git-17.013.32081-d89b022-1_all.ipk
+Size: 1656
+MD5Sum: bf3fe1c27d39b734e6aea0ff225fb71c
+SHA256sum: b5c3cc8c56d513debe53e3ac51d49ca4816a662a2819bd8260300f8b29c5b9ea
+Description:  NTP time synchronisation configuration module
 
 Package: luci-app-samba
 Version: git-17.013.32081-d89b022-1
@@ -45,12 +71,25 @@ Depends: libc, samba36-server
 Source: feeds/luci/applications/luci-app-samba
 Section: luci
 Architecture: all
-Installed-Size: 1360
+Installed-Size: 1202
 Filename: luci-app-samba_git-17.013.32081-d89b022-1_all.ipk
-Size: 2094
-MD5Sum: b85865c76f856c23b1bd4f1c3e2fda3c
-SHA256sum: 64628b56c644620fe46a0db34c056787fa7c2a61cf9a12f43c51a9ae5c3e32d4
+Size: 1929
+MD5Sum: 6a7cd3f8be6763a9d0ba6ec7cb6c2b9a
+SHA256sum: 8ed07ee0acaefea51bb02329996854e2f96eb44653013f8f647481bbee38ea86
 Description:  Network Shares - Samba SMB/CIFS module
+
+Package: luci-app-statistics
+Version: git-17.013.32081-d89b022-1
+Depends: libc, collectd, rrdtool1, collectd-mod-rrdtool, collectd-mod-iwinfo, collectd-mod-interface, collectd-mod-load, collectd-mod-network
+Source: feeds/luci/applications/luci-app-statistics
+Section: luci
+Architecture: all
+Installed-Size: 20585
+Filename: luci-app-statistics_git-17.013.32081-d89b022-1_all.ipk
+Size: 21401
+MD5Sum: 792af2e4115d35775f89ac532097ae92
+SHA256sum: 1db6151e37d782f54c1007ad63dfa1d487a5e0c655b358acce3c7aab7b2cb889
+Description:  LuCI Statistics Application
 
 Package: luci-app-transmission
 Version: git-17.013.32081-d89b022-1
@@ -58,11 +97,11 @@ Depends: libc, transmission-daemon
 Source: feeds/luci/applications/luci-app-transmission
 Section: luci
 Architecture: all
-Installed-Size: 3399
+Installed-Size: 3253
 Filename: luci-app-transmission_git-17.013.32081-d89b022-1_all.ipk
-Size: 4156
-MD5Sum: 4b734d8660e3a7ffb385815821099b51
-SHA256sum: 19a73d9f2f6595b28740a641e0284294410af9d379fbf0ecc935369e206fa713
+Size: 3999
+MD5Sum: df6615094f8c539bf7d0e8917d7e2591
+SHA256sum: 006ac4233f79cea213bcfe84a5f02b22f27c6aa773a80cd1c2ab841e0e6d13f0
 Description:  LuCI Support for Transmission
 
 Package: luci-app-upnp
@@ -84,11 +123,11 @@ Depends: libc, lua, libuci-lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua
 Source: feeds/luci/modules/luci-base
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 122070
+Installed-Size: 107319
 Filename: luci-base_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 122924
-MD5Sum: cd3c5069ced72c511f86682a6028bc28
-SHA256sum: 4f0f069dcdcf9b3801afd59514e6c68e3b3917ecc650aa40a35edf5d8a6bc27c
+Size: 108163
+MD5Sum: 26cbab3bcd8aab3c1faa241802ca6319
+SHA256sum: 8efd29aa4fc238482b28c9dea15de169d67c88366010718299ea2e44508eb01d
 Description:  LuCI core libraries
 
 Package: luci-i18n-base-en
@@ -97,11 +136,11 @@ Depends: libc, luci-base
 Source: feeds/luci/modules/luci-base
 Section: luci
 Architecture: all
-Installed-Size: 721
+Installed-Size: 725
 Filename: luci-i18n-base-en_git-17.013.32081-d89b022-1_all.ipk
-Size: 1498
-MD5Sum: 94877061b4b0c998901e89beb0c5b8ab
-SHA256sum: 4305581e6b994b734cf1f2a7f483fa76a9105b0ba1e1438c767951fb8e0f37e3
+Size: 1499
+MD5Sum: 6ac6387009ba20628cd10f67a6c373aa
+SHA256sum: bdfcb403477bee4134b6d9c62d2642c6ad72f3e0a7d33d6339f63f3962868b64
 Description:  Translation for luci-base - English
 
 Package: luci-i18n-base-pt-br
@@ -110,11 +149,11 @@ Depends: libc, luci-base
 Source: feeds/luci/modules/luci-base
 Section: luci
 Architecture: all
-Installed-Size: 21410
+Installed-Size: 21407
 Filename: luci-i18n-base-pt-br_git-17.013.32081-d89b022-1_all.ipk
-Size: 22253
-MD5Sum: cd83aedd76ffae8ac716fcb3b664fccd
-SHA256sum: 7b24293cde2d12b85c33701e8c8a2ea8bd8ccc9fc99db55f4412c0fe488ba18a
+Size: 22242
+MD5Sum: 1ed4dcc5f192d36dc1fc551a4b03ac93
+SHA256sum: 742005f6276bb9d5cae3a30b55e30a75d8703ba51ece850550a59a81e3a5c009
 Description:  Translation for luci-base - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-base-pt
@@ -181,11 +220,11 @@ Depends: libc, luci-app-firewall
 Source: feeds/luci/applications/luci-app-firewall
 Section: luci
 Architecture: all
-Installed-Size: 306
+Installed-Size: 307
 Filename: luci-i18n-firewall-en_git-17.013.32081-d89b022-1_all.ipk
-Size: 1087
-MD5Sum: d753c8ca48f01dcccb542152bbb8641e
-SHA256sum: ab9aaa27a4fabe060d20f3fcf1a790f38575fb7ad16431777b23f85311189c9e
+Size: 1089
+MD5Sum: 24a4234c680c33a80d9f099e17cadc6e
+SHA256sum: 1d29057c17a8a36045a0ef8e9eb6a67e7962a7312c7a6b7a85da68d6f8d50b16
 Description:  Translation for luci-app-firewall - English
 
 Package: luci-i18n-firewall-pt-br
@@ -194,11 +233,11 @@ Depends: libc, luci-app-firewall
 Source: feeds/luci/applications/luci-app-firewall
 Section: luci
 Architecture: all
-Installed-Size: 4120
+Installed-Size: 4108
 Filename: luci-i18n-firewall-pt-br_git-17.013.32081-d89b022-1_all.ipk
-Size: 4916
-MD5Sum: 44cdfde936558748281ada080877dfb9
-SHA256sum: d18bc573f25c3b7d2066771aeeb8316c74415c76c36fd89e0a369b956a33c2a4
+Size: 4899
+MD5Sum: c3c56eb4567ace02dda6afdda870ca37
+SHA256sum: 29593cae49ad3f63b277f889ef1ba384b8e2434a97a2acfa02d404b678414b91
 Description:  Translation for luci-app-firewall - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-firewall-pt
@@ -220,11 +259,11 @@ Depends: libc, luci-app-hd-idle
 Source: feeds/luci/applications/luci-app-hd-idle
 Section: luci
 Architecture: all
-Installed-Size: 304
+Installed-Size: 306
 Filename: luci-i18n-hd-idle-en_git-17.013.32081-d89b022-1_all.ipk
-Size: 1080
-MD5Sum: 0b44f9b53086525a814bc38894fa6675
-SHA256sum: bbe5ad1026c67a90f12493880a711326b392bf127ee76c08fd96f42c593113ac
+Size: 1090
+MD5Sum: 3b4e58c3182879053ee7913b3041d0e7
+SHA256sum: bbfafd9480d237ccdd29425376fd0a2f24462cb037399dbdb996dc28b983b325
 Description:  Translation for luci-app-hd-idle - English
 
 Package: luci-i18n-hd-idle-pt-br
@@ -233,11 +272,11 @@ Depends: libc, luci-app-hd-idle
 Source: feeds/luci/applications/luci-app-hd-idle
 Section: luci
 Architecture: all
-Installed-Size: 694
+Installed-Size: 698
 Filename: luci-i18n-hd-idle-pt-br_git-17.013.32081-d89b022-1_all.ipk
-Size: 1509
-MD5Sum: 2286b76aa135a6bcd29a113a03489945
-SHA256sum: ba3c2c5b4a3044b917f021dd885eb76e014b38dc49085409c340c766aa6f63cd
+Size: 1515
+MD5Sum: f84b5bd12195d7e0e15e8b21eb09b4cb
+SHA256sum: d50fa0f16e38267bd6f7ca2cf9b892f4a485c699b5e0850a772a364cb5b8923e
 Description:  Translation for luci-app-hd-idle - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-hd-idle-pt
@@ -253,17 +292,69 @@ MD5Sum: 04173b987b04087ecf9981b3e1505ace
 SHA256sum: 07d9708de1c3f048d02db0739dcfbe88b7d309ec1e25c7b9733362e20056418f
 Description:  Translation for luci-app-hd-idle - Português (Portuguese)
 
+Package: luci-i18n-multiwan-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-multiwan
+Source: feeds/luci/applications/luci-app-multiwan
+Section: luci
+Architecture: all
+Installed-Size: 306
+Filename: luci-i18n-multiwan-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1088
+MD5Sum: 368cabebf33dcf60d20a7864473ced8c
+SHA256sum: 6bf16e52eb3cd809c75b4d7de9730dae1dd6d4d68b2e849e109389736257a8d9
+Description:  Translation for luci-app-multiwan - English
+
+Package: luci-i18n-multiwan-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-multiwan
+Source: feeds/luci/applications/luci-app-multiwan
+Section: luci
+Architecture: all
+Installed-Size: 1364
+Filename: luci-i18n-multiwan-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 2192
+MD5Sum: 7edf56493a6d939f927627a86f684372
+SHA256sum: 9b3fee07b2bcb5e1db6bad390b69d609e68a694fd0b11973e2833788a0140894
+Description:  Translation for luci-app-multiwan - Português do Brasil (Brazialian Portuguese)
+
+Package: luci-i18n-ntpc-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-ntpc
+Source: feeds/luci/applications/luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 302
+Filename: luci-i18n-ntpc-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 1079
+MD5Sum: d058ea13f4f3144693e5e8ec17d6f442
+SHA256sum: 25f285686ef55574c740106f6948dcba128e09362401a0302297698359a35554
+Description:  Translation for luci-app-ntpc - English
+
+Package: luci-i18n-ntpc-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-ntpc
+Source: feeds/luci/applications/luci-app-ntpc
+Section: luci
+Architecture: all
+Installed-Size: 775
+Filename: luci-i18n-ntpc-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 1590
+MD5Sum: 9a53e5f98abae0388ec39b13ffadcc8f
+SHA256sum: 98dbe90e4e5b25d6e18a1e74211c2ceda87748d09b969a4dc4bcc6043dd91d82
+Description:  Translation for luci-app-ntpc - Português do Brasil (Brazialian Portuguese)
+
 Package: luci-i18n-samba-en
 Version: git-17.013.32081-d89b022-1
 Depends: libc, luci-app-samba
 Source: feeds/luci/applications/luci-app-samba
 Section: luci
 Architecture: all
-Installed-Size: 611
+Installed-Size: 612
 Filename: luci-i18n-samba-en_git-17.013.32081-d89b022-1_all.ipk
 Size: 1396
-MD5Sum: fde6cb507ff763c4f0776a2b083492f0
-SHA256sum: 795e7e32be69dece1441dfbdc8bcbd9f9e594ccb84da548937a8e42411f4529f
+MD5Sum: 657297216c3c9ad9ac1cca666c5f3f4d
+SHA256sum: 6e960648ac47c24107e28ad3a5eac2c62b655c69e4a115ce4c133419c0c1073f
 Description:  Translation for luci-app-samba - English
 
 Package: luci-i18n-samba-pt-br
@@ -274,9 +365,9 @@ Section: luci
 Architecture: all
 Installed-Size: 1099
 Filename: luci-i18n-samba-pt-br_git-17.013.32081-d89b022-1_all.ipk
-Size: 1911
-MD5Sum: 843483a3c781ccfa002ce73010a1a25d
-SHA256sum: 8815771c5c6ec8276bcf94644ba73223177078ddbb72fc906e495fcf45c0198c
+Size: 1913
+MD5Sum: a750880610a1c0951debb8e3b460ad1e
+SHA256sum: a4533cea4827c17dfcd157034dcfb5e88b0d75d259c5bd30986ebae36a922e9e
 Description:  Translation for luci-app-samba - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-samba-pt
@@ -292,6 +383,32 @@ MD5Sum: 68d5818418c3400dc5554d3f037e36c4
 SHA256sum: 220783093e842bb304930381aef3956a07ac1da41be54b38478607cdf7ab1ed4
 Description:  Translation for luci-app-samba - Português (Portuguese)
 
+Package: luci-i18n-statistics-en
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-statistics
+Source: feeds/luci/applications/luci-app-statistics
+Section: luci
+Architecture: all
+Installed-Size: 1744
+Filename: luci-i18n-statistics-en_git-17.013.32081-d89b022-1_all.ipk
+Size: 2541
+MD5Sum: 871f5711498cd154bfa2400865fe5b65
+SHA256sum: 76abd8bd75cf900391cb30486760b3e95ad20bc02a4e42ddbe3d3a1cbb5c630a
+Description:  Translation for luci-app-statistics - English
+
+Package: luci-i18n-statistics-pt-br
+Version: git-17.013.32081-d89b022-1
+Depends: libc, luci-app-statistics
+Source: feeds/luci/applications/luci-app-statistics
+Section: luci
+Architecture: all
+Installed-Size: 6815
+Filename: luci-i18n-statistics-pt-br_git-17.013.32081-d89b022-1_all.ipk
+Size: 7678
+MD5Sum: 2f9aaf928efb21edcd8fbefefc9e9e7f
+SHA256sum: 09459a7ee9c277a0edfc9bd3422b9cd9784c2b737f1fd82b9146f5de8f016579
+Description:  Translation for luci-app-statistics - Português do Brasil (Brazialian Portuguese)
+
 Package: luci-i18n-transmission-en
 Version: git-17.013.32081-d89b022-1
 Depends: libc, luci-app-transmission
@@ -300,9 +417,9 @@ Section: luci
 Architecture: all
 Installed-Size: 308
 Filename: luci-i18n-transmission-en_git-17.013.32081-d89b022-1_all.ipk
-Size: 1090
-MD5Sum: f554603ba3fa3ce77be50d125e7409dc
-SHA256sum: 260748225015beb3cd0ca24fcfb419b8716f51457a6d49697120700cc09e0a8b
+Size: 1088
+MD5Sum: 4383f350787beca7ca87734c469f6f66
+SHA256sum: 1bd13b1fad89fff52d809a225a7fa14482487021ec220341a4c4f0da6f4f306a
 Description:  Translation for luci-app-transmission - English
 
 Package: luci-i18n-transmission-pt-br
@@ -311,11 +428,11 @@ Depends: libc, luci-app-transmission
 Source: feeds/luci/applications/luci-app-transmission
 Section: luci
 Architecture: all
-Installed-Size: 2824
+Installed-Size: 2827
 Filename: luci-i18n-transmission-pt-br_git-17.013.32081-d89b022-1_all.ipk
-Size: 3612
-MD5Sum: 82f580c743fb1f906096861e3d2dc2a3
-SHA256sum: 1882bf20fa98778b89c05a2536a520bf5b49990b1799b870c6fdd3ea0b276cef
+Size: 3615
+MD5Sum: 1004c7dc97931f0993fe13e39d9f0af8
+SHA256sum: dfd374cd79972c658b87c93902abde91ee58a8713ca2331b8af02306c1359f2a
 Description:  Translation for luci-app-transmission - Português do Brasil (Brazialian Portuguese)
 
 Package: luci-i18n-transmission-pt
@@ -376,11 +493,11 @@ Depends: libc, liblua, libnl-tiny
 Source: feeds/luci/libs/luci-lib-ip
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 9385
+Installed-Size: 9397
 Filename: luci-lib-ip_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 10080
-MD5Sum: 83225a19ce869babce9c8ac614edee36
-SHA256sum: 22305cafbfc2bb764b59ac3fd1e63de341c11271b44a5601c36b4881522ad115
+Size: 10094
+MD5Sum: d13181c6e9432b855b699106d98c3736
+SHA256sum: c98f8a66167ecad7a02aec56dcc16820d282411b73a3debe97d583edd945c29e
 Description:  Lua library for IP calculation and routing information
 
 Package: luci-lib-nixio
@@ -389,11 +506,11 @@ Depends: libc, liblua
 Source: feeds/luci/libs/luci-lib-nixio
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 29185
+Installed-Size: 29184
 Filename: luci-lib-nixio_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 29758
-MD5Sum: 1223c281348692188273280fc2134e89
-SHA256sum: d0cd2f6042224732d3377bfd075c85eb39e986e50e363e9b7e659b6007ddea6e
+Size: 29750
+MD5Sum: a4bed73937dddcd0f42d3222551ef6c2
+SHA256sum: 9c6d208487c5297afd6fa606963f38333c680f92cb663373aab8ca911f83b005
 Description:  NIXIO POSIX library
 
 Package: luci-mod-admin-full
@@ -402,11 +519,11 @@ Depends: libc, luci-base
 Source: feeds/luci/modules/luci-mod-admin-full
 Section: luci
 Architecture: ramips_24kec
-Installed-Size: 70252
+Installed-Size: 64490
 Filename: luci-mod-admin-full_git-17.013.32081-d89b022-1_ramips_24kec.ipk
-Size: 71076
-MD5Sum: 0eb4ccd3cf2a039c96fd93ab8a40563f
-SHA256sum: 56bf262e89db2acc2f4531a05661257a8da155d9b4e31b68c2288ca1d9a18ad9
+Size: 65267
+MD5Sum: 2b1c72fefc6cca6832f20ee7ce3f6f78
+SHA256sum: 09ac24ee6ceac123ba5dc50d8e56f85920fc107b4fba958f82b8419abc1adfc1
 Description:  LuCI Administration - full-featured for full control
 
 Package: luci-proto-3g
@@ -428,11 +545,11 @@ Depends: libc
 Source: feeds/luci/protocols/luci-proto-ipv6
 Section: luci
 Architecture: all
-Installed-Size: 4371
+Installed-Size: 3936
 Filename: luci-proto-ipv6_git-17.013.32081-d89b022-1_all.ipk
-Size: 5058
-MD5Sum: 3ab4facb8913cf893daceff9b06dd9e9
-SHA256sum: c8e6719f45f7e038a65d1792d4c03c1cd637e5659b88f50884c0c46a07ef09f5
+Size: 4651
+MD5Sum: db5e9d599552be6983afe4da2ac9ac40
+SHA256sum: b6bae863532c41ca575598700e251d1a062246703758aeba629b12b97da7f340
 Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite/aiccu
 
 Package: luci-proto-openconnect
@@ -454,11 +571,11 @@ Depends: libc
 Source: feeds/luci/protocols/luci-proto-ppp
 Section: luci
 Architecture: all
-Installed-Size: 2604
+Installed-Size: 2530
 Filename: luci-proto-ppp_git-17.013.32081-d89b022-1_all.ipk
-Size: 3304
-MD5Sum: 9f7c9f42da8940ed5ae49d6aac92f93b
-SHA256sum: efa0ed4994a20e7b72293f4688d7b0a4cb8d77f837db3192249afa25f08e3626
+Size: 3213
+MD5Sum: 7b2a87c52c0227b240539e50314018a1
+SHA256sum: 5ee8a16ff4d05812497cc08262dcbc4ec5981323c30b3d601bf28f2a51a25b04
 Description:  Support for PPP/PPPoE/PPPoA/PPtP
 
 Package: luci-proto-relay
@@ -480,23 +597,23 @@ Depends: libc
 Source: feeds/luci/themes/luci-theme-bootstrap
 Section: luci
 Architecture: all
-Installed-Size: 12976
+Installed-Size: 12980
 Filename: luci-theme-bootstrap_git-17.013.32081-d89b022-1_all.ipk
-Size: 13693
-MD5Sum: d10cefcfe3005854124e67e2b8557182
-SHA256sum: 4e0dd5aaf93c0bdedc060345b3a368c0ece88a4145c5dd80d0148a356e73714b
+Size: 13692
+MD5Sum: 5df6ab87f241d1984220c6f08186ee8a
+SHA256sum: 94488311d12beb8d1d3ebc55f953d06583e454dbe1d05fe41195c5d7b2c0e445
 Description:  Bootstrap Theme (default)
 
 Package: luci
 Version: git-17.013.32081-d89b022-1
-Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua
+Depends: libc, uhttpd, uhttpd-mod-ubus, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6
 Source: feeds/luci/collections/luci
 Section: luci
 Architecture: all
-Installed-Size: 104
+Installed-Size: 105
 Filename: luci_git-17.013.32081-d89b022-1_all.ipk
-Size: 867
-MD5Sum: f0e47712b3d6aa178f3bcad3ee41af98
-SHA256sum: f09c6d659050624fb539aec6024bd4e7d77cd237950fae08c7da79b4d4485d58
+Size: 879
+MD5Sum: e7db3b718eace2738c7529416ef3aec5
+SHA256sum: d473bb0c539c451cf26d65055ab3b70e0d3457cb5e011736d03614e71eaf0c6b
 Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
 

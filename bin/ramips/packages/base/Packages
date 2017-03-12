@@ -66,6 +66,22 @@ MD5Sum: 745b4ef18fbc44d427e642b0d739b30e
 SHA256sum: aed7f84ae3d3fa5ef642a7d8e9a9d4af79931128e85025d80173eda71ba2951b
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
+Package: blkid
+Version: 2.25.2-4
+Depends: libc, libblkid, libuuid
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: ramips_24kec
+Installed-Size: 27385
+Filename: blkid_2.25.2-4_ramips_24kec.ipk
+Size: 28150
+MD5Sum: 445d5a41ac091c0c8f156f665942306c
+SHA256sum: 6285d13ea86489129fc7d08325cf0bd7252813b8d1cbfecaeead03b00081e3ed
+Description:  The blkid program is the command-line interface to working with the libblkid
+ library.
+
 Package: block-mount
 Version: 2016-01-10-96415afecef35766332067f4205ef3b2c7561d21
 Depends: libc, ubox, libubox, libuci
@@ -125,7 +141,7 @@ Description:  Broadcom BCM43xx fullmac USB firmware
 
 Package: busybox
 Version: 1.23.2-1
-Depends: libc, librpc
+Depends: libc
 Source: package/utils/busybox
 License: GPL-2.0
 LicenseFiles: LICENSE archival/libarchive/bz/LICENSE
@@ -133,11 +149,11 @@ Section: base
 Essential: yes
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 311155
+Installed-Size: 232057
 Filename: busybox_1.23.2-1_ramips_24kec.ipk
-Size: 310607
-MD5Sum: 80b6d4847ebeff3ca971bf9443878ae3
-SHA256sum: 03a221dd0eb101b663a8ad3ddbd9ed309df2b671ddd6f15da0c16c2ff4d83888
+Size: 232072
+MD5Sum: a9223b65b821e6eae4633d4d128fb0fa
+SHA256sum: f4aca35e2a62b27230a6b504dcbc49d329e7ae1ebf98074435f1534caff4378a
 Description:  The Swiss Army Knife of embedded Linux.
  It slices, it dices, it makes Julian Fries.
 
@@ -154,6 +170,21 @@ Size: 10531
 MD5Sum: f6675ee324d1320b189a1d9c747c219d
 SHA256sum: 81774739ca9eb92f97e8cdd5de10435d99228dee14ff468a7bc319dfa0d7e12a
 Description:  AR9170 firmware
+
+Package: cfdisk
+Version: 2.25.2-4
+Depends: libc, libblkid, libncurses, libsmartcols
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: ramips_24kec
+Installed-Size: 91669
+Filename: cfdisk_2.25.2-4_ramips_24kec.ipk
+Size: 92356
+MD5Sum: 589188a59549ba6d6ce4a96470ea168f
+SHA256sum: fc35f00b1dc3ce5c891b0553856221fa81089dfa965cc2bd14d487e6c42638eb
+Description:  cfdisk is a curses-based program for partitioning any hard disk drive
 
 Package: chat
 Version: 2.4.7-6
@@ -245,11 +276,11 @@ License: MIT
 LicenseFiles: LICENSE libtomcrypt/LICENSE libtommath/LICENSE
 Section: net
 Architecture: ramips_24kec
-Installed-Size: 98633
+Installed-Size: 98635
 Filename: dropbear_2015.67-1_ramips_24kec.ipk
-Size: 99128
-MD5Sum: 51c1ef256936d99354c30278b4292698
-SHA256sum: 01bb3975ddddabdbb5e5587b4237ca936b880fd7e89fbfa1ccbb4b56b54debdc
+Size: 99117
+MD5Sum: 56ae4ec1f9bf969bff4328ca3152488e
+SHA256sum: c35a58d6e6eaf7341d6922f9c8ef235c35b702cde17b98645db576e647eca3c2
 Description:  A small SSH2 server/client designed for small memory environments.
 
 Package: e2fsprogs
@@ -265,6 +296,21 @@ MD5Sum: 7e383bc5b2b7ebdb4fbd9ec711a25ec2
 SHA256sum: 4a6fe77b356d84c0e200af969ab52c4330cca1470932a75f7a5a7758f9fa05f7
 Description:  This package contains essential ext2 filesystem utilities which consists of
  e2fsck, mke2fs and most of the other core ext2 filesystem utilities.
+
+Package: fdisk
+Version: 2.25.2-4
+Depends: libc, libblkid, libsmartcols
+Source: package/utils/util-linux
+License: GPL-2.0
+LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
+Section: utils
+Architecture: ramips_24kec
+Installed-Size: 97549
+Filename: fdisk_2.25.2-4_ramips_24kec.ipk
+Size: 98300
+MD5Sum: eb9cb3d6b349f84249ed940918f7f225
+SHA256sum: 28aa02c2cf94b1302b48e49e86d3eebf3c8509a51c786be64e9e97e4786fcea7
+Description:  a menu-driven program for creation and manipulation of partition tables
 
 Package: findfs
 Version: 2.25.2-4
@@ -368,9 +414,9 @@ Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 5001
 Filename: hostapd-common_2015-03-25-1_ramips_24kec.ipk
-Size: 5719
-MD5Sum: bdb619ce93f70dd885ed3a75f245e4ba
-SHA256sum: a21deb4f5b266dbc1b14e3363b2b46ef615cd13a0e59c2d05b6fc6033df38697
+Size: 5718
+MD5Sum: 9ed9ef27d443307ba7f32c076cff339d
+SHA256sum: 58e6952e482cc12244ac0dd7465e8271c28c7bb6124f09cb45b5a0dec27e8030
 Description:  hostapd/wpa_supplicant common support files
 
 Package: hostapd-mini
@@ -422,6 +468,20 @@ SHA256sum: 78604b3081b6a40e379b2f9c6f6ab7c28d98d49ee5494b3a7907ae41e2fe368f
 Description:  This package contains a full featured IEEE 802.1x/WPA/EAP/RADIUS
  Authenticator.
 
+Package: ip6tables
+Version: 1.4.21-1
+Depends: libc, kmod-ip6tables, iptables
+Source: package/network/utils/iptables
+License: GPL-2.0
+Section: net
+Architecture: ramips_24kec
+Installed-Size: 215
+Filename: ip6tables_1.4.21-1_ramips_24kec.ipk
+Size: 921
+MD5Sum: f363b49edaa29cdf3c1e2421a31375de
+SHA256sum: 7478f026d483605530301b3cb0cc6867b3776db2970e524871a79c21d60845cd
+Description:  IPv6 firewall administration tool
+
 Package: iptables
 Version: 1.4.21-1
 Depends: libc, kmod-ipt-core, libip4tc, libip6tc, libxtables
@@ -429,11 +489,11 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: net
 Architecture: ramips_24kec
-Installed-Size: 17473
+Installed-Size: 17475
 Filename: iptables_1.4.21-1_ramips_24kec.ipk
-Size: 18321
-MD5Sum: 8be1a4962c834440915e443af2561497
-SHA256sum: 8c4553e5e8d702471faf03caf00ffc311b30bdea5bfed8ef530c408a31a16319
+Size: 18313
+MD5Sum: 349c3da0215611ca0ae9d74609e304ea
+SHA256sum: b227c43285d05a872af4c3f663b6e0ad6001c963d14530dd182cf13c62b27484
 Description:  IP firewall administration tool.
  
  Matches:
@@ -760,7 +820,7 @@ Description:  PATA support for ARTOP 6210/6260 host controllers
 
 Package: kmod-ata-core
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-scsi-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-scsi-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -768,9 +828,9 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 76808
 Filename: kmod-ata-core_3.18.45-1_ramips_24kec.ipk
-Size: 77185
-MD5Sum: 01808c8998e98ccee28a090a7dff777b
-SHA256sum: 9fe74b40bf535ecc1fee249ec60969193c5febe3ced6a1de1ea3e0a097d31a21
+Size: 77151
+MD5Sum: 05e0fe8d3a54e8d5aa75ebd55c053cdd
+SHA256sum: 38a40d42688e5e2e8bc39e1d21e27ffed0973ceff980f896013b59f7f97f6140
 Description:  Serial and Parallel ATA support
 
 Package: kmod-ata-marvell-sata
@@ -1521,21 +1581,21 @@ Description:  Driver for Atheros AR9170 USB sticks
 
 Package: kmod-cfg80211
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), iw
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), iw
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 131115
+Installed-Size: 126879
 Filename: kmod-cfg80211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 131649
-MD5Sum: b6a5c8f484ba74738ad45db503d2c301
-SHA256sum: 21598d4f2ddc7358af73be4fc08e6278d65e03e2cc550d24a9faadadba260373
+Size: 127400
+MD5Sum: 24a29bb42ee3e21dd114260039348f3e
+SHA256sum: 5fa643f9ea91655b57643f821e8cd555f868d095bd53ed0108cb7a06102fd22f
 Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
 
 Package: kmod-crypto-aead
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -1543,39 +1603,39 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 3704
 Filename: kmod-crypto-aead_3.18.45-1_ramips_24kec.ipk
-Size: 4511
-MD5Sum: 59c17226777d243ec0ff6f16457b6183
-SHA256sum: e97a5db10ebfad5e6cd9fc2b03d0259a05dc3fecea75387ba20eb39bb35169dc
+Size: 4509
+MD5Sum: c657e6384d5c8ae2db7924e8a82a97e5
+SHA256sum: 7721a34caa8ebfd2a6bf34be58b9c6093698ae38b5ff88970522c92c7ae3140c
 Description:  CryptoAPI AEAD support
 
 Package: kmod-crypto-aes
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 201
+Installed-Size: 199
 Filename: kmod-crypto-aes_3.18.45-1_ramips_24kec.ipk
-Size: 1006
-MD5Sum: 8066d28ad44d56e54241f947b2f15870
-SHA256sum: 432d2681c0b067b721dcc834a2de91c046fd7905b6831dcf58d556c1207045af
+Size: 1009
+MD5Sum: d9319a728ff26ea0040439aaa416d5e2
+SHA256sum: addafe103f5cb5e676a94893a55794459bd81308e63a9a5494827843a7b4b65b
 Description:  AES cipher CryptoAPI module
 
 Package: kmod-crypto-arc4
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1261
+Installed-Size: 1260
 Filename: kmod-crypto-arc4_3.18.45-1_ramips_24kec.ipk
 Size: 2097
-MD5Sum: ba183e84673bae2d2fbe158a84626122
-SHA256sum: 710a48d600efb7c9298a4501ecdcc7ed0a6138d85a7719480b5be99168640399
+MD5Sum: 7014cfe2ffe6d218e8aa3b5174499699
+SHA256sum: 3c0e9aa47873b44944e6102bacca570a4dfbf3c31fbfeaabced1a210e77a145a
 Description:  ARC4 (RC4) cipher CryptoAPI module
 
 Package: kmod-crypto-authenc
@@ -1625,7 +1685,7 @@ Description:  Support for Counter with CBC MAC (CCM)
 
 Package: kmod-crypto-core
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -1633,24 +1693,24 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 7279
 Filename: kmod-crypto-core_3.18.45-1_ramips_24kec.ipk
-Size: 8031
-MD5Sum: c95595de0a299abccbae68c2066c7aa7
-SHA256sum: adbad3a93b6a093240f93b281a0b3141e338edec982aa9777dfd482ca6d71a6c
+Size: 8032
+MD5Sum: 6a82525cc58b8968447c3df25e04eb87
+SHA256sum: b9b66ee2a4c9f7df94a6eaa71407b324a94bb9a39d29f1ce6eec7b5588d96f75
 Description:  Core CryptoAPI modules
 
 Package: kmod-crypto-crc32c
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-hash, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-hash, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1016
+Installed-Size: 1014
 Filename: kmod-crypto-crc32c_3.18.45-1_ramips_24kec.ipk
-Size: 1842
-MD5Sum: 29a80a04fe5160ab3746a4e383246a96
-SHA256sum: ee33d84da6cd266456267ca8eef5e6e3a05bc9138cc905d17814b06076330acb
+Size: 1841
+MD5Sum: b4d08e6cf42e2dcd5a00e8c75aa56ddb
+SHA256sum: 1099b522a45cba5f20b20ca4373c5d9dc0975fcf94bb9cb5c27f471fd48895ab
 Description:  CRC32c CRC module
 
 Package: kmod-crypto-ctr
@@ -1685,32 +1745,32 @@ Description:  Deflate compression CryptoAPI module
 
 Package: kmod-crypto-des
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 8374
+Installed-Size: 8372
 Filename: kmod-crypto-des_3.18.45-1_ramips_24kec.ipk
-Size: 8967
-MD5Sum: 2432ed1adaabcb814398107b2f37d76e
-SHA256sum: 25f7373b7664d52a48cd609e155ed1e3ff5cd387509952ba81074ab9b74e2202
+Size: 8964
+MD5Sum: 693eea5321691cc06767cb009267aa1f
+SHA256sum: 6f7cd597513f84dea597929a348234b07fa25a7a601853bee61a8ada41d46892
 Description:  DES/3DES cipher CryptoAPI module
 
 Package: kmod-crypto-ecb
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-manager, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-manager, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1588
+Installed-Size: 1587
 Filename: kmod-crypto-ecb_3.18.45-1_ramips_24kec.ipk
-Size: 2435
-MD5Sum: b4f88acefbaf585ec4a86044bf384236
-SHA256sum: c22c6cefe1d830829e2f6e3c7e3077a781d3d7f6baa1de2abeab387422166c62
+Size: 2436
+MD5Sum: 9d6447244428c99c9019ea93d42243ea
+SHA256sum: d1be01dd2433d19381cfda629589c6b441abde2509a59b94ae39f0fbab58fb1e
 Description:  Electronic CodeBook CryptoAPI module
 
 Package: kmod-crypto-fcrypt
@@ -1775,22 +1835,22 @@ Description:  GHASH digest CryptoAPI module
 
 Package: kmod-crypto-hash
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 6462
+Installed-Size: 6463
 Filename: kmod-crypto-hash_3.18.45-1_ramips_24kec.ipk
-Size: 7291
-MD5Sum: c015dfb6043986e06a20be6fec0cafe9
-SHA256sum: 80378a926a78e90a413b85e9b314beeec85316f5dd78b63dc59ed6d16c8b77b6
+Size: 7293
+MD5Sum: ed6897595124ec56a7779173c560c7f9
+SHA256sum: 5b6d4ddbef2a056d517b00a308f49b0adf3394c16405a49277b230b0736bfb65
 Description:  CryptoAPI hash support
 
 Package: kmod-crypto-hmac
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-manager, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-manager, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -1798,9 +1858,9 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 2100
 Filename: kmod-crypto-hmac_3.18.45-1_ramips_24kec.ipk
-Size: 2939
-MD5Sum: 7dbefc79c5f0aeb203056e70c7886e9d
-SHA256sum: 0b1a3d46adef0dbfbdc8ca80aff3df64d5e303f914f0329336e3830866b13dcc
+Size: 2935
+MD5Sum: 61d54d07bd6cfed30290ed11857c4ea8
+SHA256sum: ea95d1230ab54b738f1051b97596cb5d8ecbe65d7d097f2e9adf24d83a7f4760
 Description:  HMAC digest CryptoAPI module
 
 Package: kmod-crypto-hw-geode
@@ -1880,7 +1940,7 @@ Description:  CryptoAPI initialization vectors
 
 Package: kmod-crypto-manager
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -1888,39 +1948,39 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 105
 Filename: kmod-crypto-manager_3.18.45-1_ramips_24kec.ipk
-Size: 859
-MD5Sum: bd35b065909c83e5d1278c288bcbed87
-SHA256sum: 5090049b14720ff526a9104d3e8744e7ca622f9d96cf32dddece5996806aa6d9
+Size: 861
+MD5Sum: 3fc91f98a9cd1724413a5112cf216cce
+SHA256sum: a72fa5f079d2b61af3235935cad60b9e0fff3830b7876719b69af25d7fe23d75
 Description:  CryptoAPI algorithm manager
 
 Package: kmod-crypto-md4
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-hash, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-hash, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2181
+Installed-Size: 2182
 Filename: kmod-crypto-md4_3.18.45-1_ramips_24kec.ipk
-Size: 2990
-MD5Sum: 55ee14a28efc78a91e58b4b609996831
-SHA256sum: d029b58c0fea5d43ff15adaf1be6ec8ffaea2f2143ffae8e0694e879dc7e9de6
+Size: 2998
+MD5Sum: 5d897c04f60a74c705da7b2237d974e7
+SHA256sum: fd0d8bc028a500c4bae407247570684e98f3ada19e1137242b0d5d2f24bad9f8
 Description:  MD4 digest CryptoAPI module
 
 Package: kmod-crypto-md5
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-hash, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-hash, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1307
+Installed-Size: 1308
 Filename: kmod-crypto-md5_3.18.45-1_ramips_24kec.ipk
-Size: 2145
-MD5Sum: f4fcbf27f462c19b9a6c89d16137e2b0
-SHA256sum: bad6043561c8f86de2724c00876b1159427dfeb74e4352653f871cae1e14977c
+Size: 2142
+MD5Sum: 959aa460b7ee6c213cd101fe8ad60075
+SHA256sum: d5b36e5fc727abdfa62387b4cb4afa363a4b44c4de612381de1acb1f3307762e
 Description:  MD5 digest CryptoAPI module
 
 Package: kmod-crypto-michael-mic
@@ -2030,7 +2090,7 @@ Description:  Propagating Cipher Block Chaining CryptoAPI module
 
 Package: kmod-crypto-pcompress
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -2038,9 +2098,9 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 105
 Filename: kmod-crypto-pcompress_3.18.45-1_ramips_24kec.ipk
-Size: 854
-MD5Sum: 3b54a614062edeb806108e0bfc00308c
-SHA256sum: 15bac990a0aff34933b220793dd6450414292cb045185d40da1ec36bc31dd153
+Size: 851
+MD5Sum: df4aea413643683afd38a9ec3955cd0f
+SHA256sum: f071e8180e9f9b4c49777f533cc764d98d38b9db61a2309492cfd036f2533df9
 Description:  CryptoAPI Partial (de)compression operations
 
 Package: kmod-crypto-rng
@@ -2090,17 +2150,17 @@ Description:  SHA1 digest CryptoAPI module
 
 Package: kmod-crypto-sha256
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-hash, kmod-crypto-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-hash, kmod-crypto-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 4465
+Installed-Size: 4470
 Filename: kmod-crypto-sha256_3.18.45-1_ramips_24kec.ipk
-Size: 5278
-MD5Sum: b9c28748c35c8ad5ff638f9fcaebd340
-SHA256sum: a269a43e67917908018b761d78025852b84acc77e48db6cf633423a51c4395e9
+Size: 5270
+MD5Sum: 6ee4f5485347284ee1d30c1ee4774c3a
+SHA256sum: ca28f2ae2dbb50fbe6d6e4f6385a737e18c9cbbc5388bdc91428b4555f1fe804
 Description:  SHA224 SHA256 digest CryptoAPI module
 
 Package: kmod-crypto-test
@@ -2210,7 +2270,7 @@ Description:  DMA shared buffer support
 
 Package: kmod-dnsresolver
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -2219,8 +2279,8 @@ Architecture: ramips_24kec
 Installed-Size: 105
 Filename: kmod-dnsresolver_3.18.45-1_ramips_24kec.ipk
 Size: 834
-MD5Sum: 8e633cc64316907bfa8921b10602de11
-SHA256sum: 18f7dce15df53d39af7da1161d76d962ec2b9e488e254961924bc873f7ed5591
+MD5Sum: 27f5cb6851f7c05e2ff8f33f68627021
+SHA256sum: c8d3dad6658e38a6643dcba0efe9d0910be330aeeecfb642dd0d1650d2938bbf
 Description:  In-kernel DNS Resolver
 
 Package: kmod-dummy
@@ -2351,17 +2411,17 @@ Description:  This driver provides line echo cancelling support for mISDN and
 
 Package: kmod-eeprom-93cx6
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1599
+Installed-Size: 1600
 Filename: kmod-eeprom-93cx6_3.18.45-1_ramips_24kec.ipk
-Size: 2438
-MD5Sum: 4b940fa62474321dd860fa1f1359b56f
-SHA256sum: 05ea34c427ca77904b4eb4fdc066c20afbd7e197d53f1cb22cf4747a5393ad4e
+Size: 2441
+MD5Sum: 3354cb2ac4f83b91dbdd2604a894c7fe
+SHA256sum: 001a925451598e2bc7196f8688d8c710b33e683a89bffc580ad5b99c49bead08
 Description:  Kernel module for EEPROM 93CX6 support
 
 Package: kmod-eeprom-at24
@@ -2501,32 +2561,32 @@ Description:  Kernel module for AutoFS4 support
 
 Package: kmod-fs-btrfs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-lib-crc32c, kmod-lib-lzo, kmod-lib-zlib, kmod-lib-raid6, kmod-lib-xor
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-lib-crc32c, kmod-lib-lzo, kmod-lib-zlib, kmod-lib-raid6, kmod-lib-xor
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 463837
+Installed-Size: 457276
 Filename: kmod-fs-btrfs_3.18.45-1_ramips_24kec.ipk
-Size: 463386
-MD5Sum: f60a4ede4e3d3ac4752951b4056a6713
-SHA256sum: 233e2db3679b6fa4d4986b8c317c4a845b456208b10268d9aa7ac0df6aebdf8d
+Size: 456787
+MD5Sum: d9139ece6b3138ddc65bea271a12862c
+SHA256sum: 379273e661b4eeaf42430b9af97e784324c952933a9f55af8d538361f2c4591b
 Description:  Kernel module for BTRFS support
 
 Package: kmod-fs-cifs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base, kmod-crypto-arc4, kmod-crypto-hmac, kmod-crypto-md5, kmod-crypto-md4, kmod-crypto-des, kmod-crypto-ecb, kmod-crypto-sha256
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base, kmod-crypto-arc4, kmod-crypto-hmac, kmod-crypto-md5, kmod-crypto-md4, kmod-crypto-des, kmod-crypto-ecb, kmod-crypto-sha256
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 110330
+Installed-Size: 110160
 Filename: kmod-fs-cifs_3.18.45-1_ramips_24kec.ipk
-Size: 110151
-MD5Sum: 6894aca689cba45cac7a376ba2939809
-SHA256sum: 07e80bf7a73efdb584586cb1bea9f91567700c296a6f14961b54c39973768934
+Size: 109909
+MD5Sum: 89b5c1a6861e1d7c5773a924e668ae66
+SHA256sum: 8464697180cbeca3397047b3e44c93b9ce5850520e984f660b56d5d8db91b5e1
 Description:  Kernel module for CIFS support
 
 Package: kmod-fs-configfs
@@ -2561,32 +2621,32 @@ Description:  Kernel module for cramfs support
 
 Package: kmod-fs-exportfs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2755
+Installed-Size: 2753
 Filename: kmod-fs-exportfs_3.18.45-1_ramips_24kec.ipk
-Size: 3558
-MD5Sum: 61b266942187b83ef2d3a1675d69091e
-SHA256sum: 3262f32008c4b753a2f58fbba87626104dec427d8db65860c025ad6cbf31d9b3
+Size: 3557
+MD5Sum: 3b579d078a23fda9842457a669a5b6b6
+SHA256sum: a6e1504ca50f33cfa949117b33ce5677e7268a6b120287ed60c9ed709936e6a5
 Description:  Kernel module for exportfs. Needed for some other modules.
 
 Package: kmod-fs-ext4
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-lib-crc16, kmod-crypto-hash
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-lib-crc16, kmod-crypto-hash
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 221061
+Installed-Size: 220764
 Filename: kmod-fs-ext4_3.18.45-1_ramips_24kec.ipk
-Size: 221248
-MD5Sum: 952b204ed7fdafa1c2768a5f9362ed98
-SHA256sum: 569be7e268c985b14d223b41ba2aa5a6d47207b48f35b8607cd7fb227fabcea5
+Size: 220895
+MD5Sum: fc6c41030b148bdb0c51073d7c9512b3
+SHA256sum: ac2003c06b2aa7682f2ce5a1733782454da7313789c643c5730de83be9f400ab
 Description:  Kernel module for EXT4 filesystem support
 
 Package: kmod-fs-f2fs
@@ -2636,122 +2696,122 @@ Description:  Kernel module for ISO9660 filesystem support
 
 Package: kmod-fs-msdos
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-fs-vfat, kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-fs-vfat, kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 4695
+Installed-Size: 4697
 Filename: kmod-fs-msdos_3.18.45-1_ramips_24kec.ipk
-Size: 5506
-MD5Sum: f65ef8b8d0fd9dfa58bb30c935ba66f0
-SHA256sum: ce32e4d340c6d8d6faa27561f7c378b1b0ea2951078b1ab1119073dcedebf386
+Size: 5507
+MD5Sum: f1cf7bcd3bd568099b1f1122d0a6d28d
+SHA256sum: 20dbe331eec3341808b7cd3d54dafda62a8f0a6c1b8404a1a1f3a76becabd11d
 Description:  Kernel module for MSDOS filesystem support
 
 Package: kmod-fs-nfs-common
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 111229
+Installed-Size: 111234
 Filename: kmod-fs-nfs-common_3.18.45-1_ramips_24kec.ipk
-Size: 111837
-MD5Sum: 4d332c7a7fa8d96d9e3addfebfb0fa63
-SHA256sum: a5031f8110235217f7bcd5cd6ae65277db69017a96fb99f3619e041797d84eff
+Size: 111830
+MD5Sum: 348bda3aafe37db90f5b59d01c3a6635
+SHA256sum: aefd4752647b7b0ec4a9c7d3f64fede3562eebeeb6c026e43494174028def27b
 Description:  Common NFS filesystem modules
 
 Package: kmod-fs-nfs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-fs-nfs-common, kmod-dnsresolver
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-fs-nfs-common, kmod-dnsresolver
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 71466
+Installed-Size: 71467
 Filename: kmod-fs-nfs_3.18.45-1_ramips_24kec.ipk
-Size: 72178
-MD5Sum: 6e99f4020d63c86605de50e27fff51b3
-SHA256sum: 88c35f2a66eb2e451f08f31dd069bb2e379010a93946f9ffd1b5e492c4698900
+Size: 72179
+MD5Sum: 5a7577c8ecfd10f25f0168e251ff91e2
+SHA256sum: 9442e1c0798669ca6b7e390b6be15b88040fb69b72e629707915eaae5c55b023
 Description:  Kernel module for NFS support
 
 Package: kmod-fs-nfsd
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-fs-nfs-common, kmod-fs-exportfs
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-fs-nfs-common, kmod-fs-exportfs
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 43212
+Installed-Size: 43214
 Filename: kmod-fs-nfsd_3.18.45-1_ramips_24kec.ipk
-Size: 44005
-MD5Sum: 12887339c0e31477a404d4c63ece6a22
-SHA256sum: 9e991ad724f935ffbea7bbf1984d9adb005e5155c924e645aff26d9c85cc5ca0
+Size: 44020
+MD5Sum: a024f9ca4787a942066a6b48c08e8f1f
+SHA256sum: 7342e1b7d23aaa034333e24110682e66ffc5da86a2d74aa78984eacbab127bf8
 Description:  Kernel module for NFS kernel server support
 
 Package: kmod-fs-ntfs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 53891
+Installed-Size: 53890
 Filename: kmod-fs-ntfs_3.18.45-1_ramips_24kec.ipk
-Size: 54439
-MD5Sum: 73bc33a6437b4886fdcac50d788afb53
-SHA256sum: 317afdbde690ef58dee6ceabcf79ee4b2b2150a59d7bf366b05ad4efa0aaaa0d
+Size: 54432
+MD5Sum: 63407d30bfdaebed1ed128b2b3c9df23
+SHA256sum: c3be596d6f2c1cceac2b4723a21dd59ad12db2b9ee799221c00c6a832b08799a
 Description:  Kernel module for NTFS filesystem support
 
 Package: kmod-fs-vfat
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 37993
+Installed-Size: 37909
 Filename: kmod-fs-vfat_3.18.45-1_ramips_24kec.ipk
-Size: 38799
-MD5Sum: 2c1bea22630d65025111eed605b87980
-SHA256sum: fd3e237486ba388728de09a8e62aa1b1327ac076da15a3b04bcf5cc76ba0dfeb
+Size: 38684
+MD5Sum: 79ec2d40965ddb1a081b4d9c22fbd5df
+SHA256sum: dd623e7bc213ab38b37de46d679507a39c5c98c5cf57baf511bfd5c7c0ee850d
 Description:  Kernel module for VFAT filesystem support
 
 Package: kmod-fs-xfs
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-fs-exportfs, kmod-lib-crc32c
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-fs-exportfs, kmod-lib-crc32c
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 271972
+Installed-Size: 271700
 Filename: kmod-fs-xfs_3.18.45-1_ramips_24kec.ipk
-Size: 271762
-MD5Sum: ac392f4973a2ff9b9d4f7eefa6e12781
-SHA256sum: edc8deecf5919f25c8e26c865583faaba39520f9eeaf9bbbb5ce51b682a3b1da
+Size: 271461
+MD5Sum: 1281df9506c969633ba48d7b8cc049b9
+SHA256sum: 1d2acca8da3643f964ed93cd2f1c436012cc1850ec829aa3b1027a4104bf9b29
 Description:  Kernel module for XFS support
 
 Package: kmod-fuse
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 43537
+Installed-Size: 43533
 Filename: kmod-fuse_3.18.45-1_ramips_24kec.ipk
-Size: 44307
-MD5Sum: 8edb8716c7ff36f8e2bbd4290fa59de6
-SHA256sum: 33fdccebe0892dfcb2ebb898dc7f2f264c9ec0dac983af6a7b3ce4a56e4ef6b9
+Size: 44312
+MD5Sum: a678cc3e6414a7e974383e66c540e1f2
+SHA256sum: 972efe1dbb272c5d8e072e5b047f7c50b5c02a8ad7aef9088e779abee325d8f5
 Description:  Kernel module for userspace filesystem support
 
 Package: kmod-gigaset
@@ -2789,15 +2849,15 @@ Description:  This enables playing beeps through an GPIO-connected buzzer
 
 Package: kmod-gpio-button-hotplug
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/gpio-button-hotplug
 Section: kernel
 Architecture: ramips_24kec
-Installed-Size: 5399
+Installed-Size: 5216
 Filename: kmod-gpio-button-hotplug_3.18.45-1_ramips_24kec.ipk
-Size: 6344
-MD5Sum: 85716a7364cab6e7634010b8bdb42028
-SHA256sum: 3827b09ef9bbb8d4bd6600dee410c72e48f9e0604b15f38dc156c09628046772
+Size: 6171
+MD5Sum: c2219e00d9836cdbe213887e5f1aa4fe
+SHA256sum: 0ff75c9ae88f713c845952a470ef779505d0b4180e12582da3ae290df2bdaf19
 Description:  This is a replacement for the following in-kernel drivers:
  1) gpio_keys (KEYBOARD_GPIO)
  2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
@@ -3850,17 +3910,17 @@ Description:  Netfilter IPv6 extra header matching modules
 
 Package: kmod-ip6tables
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nf-ipt6, kmod-ipt-core, kmod-ipt-conntrack
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nf-ipt6, kmod-ipt-core, kmod-ipt-conntrack
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 8876
+Installed-Size: 7983
 Filename: kmod-ip6tables_3.18.45-1_ramips_24kec.ipk
-Size: 9717
-MD5Sum: 2d8393a44526218c4f00063825e7f1aa
-SHA256sum: bd26e151bdeaa0cb1b61df4931c41e02e036229bc80754909c7ef85c79f2523b
+Size: 8828
+MD5Sum: e7feca83c0ca376dc14553e0c0576703
+SHA256sum: 24b1c2a6e60edf86d096046e69beb3f9cbd4e18eef6ca08b23388b716035105a
 Description:  Netfilter IPv6 firewalling support
 
 Package: kmod-ipip
@@ -4091,17 +4151,17 @@ Description:  Netfilter (IPv4) extra kernel modules for connection tracking
 
 Package: kmod-ipt-conntrack
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-ipt-core, kmod-nf-conntrack
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-ipt-core, kmod-nf-conntrack
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 4698
+Installed-Size: 4706
 Filename: kmod-ipt-conntrack_3.18.45-1_ramips_24kec.ipk
-Size: 5552
-MD5Sum: 86307fc5b24471020c4ab5ba446c13c7
-SHA256sum: f2c4cb99150f5c1e84276683c3794a044373b8be244277c593fbca22aa1c3cc7
+Size: 5560
+MD5Sum: 411e0353b3be1f84c268dd52b20d8266
+SHA256sum: bdbbe73d74ac459cceba957e67089dc7402e6c72be539441ebbb38a523139a13
 Description:  Netfilter (IPv4) kernel modules for connection tracking
  Includes:
  - conntrack
@@ -4112,17 +4172,17 @@ Description:  Netfilter (IPv4) kernel modules for connection tracking
 
 Package: kmod-ipt-core
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nf-ipt
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nf-ipt
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 17626
+Installed-Size: 16257
 Filename: kmod-ipt-core_3.18.45-1_ramips_24kec.ipk
-Size: 18553
-MD5Sum: 7f7cf3de472ceb81bd8b540744a0addc
-SHA256sum: 7e1e55769f716491d9793b73bf198a09a9be1ac5b6999337f05049c68cdcdbd0
+Size: 17166
+MD5Sum: 2b2ac5fef84757ce734df4e70e6511d8
+SHA256sum: 550f52d8341da3e9a6ba7843b7f21a45d28e1fce63f896407f7294e775fc4c54
 Description:  Netfilter core kernel modules
  Includes:
  - comment
@@ -4509,17 +4569,17 @@ Description:  Netfilter (IPv6) kernel modules for NAT targets
 
 Package: kmod-ipt-nat
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-ipt-core, kmod-nf-nat
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-ipt-core, kmod-nf-nat
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 4457
+Installed-Size: 4015
 Filename: kmod-ipt-nat_3.18.45-1_ramips_24kec.ipk
-Size: 5328
-MD5Sum: f837e99c1d4f69ece4f4869f27853f32
-SHA256sum: 46c387d203d3239f79ca6e24e31e056a82f893d74ced16a2ad150dac6179e2d2
+Size: 4878
+MD5Sum: 1570330440da7fbe5ce16503cb4287b3
+SHA256sum: c0a6fd41026e016a276b1b7498092b57ed979d4302e7b2b22433ea1a05364d7e
 Description:  Netfilter (IPv4) kernel modules for basic NAT targets
  Includes:
  - MASQUERADE
@@ -4742,17 +4802,17 @@ Description:  Kernel module for generic IP tunnel support
 
 Package: kmod-ipv6
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 165160
+Installed-Size: 156209
 Filename: kmod-ipv6_3.18.45-1_ramips_24kec.ipk
-Size: 165240
-MD5Sum: a997f50c79c43d4dbdbdfc19a62b916f
-SHA256sum: b2de549d66765ffebaf64905b4db9e5bc63047c954779cf92e78b79ced9fc795
+Size: 156405
+MD5Sum: 6d99180cd405ac05e029ea52ab068445
+SHA256sum: e0cd8c297540b003c7007a324f620cb7e27e78dca319a3e4818e424778168643
 Description:  Kernel modules for IPv6 support
 
 Package: kmod-ipvti
@@ -4935,17 +4995,17 @@ Description:  Kernel modules for L2TP V3 Support
 
 Package: kmod-leds-gpio
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2757
+Installed-Size: 2758
 Filename: kmod-leds-gpio_3.18.45-1_ramips_24kec.ipk
-Size: 3552
-MD5Sum: 35ae6a95293b28e49aeb23ffd64a7a04
-SHA256sum: e2a21b8c1d17ece0e9f20e917613dd2a0f02add6614376441fe3c03390ad299c
+Size: 3551
+MD5Sum: 308dbef3b09ad2d6f0ed4dbfb7a6b6f9
+SHA256sum: a20eb0fad2fdf76d3cfbcefe7d266fa3c96e2be976b005ff447c9b7ee190c918
 Description:  Kernel module for LEDs on GPIO lines
 
 Package: kmod-leds-pca963x
@@ -5107,17 +5167,17 @@ Description:  Kernel module that allows LEDs one time activation of a transient 
 
 Package: kmod-ledtrig-usbdev
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-usb-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-usb-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2132
+Installed-Size: 2128
 Filename: kmod-ledtrig-usbdev_3.18.45-1_ramips_24kec.ipk
-Size: 2992
-MD5Sum: 0679b49e44643bee02e7a7c32deda536
-SHA256sum: 22f3ccfc39330bf70c7322ea50acb5e80c99c573644c506eaf18692d3a0e73ee
+Size: 2988
+MD5Sum: df1b0dc47e9b89168df05a7d8f1cf4e9
+SHA256sum: 5b34a9c8bbf3b2735f5fb6329635009dda17108c4b2975ea737067cacfb711e0
 Description:  Kernel module to drive LEDs based on USB device presence/activity
 
 Package: kmod-lib-cordic
@@ -5137,62 +5197,62 @@ Description:  Kernel module for Cordic function support
 
 Package: kmod-lib-crc-ccitt
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1354
+Installed-Size: 1350
 Filename: kmod-lib-crc-ccitt_3.18.45-1_ramips_24kec.ipk
-Size: 2179
-MD5Sum: 775c0891e5105ab5f33e8de61d3e3a47
-SHA256sum: fdf887995686a40da32fb0afbec9640e1734e0aeaaa3cca7babf46fb2497b470
+Size: 2178
+MD5Sum: aa22309a26c85278fb7c0ec3d962f3dd
+SHA256sum: 64362e3a5cfaaffa708f46139ea3eb155ac57dbe77baff887715444179ae1ca3
 Description:  Kernel module for CRC-CCITT support
 
 Package: kmod-lib-crc-itu-t
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1356
+Installed-Size: 1360
 Filename: kmod-lib-crc-itu-t_3.18.45-1_ramips_24kec.ipk
-Size: 2182
-MD5Sum: 091619b65dc0329c4830b8350f0f31cd
-SHA256sum: bc94f52353215ebd6f0f6b7a7d5d594cf3a9b22f80d947f2bdc6e5b7085618e1
+Size: 2194
+MD5Sum: 65dd36281ef52d55ee5e3cb510ea34aa
+SHA256sum: 9fa9354d9b40dd54419182eca4bb5c8f362d0af42e43fa9b1759c09d4a3c9fdc
 Description:  Kernel module for CRC ITU-T V.41 support
 
 Package: kmod-lib-crc16
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1311
+Installed-Size: 1314
 Filename: kmod-lib-crc16_3.18.45-1_ramips_24kec.ipk
-Size: 2135
-MD5Sum: f9aa2ed2ca1a32639cecc5d35b9d0b53
-SHA256sum: 0fd1cb7f4c92f05add4c02716a530f084224fe737fbed3a10be71a969d70c1ba
+Size: 2141
+MD5Sum: 7904e0b0c2c581ae915000d982d151bf
+SHA256sum: cda1cb3099f51b6d7935da669ab8aa2aa78e8c95b3f878fa373592d6ea25bb89
 Description:  Kernel module for CRC16 support
 
 Package: kmod-lib-crc32c
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-crypto-crc32c
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-crypto-crc32c
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1023
+Installed-Size: 1024
 Filename: kmod-lib-crc32c_3.18.45-1_ramips_24kec.ipk
-Size: 1848
-MD5Sum: 542ac76a0963ef9d159284f088edb129
-SHA256sum: 28d2b0bbde577ef8b2870e3bbf1a57813958b1043828398bfab5d7074184e164
+Size: 1847
+MD5Sum: ae9718b86c196c3f7106ddd03f00e181
+SHA256sum: 9a4c30190dec9dd85160b7b05b7a47e9a08219fc259f8f9fe07fa4debf921454
 Description:  Kernel module for CRC32 support
 
 Package: kmod-lib-crc7
@@ -5242,7 +5302,7 @@ Description:  Kernel module for LZ4 compression/decompression support
 
 Package: kmod-lib-lzo
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -5250,24 +5310,24 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 2807
 Filename: kmod-lib-lzo_3.18.45-1_ramips_24kec.ipk
-Size: 3617
-MD5Sum: b198aa03356514288c702c5f20c0c609
-SHA256sum: 7488a7b55c0b62a1a32ebbfd7007aa1af67ad96b64bad560d269a8db501f21f3
+Size: 3604
+MD5Sum: cdba14bde6562c2d10c8f18d6e401621
+SHA256sum: bc804ea8201963e8e49638f36acef199378b087fa03d886e3d3d566e9b4f03af
 Description:  Kernel module for LZO compression/decompression support
 
 Package: kmod-lib-raid6
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 73885
+Installed-Size: 73888
 Filename: kmod-lib-raid6_3.18.45-1_ramips_24kec.ipk
-Size: 74748
-MD5Sum: 9e75dd1fe502f00609e04ffd9c436e1f
-SHA256sum: 9fcf71a8eb362c3cab19682d14d7b3712e74b28858d5a8bb1663e2ea55d51c84
+Size: 74743
+MD5Sum: 289b8841abd843f1ed43717643a33566
+SHA256sum: 46ef1d1f7639ee91a5ad897d1f388c31049da75bd4c430658d21f57d2f459231
 Description:  Kernel module for RAID6 algorithms
 
 Package: kmod-lib-textsearch
@@ -5287,32 +5347,32 @@ Description:  Textsearch support
 
 Package: kmod-lib-xor
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 3057
+Installed-Size: 3059
 Filename: kmod-lib-xor_3.18.45-1_ramips_24kec.ipk
-Size: 3790
-MD5Sum: 1892e288a98fbb20763472575e22e69e
-SHA256sum: 0895e342d94529d5e4f9e17912c65bb6bd6d83e59a3623949daab4ee55bf2987
+Size: 3791
+MD5Sum: 27ec38dd0adab3e58ac9392dedbe472f
+SHA256sum: c45ee22821193140e25e50315e77e6e40cf7d8d20ba6915613fe63b2a7afc14d
 Description:  Kernel module for XOR blocks algorithms
 
 Package: kmod-lib-zlib
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 17350
+Installed-Size: 17356
 Filename: kmod-lib-zlib_3.18.45-1_ramips_24kec.ipk
-Size: 18122
-MD5Sum: 8ea7e3eca54e38223249bd5c33856fa0
-SHA256sum: 873e980933179df9d882fd221bfa69ec19bdd0e40b93b0128bab07d02c0d54b5
+Size: 18135
+MD5Sum: 40cb2d50360cbe92cf3e2418c6cfea04
+SHA256sum: 79d638a4429307ff8fb1a3e17d224f905349a49d1cdfb545fad871cb19a9881d
 Description:  Zlib support
 
 Package: kmod-lib80211
@@ -5451,16 +5511,16 @@ Description:  mac80211 HW simulation device
 
 Package: kmod-mac80211
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-cfg80211, hostapd-common, kmod-crypto-core, kmod-crypto-arc4
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-cfg80211, hostapd-common, kmod-crypto-core, kmod-crypto-arc4
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 229959
+Installed-Size: 229738
 Filename: kmod-mac80211_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 229413
-MD5Sum: bac58b1297b7c8c08cd45bce5b55c8fd
-SHA256sum: 455dc61ed4c9f6eec2f9898babf03a7e98cdee33d7768f8f515881a759918320
+Size: 229127
+MD5Sum: af0d24b81959634ef96fd57d92834f54
+SHA256sum: 86bf1a14c05615360f9985976fdcfd4c611c3093bf31bbd02994a369e0b921fc
 Description:  Generic IEEE 802.11 Networking Stack (mac80211)
 
 Package: kmod-macvlan
@@ -5894,62 +5954,62 @@ Description:  Kernel modules support for a netlink-based connection tracking
 
 Package: kmod-nf-conntrack6
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-ipv6, kmod-nf-conntrack
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-ipv6, kmod-nf-conntrack
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 11460
+Installed-Size: 8845
 Filename: kmod-nf-conntrack6_3.18.45-1_ramips_24kec.ipk
-Size: 12299
-MD5Sum: c6e3dcaad17555ce3de2a5342a306a43
-SHA256sum: cd2425b7b13c014c0c111f91436110bed0cfdc25929d30cc0523c1f3b6aeb40b
+Size: 9679
+MD5Sum: 3955508bb261cac0da78075c4860d874
+SHA256sum: 3d28fb782157978daf7eddfb972aa17eb0686bd6f0207154f5786c2483a186e8
 Description:  Netfilter IPv6 connection tracking
 
 Package: kmod-nf-conntrack
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 42303
+Installed-Size: 36958
 Filename: kmod-nf-conntrack_3.18.45-1_ramips_24kec.ipk
-Size: 43111
-MD5Sum: d11681c5db498820d886190564a050ff
-SHA256sum: f2a7c959edbfe35740b79f45b92343b70d9d2e2d2ff0f5bc4aa7899d80e1a131
+Size: 37820
+MD5Sum: 6dca9b4322c7b2159e988c70ea8d2ff2
+SHA256sum: 817121c2390f4cafdf8c8bc288a8bd341955a338110be6b3aee6b21838eee844
 Description:  Netfilter connection tracking
 
 Package: kmod-nf-ipt6
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nf-ipt, kmod-nf-conntrack6
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nf-ipt, kmod-nf-conntrack6
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 7793
+Installed-Size: 7558
 Filename: kmod-nf-ipt6_3.18.45-1_ramips_24kec.ipk
-Size: 8607
-MD5Sum: b54262e807eb68b33509e5c24f92d5f7
-SHA256sum: a88a83b20d031e52eaebdc2cbee4d5094f509fe1d0be08fc43dcad8f09209abb
+Size: 8373
+MD5Sum: a85624fcac227c188061a9bbe428b637
+SHA256sum: 7d5bc3a4e33f45e8f7cb9090b47adec3a12773c974778197eff8b8e7bc421584
 Description:  Ip6tables core
 
 Package: kmod-nf-ipt
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 15886
+Installed-Size: 14899
 Filename: kmod-nf-ipt_3.18.45-1_ramips_24kec.ipk
-Size: 16640
-MD5Sum: c2d6d6d0286ca8c705f43ec575da0119
-SHA256sum: 1870536b867987005466bc9ac5a88eb30b3e1d863fbe0592ceccac9078b7f7b3
+Size: 15661
+MD5Sum: 4b78d9d905f53eda8d036fbf10d38cad
+SHA256sum: 7f53962d53884505200e4b9805af97ae1a78c660bfea516c5e8047f851bd7c64
 Description:  Iptables core
 
 Package: kmod-nf-nat6
@@ -5969,17 +6029,17 @@ Description:  Netfilter IPV6-NAT
 
 Package: kmod-nf-nat
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nf-conntrack, kmod-nf-ipt
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nf-conntrack, kmod-nf-ipt
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 11694
+Installed-Size: 10000
 Filename: kmod-nf-nat_3.18.45-1_ramips_24kec.ipk
-Size: 12509
-MD5Sum: dc6207a614c2d79ccbae0aadde617d4b
-SHA256sum: 3c2c1ac96157ee54cd4362a948afec2d4ea8b9caa283f62f1ef6a89f1d07e467
+Size: 10850
+MD5Sum: c0d56ac5a463dab8c39f4526bdc7b09a
+SHA256sum: a3114e287da18e7ca8aaf8b748698f687827badceaf829a58e1434d0432aa533
 Description:  Netfilter NAT
 
 Package: kmod-nf-nathelper-extra
@@ -6008,17 +6068,17 @@ Description:  Extra Netfilter (IPv4) Conntrack and NAT helpers
 
 Package: kmod-nf-nathelper
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nf-nat
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nf-nat
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 7566
+Installed-Size: 5326
 Filename: kmod-nf-nathelper_3.18.45-1_ramips_24kec.ipk
-Size: 8410
-MD5Sum: a06d3afbc1d43f5206bfa6b6e0794afb
-SHA256sum: 432143f0fbd4eef1c402f42c756563e5ae3c1281aeb40b6f79156e081c044157
+Size: 6186
+MD5Sum: b53fb43dd4eb6c1bb9331975e3dfcd50
+SHA256sum: 19dd53a7a916242b94daa04868de2609862f6f15ecd98b8c08a0ae048addc4b2
 Description:  Default Netfilter (IPv4) Conntrack and NAT helpers
  Includes:
  - ftp
@@ -6121,17 +6181,17 @@ Description:  Netfilter nf_tables NAT support
 
 Package: kmod-nls-base
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 3146
+Installed-Size: 3145
 Filename: kmod-nls-base_3.18.45-1_ramips_24kec.ipk
-Size: 3890
-MD5Sum: 4598b3da215d3577366bec3e23c82d4c
-SHA256sum: ee00dc55e4e7fd7a39aa4eab917b19a612fa5007be1e940a750859ee012c71c5
+Size: 3888
+MD5Sum: 41c981dc6390a0c5fd619d040b951add
+SHA256sum: 1117f1a6d257800b331649df259acdc821c004b8f683eb3514c3e00964ff48aa
 Description:  Kernel module for NLS (Native Language Support)
 
 Package: kmod-nls-cp1250
@@ -6166,17 +6226,17 @@ Description:  Kernel module for NLS Codepage 1251 (Russian)
 
 Package: kmod-nls-cp437
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2094
+Installed-Size: 2099
 Filename: kmod-nls-cp437_3.18.45-1_ramips_24kec.ipk
-Size: 2924
-MD5Sum: 1ae68671422d6f194929ff5483ca476a
-SHA256sum: 7ecae7c98a28bbd8eb14f0cee0e05550ec8ff914dee134046a661eb1aa459874
+Size: 2917
+MD5Sum: 44a394297e6ad9ec0ae54f01337da6d5
+SHA256sum: 41dd877930e109cdbf018d112372bec2f86bd17330190224b161d7dea91b796d
 Description:  Kernel module for NLS Codepage 437 (United States, Canada)
 
 Package: kmod-nls-cp775
@@ -6196,17 +6256,17 @@ Description:  Kernel module for NLS Codepage 775 (Baltic Rim)
 
 Package: kmod-nls-cp850
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 2048
+Installed-Size: 2047
 Filename: kmod-nls-cp850_3.18.45-1_ramips_24kec.ipk
-Size: 2869
-MD5Sum: 10b30a89c8aae011f385b5596a06bb62
-SHA256sum: bd68c25d6ed720e33463a47f1c9913a33a598ba35877e515bc9603fb06799b72
+Size: 2863
+MD5Sum: f4491e1bb46d3537616a6c1a4bd516fb
+SHA256sum: 15cfba20b8b3874796d848f646dc4bd328269ab7ad99f3e6eee0dc4de67575eb
 Description:  Kernel module for NLS Codepage 850 (Europe)
 
 Package: kmod-nls-cp852
@@ -6316,7 +6376,7 @@ Description:  Kernel module for NLS ISO 8859-15 (Latin 9)
 
 Package: kmod-nls-iso8859-1
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -6324,9 +6384,9 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 1721
 Filename: kmod-nls-iso8859-1_3.18.45-1_ramips_24kec.ipk
-Size: 2556
-MD5Sum: 6ee6990bcf794976fc696909461b7ec0
-SHA256sum: e4f2cb9f6e1530854a16e9a4bba30f7679706aae3eb64108e2936b7ee042ec3a
+Size: 2564
+MD5Sum: 5dff52ec88da0ae95961b07946738f54
+SHA256sum: 967c462c9a37679a0e1da2e546cece19b3d697b7b74aeb407e00385384b8d492
 Description:  Kernel module for NLS ISO 8859-1 (Latin 1)
 
 Package: kmod-nls-iso8859-2
@@ -6391,17 +6451,17 @@ Description:  Kernel module for NLS KOI8-R (Russian)
 
 Package: kmod-nls-utf8
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1012
+Installed-Size: 1014
 Filename: kmod-nls-utf8_3.18.45-1_ramips_24kec.ipk
-Size: 1828
-MD5Sum: e35dda6f98b71d5e4bc449d7d81f13c1
-SHA256sum: b2af9625789612ac49740c94db9921731b7ce6078d8e9e8a3e9106c083bbc635
+Size: 1833
+MD5Sum: b7ebd1ea061f45268f4136aa52494d0b
+SHA256sum: cd0a783ca14f10c09edd108124a6ed9d4ec861af70bce4495c34b45634f39253
 Description:  Kernel module for NLS UTF-8
 
 Package: kmod-of-mdio
@@ -6524,17 +6584,17 @@ Description:  Kernel modules for PPP sync tty support
 
 Package: kmod-ppp
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-lib-crc-ccitt, kmod-slhc
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-lib-crc-ccitt, kmod-slhc
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 20327
+Installed-Size: 20321
 Filename: kmod-ppp_3.18.45-1_ramips_24kec.ipk
-Size: 21157
-MD5Sum: dc98e272dce139ae54c499dcf1adbcad
-SHA256sum: 643c9be040e30eae9ad4461cd4335eed0d96eaa7a67b5e38d813c7c72aa27990
+Size: 21140
+MD5Sum: 004e4fbf97e096e4a248217cdca8f11b
+SHA256sum: 7f3128b0e0b356a8ddfc82e197418d44e7a8dc6b3fa544718c5806c13dea71e0
 Description:  Kernel modules for PPP support
 
 Package: kmod-pppoa
@@ -6554,17 +6614,17 @@ Description:  Kernel modules for PPPoA (PPP over ATM) support
 
 Package: kmod-pppoe
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-ppp, kmod-pppox
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-ppp, kmod-pppox
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 6479
+Installed-Size: 6467
 Filename: kmod-pppoe_3.18.45-1_ramips_24kec.ipk
-Size: 7341
-MD5Sum: a05f987fad51d5c76a031afd2f0c3859
-SHA256sum: 552735502ab3ebc56a0f9345d0bd987da08c8af497010d32d3a34891b8d0c41f
+Size: 7334
+MD5Sum: 99d6ad408c3bb7eb6b5623c7530bb6e2
+SHA256sum: 3983175e7382c785f43ab5bf4859c041e733dd72cd1ee14e3978c8aba305c326
 Description:  Kernel module for PPPoE (PPP over Ethernet) support
 
 Package: kmod-pppol2tp
@@ -6584,17 +6644,17 @@ Description:  Kernel modules for PPPoL2TP (PPP over L2TP) support
 
 Package: kmod-pppox
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-ppp
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-ppp
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 1592
+Installed-Size: 1591
 Filename: kmod-pppox_3.18.45-1_ramips_24kec.ipk
-Size: 2362
-MD5Sum: 454bfa74a41ed31be01a54e288ab3788
-SHA256sum: 9538f11239a7ec0f0316d13366a6b010ca460f4789c9109ac11e959580a40d2b
+Size: 2358
+MD5Sum: b3925c219a9ab7b9685dcaa09b3e2a65
+SHA256sum: c1dd2db1fdd490d2377098d7434e27272c5a7c76b0c5b17bf0bb470ff2d39582
 Description:  Kernel helper module for PPPoE and PPTP support
 
 Package: kmod-pps-gpio
@@ -6779,58 +6839,58 @@ Description:  Ralink Drivers for RT2x00 cards (RT2500 USB)
 
 Package: kmod-rt2800-lib
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2x00-lib, kmod-lib-crc-ccitt
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2x00-lib, kmod-lib-crc-ccitt
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 39423
+Installed-Size: 38306
 Filename: kmod-rt2800-lib_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 39418
-MD5Sum: bdea119867f698d3b1118343a66c1655
-SHA256sum: ff5e690dcb09cfe7d657a6d32a309e76b43fad017a0157f0b5fd114a39f9843a
+Size: 38389
+MD5Sum: 05bc8b1a8406523e29627f8931156137
+SHA256sum: 4262aa0d5472e24f32a54181ba36a82a4e382e946dcad9dac83a1d04bfa433eb
 Description:  Ralink Drivers for RT2x00 cards (rt2800 LIB)
 
 Package: kmod-rt2800-mmio
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2800-lib, kmod-rt2x00-mmio
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2800-lib, kmod-rt2x00-mmio
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4233
+Installed-Size: 4235
 Filename: kmod-rt2800-mmio_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 5001
-MD5Sum: 7df313ec6a27a0df0ee62ad17053d017
-SHA256sum: 012459a9fda912bfded91e6478bb43fdb8382847a20de931a15d216660a4a5cf
+Size: 5002
+MD5Sum: 7fc8f56c5f8a7d22e7513d91bc458d91
+SHA256sum: 83bce052688276f2164183193e7b360d3b08049fae4c1ace0c679f5c453d5665
 Description:  Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx MMIO)
 
 Package: kmod-rt2800-pci
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2x00-pci, kmod-rt2800-lib, kmod-rt2800-mmio, rt2800-pci-firmware
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2x00-pci, kmod-rt2800-lib, kmod-rt2800-mmio, rt2800-pci-firmware
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 3654
+Installed-Size: 3655
 Filename: kmod-rt2800-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 4518
-MD5Sum: 0d90c3b426dbfd746d23564832cb8d41
-SHA256sum: 929a3ce129fcdd91d8f06b1fd2c86d000edf34268e1c07c454963fd160f5bc67
+Size: 4514
+MD5Sum: c200411ab68f6559bc573a43513eb208
+SHA256sum: 7050474f7f0664552b5ba8d152f51a8f5d12c1884c577d43567b4eb4cc683725
 Description:  Ralink Drivers for RT2x00 cards (RT2860 PCI)
 
 Package: kmod-rt2800-soc
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2800-mmio, kmod-rt2800-lib
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2800-mmio, kmod-rt2800-lib
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 4007
+Installed-Size: 4004
 Filename: kmod-rt2800-soc_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 4857
-MD5Sum: 66f290ec1d05204a5a01d23c026038f1
-SHA256sum: 0b682a16484cad9836fd9b91063c6550eb020b8a90cda719ee8d6d1929a01108
+Size: 4851
+MD5Sum: 7fb37431a7dc6739199c9237f3cec378
+SHA256sum: e13d0d1b6fe4e8b801925acb0e4387423cbdb4136fde851c8d3c6618a45551e2
 Description:  Ralink Drivers for RT2x00 cards (RT28xx/RT3xxx SoC)
 
 Package: kmod-rt2800-usb
@@ -6849,35 +6909,35 @@ Description:  Ralink Drivers for RT2x00 cards (RT2870 USB)
 
 Package: kmod-rt2x00-lib
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-mac80211, kmod-lib-crc-itu-t
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-mac80211, kmod-lib-crc-itu-t
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 21334
+Installed-Size: 20846
 Filename: kmod-rt2x00-lib_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 22063
-MD5Sum: 863a68c604ef45e1efd802399e149a7e
-SHA256sum: 89f7d18ed85b20413c9ea5abccf10507f611b35e52ba7998f5d49b0a916630f2
+Size: 21577
+MD5Sum: ae71e38830842f628742578d62319919
+SHA256sum: 016b4960139c546a39c22c1d48f29c248f8b8fad0b208c72fd8624407b6eb402
 Description:  Ralink Drivers for RT2x00 cards (LIB)
 
 Package: kmod-rt2x00-mmio
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2x00-lib, kmod-eeprom-93cx6
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2x00-lib, kmod-eeprom-93cx6
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
 Installed-Size: 1921
 Filename: kmod-rt2x00-mmio_3.18.45+2016-01-10-1_ramips_24kec.ipk
-Size: 2722
-MD5Sum: 1fb46be7e169254ea60a2977dfced66a
-SHA256sum: 045a17fa4b33c2f18209b3992cfd187c807e57519d404d40c680b5029c0e16fb
+Size: 2720
+MD5Sum: fdf3c0a7b53c5ba061488e297ed42b9b
+SHA256sum: c81bdaa01e4b1ac4fa8cbec1de087be1166eba76f340e41fc96f45f00eb3f13f
 Description:  Ralink Drivers for RT2x00 cards (MMIO)
 
 Package: kmod-rt2x00-pci
 Version: 3.18.45+2016-01-10-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-rt2x00-mmio, kmod-rt2x00-lib
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-rt2x00-mmio, kmod-rt2x00-lib
 Source: package/kernel/mac80211
 Section: kernel
 Maintainer: Felix Fietkau <nbd@openwrt.org>
@@ -6885,8 +6945,8 @@ Architecture: ramips_24kec
 Installed-Size: 1732
 Filename: kmod-rt2x00-pci_3.18.45+2016-01-10-1_ramips_24kec.ipk
 Size: 2587
-MD5Sum: eacfd6094477b300032a691fa3a06e10
-SHA256sum: 709e9a0c4d2b301582988554e9ababc6453e5eece01a591a15d42372e77112c5
+MD5Sum: 5de5f21e2b0e57d4be8c452b5a235278
+SHA256sum: 144699f4817831d4e419d68898bbed9d945bb072aa22e09d27268ed821906ae4
 Description:  Ralink Drivers for RT2x00 cards (PCI)
 
 Package: kmod-rt2x00-usb
@@ -7182,17 +7242,17 @@ Description:  Kernel support for CD / DVD drives
 
 Package: kmod-scsi-core
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e)
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526)
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 77001
+Installed-Size: 76921
 Filename: kmod-scsi-core_3.18.45-1_ramips_24kec.ipk
-Size: 77436
-MD5Sum: a11e9ee937e8f9d7d1585032d0b0fca2
-SHA256sum: 51dae4db3756e48677866d0623f38d04ce6c5d4fae47210e212fbaff07153936
+Size: 77389
+MD5Sum: fccd2daedafa55b2cbe40bd7193acca2
+SHA256sum: f108fa1af5cdefcacae1ba4b6c9cb7c7b6d8bf57db7626cc8b1dbd6f48f2cb5e
 Description:  SCSI device support
 
 Package: kmod-scsi-generic
@@ -7353,17 +7413,17 @@ Description:  This driver supports Gigabit Ethernet adapters based on the
 
 Package: kmod-slhc
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-lib-crc-ccitt
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-lib-crc-ccitt
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 3379
+Installed-Size: 3383
 Filename: kmod-slhc_3.18.45-1_ramips_24kec.ipk
-Size: 4153
-MD5Sum: 8214d1936a76d7a2283190dc0abd2519
-SHA256sum: bbb5be673197f9b2d6da918a702ff11e97c15369ea53fd7f8cd135522b4f9d16
+Size: 4159
+MD5Sum: 0b47f1f825477b967d27f242aa1dfe8f
+SHA256sum: ef5f917f125a66ccea852b6822b2ae8e09ecf3baa8a927b017b5003805ea122a
 Description:  Serial Line Header Compression
 
 Package: kmod-slip
@@ -7898,17 +7958,17 @@ Description:  Kernel support for CM109 VOIP phone
 
 Package: kmod-usb-core
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-nls-base
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-nls-base
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 86921
+Installed-Size: 76794
 Filename: kmod-usb-core_3.18.45-1_ramips_24kec.ipk
-Size: 87179
-MD5Sum: 5e37e2b42888e8de28c708fc7e187980
-SHA256sum: 11591ab6ef308aceb9b549b842b3d0e08f23e07046912f1217f2e6367722055d
+Size: 77319
+MD5Sum: cadf092f7eb0b6df10cebb994ce26a1a
+SHA256sum: 46fd47c6b1542cad28cf9bf9775a93148ec2bb42e6b05f3476ba44a6c18d96f9
 Description:  Kernel support for USB
 
 Package: kmod-usb-dwc2
@@ -8306,17 +8366,17 @@ Description:  Kernel support for PCI OHCI controllers
 
 Package: kmod-usb-ohci
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-usb-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-usb-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 24440
+Installed-Size: 19486
 Filename: kmod-usb-ohci_3.18.45-1_ramips_24kec.ipk
-Size: 25124
-MD5Sum: 4ce174a6238bd373c2af37e4171d9bbc
-SHA256sum: 4d5b7b868ff36d265e8f562f2ad75cc779067cebbfcc3cf7ee94c6c83fdb59b6
+Size: 20303
+MD5Sum: 134ce162afc4d811a3636d0a13bcdb3d
+SHA256sum: b293256ab822422dc0ea22f77c6bdbbd55bf203f0740625883fa721036b0baa3
 Description:  Kernel support for USB OHCI controllers
 
 Package: kmod-usb-printer
@@ -8667,7 +8727,7 @@ Description:  Kernel support for USB-to-Serial converters
 
 Package: kmod-usb-storage-extras
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-usb-storage
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-usb-storage
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
@@ -8675,25 +8735,25 @@ Status: unknown hold not-installed
 Architecture: ramips_24kec
 Installed-Size: 30101
 Filename: kmod-usb-storage-extras_3.18.45-1_ramips_24kec.ipk
-Size: 31028
-MD5Sum: 782dc0c2ecaa6f9735cff2f4c328dda5
-SHA256sum: 599d7e208845f9ab589142c1b54b2d7b8ef65d989b408e79b0eef11a82fb3ca1
+Size: 31018
+MD5Sum: 5ded5911459aab975063b43581c2b36b
+SHA256sum: 2f37948ec5e3232bc6eddc8b6241d4316ce5cddad143e3182e5fa96de528c198
 Description:  Say Y here if you want to have some more drivers,
  such as for SmartMedia card readers
 
 Package: kmod-usb-storage
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-scsi-core, kmod-usb-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-scsi-core, kmod-usb-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 22684
+Installed-Size: 21685
 Filename: kmod-usb-storage_3.18.45-1_ramips_24kec.ipk
-Size: 23138
-MD5Sum: e1f049c6f4ab027ab3496d8a59bf0184
-SHA256sum: 4b2341d6bccee3a2a6a0c1cb194da9386a9d297fb111cdee815d8c9f292f1404
+Size: 22064
+MD5Sum: d7da660f870b15afaed1962f3f731897
+SHA256sum: 12916707c8a56ef99a618ca133a3d0d5277022dd31b6524329ac0a3193741b0b
 Description:  Kernel support for USB Mass Storage devices
 
 Package: kmod-usb-uhci
@@ -8758,17 +8818,17 @@ Description:  Kernel support for PCI USB2 (EHCI) controllers
 
 Package: kmod-usb2
 Version: 3.18.45-1
-Depends: kernel (=3.18.45-1-e2427f4f017a3775c810e9aa6dfce49e), kmod-usb-core
+Depends: kernel (=3.18.45-1-d2ca1b54afbcc0087ac57f0fd48d7526), kmod-usb-core
 Source: package/kernel/linux
 License: GPLv2
 Section: kernel
 Status: unknown hold not-installed
 Architecture: ramips_24kec
-Installed-Size: 37363
+Installed-Size: 24192
 Filename: kmod-usb2_3.18.45-1_ramips_24kec.ipk
-Size: 38125
-MD5Sum: 5fc89f234e80062e779e86d40983c18d
-SHA256sum: 15b0588ddb3a72202f8eba53235210d3794ceccb36bea41c497e97f94eb796ae
+Size: 24967
+MD5Sum: e09907851d224876a5a6e25f0186a899
+SHA256sum: 52b473f817628cf570414f4e0da5b626b4813fb32a4ec968f3bc90e805787315
 Description:  Kernel support for USB2 (EHCI) controllers
 
 Package: kmod-usb3
@@ -9712,11 +9772,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 95100
+Installed-Size: 95106
 Filename: libblkid_2.25.2-4_ramips_24kec.ipk
-Size: 95899
-MD5Sum: ce30d5d1ae04234dc7833204310e0e1a
-SHA256sum: c297a495fdbbdb7d7a8fc7e44d79993c45fcb5d9911af80ddc33a3b6ebb63010
+Size: 95883
+MD5Sum: 84c66c1375e3b1d54be5ba70b6cee12d
+SHA256sum: f0b30abd2a372af5fa21845803bdf0669dcf688536a8561dd0fd95f554ca280b
 Description:  The libblkid library is used to identify block devices (disks) as to their
  content (e.g. filesystem type, partitions) as well as extracting additional
  information such as filesystem labels/volume names, partitions, unique
@@ -9786,11 +9846,11 @@ LicenseFiles: COPYING
 Section: libs
 Maintainer: Imre Kaloz <kaloz@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 103026
+Installed-Size: 103890
 Filename: libcurl_7.40.0-3.2_ramips_24kec.ipk
-Size: 103676
-MD5Sum: 33e8f317e4b828f6768830a808043e4c
-SHA256sum: 781e0773ad31f72ebbf7d49344c1d2a691d70894ae00a2516161ca81b9c40f93
+Size: 104593
+MD5Sum: 547f377514051529375f546d0aa39d76
+SHA256sum: 7bb3d6d5360c53d21ef036b16f6b7946d2c9d057fe0858b339ace0ff1bbd5c91
 Description:  A client-side URL transfer library
 
 Package: libertas-sdio-firmware
@@ -9930,11 +9990,11 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 16842
+Installed-Size: 16843
 Filename: libip4tc_1.4.21-1_ramips_24kec.ipk
-Size: 17515
-MD5Sum: 7353ea85bed5b8136285b9a0a97b8ca7
-SHA256sum: 1cb1fec7ff036d3b39c69cf65c28f1cbc53cbd6c1fe792ebd7bc69407c40245f
+Size: 17506
+MD5Sum: 21e2bb9b8f82c3887a99a886e0abb2bb
+SHA256sum: 65a05f110d4702de4db19cf57b7cd702e4e7e260d64ac64503a0039be8dd532a
 Description:  IPv4 firewall - shared libiptc library
 
 Package: libip6tc
@@ -9944,11 +10004,11 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 10962
+Installed-Size: 16699
 Filename: libip6tc_1.4.21-1_ramips_24kec.ipk
-Size: 11703
-MD5Sum: 2441ed97eaeb4184101c881e5355cc39
-SHA256sum: 6d229c7cb035e57a626d68797cb9ffe52227b3353ea0ca6761b36fe7a5dcae7e
+Size: 17384
+MD5Sum: ebfbce44aae91ef1c739690cd5b4f23a
+SHA256sum: 7627cf4816f53ac19946f746302d6cb9dae4ca718bc7d45b6b8a08736ed44674
 Description:  IPv6 firewall - shared libiptc library
 
 Package: libiwinfo-lua
@@ -10014,6 +10074,21 @@ MD5Sum: 2a74b2e6a42c5054604e24f445a63e89
 SHA256sum: c54ec4d42140d5f0ac93d7f15bfca3f57564377b94f3c96e4c6a0e4f683ac1ec
 Description:  Minimalistic JSON based scripting engine
 
+Package: libltdl
+Version: 2.4-1
+Depends: libc
+Source: package/libs/libtool
+License: GPL-2.0+
+LicenseFiles: COPYING
+Section: libs
+Architecture: ramips_24kec
+Installed-Size: 13093
+Filename: libltdl_2.4-1_ramips_24kec.ipk
+Size: 13797
+MD5Sum: af9ac1efb8a124c57b7d6a869220c03c
+SHA256sum: 5dd7b2a380ae7ff2e92a46dfceb1cb71c3a234c30f82a4755a1cd41df20b6558
+Description:  A generic dynamic object loading library
+
 Package: liblua
 Version: 5.1.5-1
 Depends: libc
@@ -10056,11 +10131,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 94455
+Installed-Size: 94462
 Filename: libmount_2.25.2-4_ramips_24kec.ipk
-Size: 95250
-MD5Sum: 3237cef9cca9fc77f83022b2c5bdae86
-SHA256sum: 73fcb50558f77bae64876971a48de9bfbbe535f653bec7f28cc6175e410ebdf5
+Size: 95272
+MD5Sum: 3eb2a35f71f83f2a9363bd4315a7cbcf
+SHA256sum: 0cbb23f3f221c9ced14c10332a89a006b67a09143a70f68a83c186130b0c4135
 Description:  The libmount library is used to parse /etc/fstab, /etc/mtab and
  /proc/self/mountinfo files, manage the mtab file, evaluate mount options...
 
@@ -10117,11 +10192,11 @@ License: OpenSSL
 LicenseFiles: LICENSE
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 636999
+Installed-Size: 678048
 Filename: libopenssl_1.0.2j-1_ramips_24kec.ipk
-Size: 631820
-MD5Sum: 3ad7222f4809acf7f05441ad47419c12
-SHA256sum: 03e81397e8df2b059e87edcb69ca41f73640ccbfbcf2296a53559b7df1959496
+Size: 672227
+MD5Sum: f0ae102f79286a6f0af7760d3366e7e4
+SHA256sum: 8934491de8a47fe44587f32106ac2fb649188b102c4243c55de1cf4d6935ab56
 Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  commercial-grade, full-featured, and Open Source toolkit implementing the Secure
  Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
@@ -10235,11 +10310,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 48433
+Installed-Size: 48442
 Filename: libsmartcols_2.25.2-4_ramips_24kec.ipk
-Size: 49274
-MD5Sum: 22066c700e1f0be348c8591612021634
-SHA256sum: 8428e7f316c8dada55c604db05319e32439b9990e039c4606ec21f303489f6e0
+Size: 49318
+MD5Sum: ab42b7e4b64313d9476944a1d49b3eee
+SHA256sum: 6761e5f1d6f9270cbc1bd5869e08e528fb75925478a4af48c777e1418daf2ed3
 Description:  The smartcols library is used to print tables and trees in a pretty way.
 
 Package: libubox-lua
@@ -10387,11 +10462,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 5631
+Installed-Size: 5636
 Filename: libuuid_2.25.2-4_ramips_24kec.ipk
-Size: 6527
-MD5Sum: 90d6ee6708a32178cd64bccc750e1b24
-SHA256sum: 71ccc7aff2efe28a6a94e2713d2e8ed9c2236dedced94eb39634d1a3059b4f08
+Size: 6541
+MD5Sum: 5adf2652880300aeed63f53887c6b470
+SHA256sum: 7199e422e924849ad321ce69be90756c5d99b7e14f1f58ac09a8d6fe41dea93b
 Description:  The UUID library is used to generate unique identifiers for objects
  that may be accessible beyond the local system. This library
  generates UUIDs compatible with those created by the Open Software
@@ -10404,11 +10479,11 @@ Source: package/network/utils/iptables
 License: GPL-2.0
 Section: libs
 Architecture: ramips_24kec
-Installed-Size: 36817
+Installed-Size: 36818
 Filename: libxtables_1.4.21-1_ramips_24kec.ipk
-Size: 37566
-MD5Sum: c9dcd9f5e2aa3c98016115a2034104bc
-SHA256sum: 41a4561187abd50faf2c860d94d734ab94848b5f23820d339a1fd8e95e89a069
+Size: 37571
+MD5Sum: ab0de2fb8b41747e6377a35438c6bc7b
+SHA256sum: 4685c357c7f7f5f57a30c5480c5e0a0ffde1b6e3f5dac2a669cfeb3a95d37e96
 Description:  IPv4/IPv6 firewall - shared xtables library
 
 Package: logd
@@ -10468,11 +10543,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: utils
 Architecture: ramips_24kec
-Installed-Size: 35421
+Installed-Size: 35423
 Filename: mount-utils_2.25.2-4_ramips_24kec.ipk
-Size: 36237
-MD5Sum: 0de4abdd3886c7139a0602ccfb0bc5d0
-SHA256sum: 95ec8a9392317b145394e3a77514eb761a35a3a97365faa75a0a0855c500b183
+Size: 36241
+MD5Sum: 1a9918e25d0e7fb593affd38432bae99
+SHA256sum: 7a91d61f17a4e10737c59bbfbb819187565a44cc2fcc9a5c4a77eba75972b549
 Description:  contains: mount, umount, findmnt
 
 Package: mountd
@@ -10562,6 +10637,21 @@ MD5Sum: d660a4db30bd8a7059c13ad1431057db
 SHA256sum: b83c787eceb1bdf2f3b9bbc54f5d42939529e3be3f6a1af9075881cee37aeb37
 Description:  OpenWrt Network Interface Configuration Daemon
 
+Package: odhcp6c
+Version: 2016-02-08-dc186d6d2b0dd4ad23ca5fc69c00e81f796ff6d9
+Depends: libc, kmod-ipv6
+Source: package/network/ipv6/odhcp6c
+License: GPL-2.0
+Section: net
+Maintainer: Steven Barth <steven@midlink.org>
+Architecture: ramips_24kec
+Installed-Size: 24034
+Filename: odhcp6c_2016-02-08-dc186d6d2b0dd4ad23ca5fc69c00e81f796ff6d9_ramips_24kec.ipk
+Size: 24743
+MD5Sum: dec63d41a45d5d8361090729906648f8
+SHA256sum: 132f7a0763b75143bdfe21f1126a9e25775eb8dd0e6d4abcef6b72f397e57638
+Description:  Embedded DHCPv6-client for OpenWrt
+
 Package: odhcpd
 Version: 2016-10-09-801cfeea100ca7b211c9841f0fcb757b17f47860
 Depends: libc, libubox, libuci, libubus
@@ -10605,6 +10695,36 @@ Description:  Lightweight package management system
  
  opkg knows how to install both .ipk and .deb packages.
 
+Package: ppp-mod-pppoe
+Version: 2.4.7-6
+Depends: libc, kmod-pppoe
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 9743
+Filename: ppp-mod-pppoe_2.4.7-6_ramips_24kec.ipk
+Size: 10494
+MD5Sum: 1cc1a373cc3c07845f146f0cc499ccc9
+SHA256sum: 8038c20d1c9c1234c115b47070d0a9393e233aa9ac92607e0c6aea9a7c65a3b0
+Description:  This package contains a PPPoE (PPP over Ethernet) plugin for ppp.
+
+Package: ppp
+Version: 2.4.7-6
+Depends: libc, kmod-ppp
+Source: package/network/services/ppp
+License: BSD-4-Clause
+Section: net
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Architecture: ramips_24kec
+Installed-Size: 107489
+Filename: ppp_2.4.7-6_ramips_24kec.ipk
+Size: 108122
+MD5Sum: 8b17971794efa7d6a21a1bc3c710adf7
+SHA256sum: f363a99f7606b40c093eb3ffbc46b460c5d6cb86584aed24a124e7e127aef92d
+Description:  This package contains the PPP (Point-to-Point Protocol) daemon.
+
 Package: procd
 Version: 2015-10-29.1-d5fddd91b966424bb63e943e789704d52382cc18
 Depends: libc, ubusd, ubus, libjson-script, ubox, libubox, libubus
@@ -10613,11 +10733,11 @@ License: GPL-2.0
 Section: base
 Maintainer: John Crispin <blogic@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 37476
+Installed-Size: 37469
 Filename: procd_2015-10-29.1-d5fddd91b966424bb63e943e789704d52382cc18_ramips_24kec.ipk
-Size: 37962
-MD5Sum: af509c0d039f41eb50166809bda01668
-SHA256sum: 60377d4bf48baa0277b62b350c2945d1e6f6edea468ea76288851383e6c5d0ac
+Size: 38041
+MD5Sum: 493664d2588d1abe4c7ef3ee25081af4
+SHA256sum: 82d05064270ef69f8b3bbf0ae3f5b948af49bbf65d422ebdd5c7f90ff6d59f9c
 Description:  OpenWrt system process manager
 
 Package: px5g
@@ -10868,11 +10988,11 @@ License: GPL-2.0
 LicenseFiles: COPYING getopt/COPYING libblkid/COPYING libmount/COPYING Documentation/licenses/COPYING.GPLv2 Documentation/licenses/COPYING.LGPLv2.1 libuuid/COPYING Documentation/licenses/COPYING.BSD-3
 Section: utils
 Architecture: ramips_24kec
-Installed-Size: 27174
+Installed-Size: 27184
 Filename: swap-utils_2.25.2-4_ramips_24kec.ipk
-Size: 27914
-MD5Sum: cda7be2be8d1f4ec6650672a0bed5892
-SHA256sum: 3506977fe53ec4612fa3faa4ef2c1c5bf864dc1f4cec8dad6562ae7494db0080
+Size: 27933
+MD5Sum: e62678a872d68147752400974307e4ad
+SHA256sum: 14c5a07348a940a62f3ddb74221e00ac9333db590e80286b2798c2fb32fd33c8
 Description:  contains: mkswap, swaplabel
 
 Package: swconfig
@@ -11127,11 +11247,11 @@ License: BSD-3-Clause
 Section: net
 Maintainer: Felix Fietkau <nbd@openwrt.org>
 Architecture: ramips_24kec
-Installed-Size: 246292
+Installed-Size: 236211
 Filename: wpad-mini_2015-03-25-1_ramips_24kec.ipk
-Size: 246776
-MD5Sum: dcc394dca15247708c6ce3580070cc7f
-SHA256sum: d7e2f41a6d88451019aa020b7ae6d6aefa801516f1e1a758cef1e9844174c83e
+Size: 236693
+MD5Sum: eec51bc46bfcad6c4a00491d617f7b3a
+SHA256sum: 633cfb4cf0f944447f2650dcc07696b2907934b7df05bef8a6b55bff4df46871
 Description:  This package contains a minimal IEEE 802.1x/WPA Authenticator and Supplicant (WPA-PSK only).
 
 Package: wpad
