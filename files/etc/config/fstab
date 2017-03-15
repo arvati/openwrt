@@ -12,18 +12,16 @@ config swap
 	option enabled '0'
 
 config mount
-      option target '/overlay'
-      option uuid '05d615b3-bef8-460c-9a23-52db8d09e000'
-      option fstype 'ext4'
-      option options 'rw,noatime'
-      option enabled '0'
-      option enabled_fsck '0'
-
-config mount
-	option enabled '0'
-	option uuid '05d615b3-bef8-460c-9a23-52db8d09e001'
-	option target '/mnt/data'
+	option target '/overlay'
+	option uuid '05d615b3-bef8-460c-9a23-52db8d09e000'
 	option fstype 'ext4'
 	option options 'rw,noatime'
 	option enabled_fsck '0'
+	option enabled '0'
+
+config mount
+	option target '/mnt/data'
+	option fstype 'btrfs'
+	option uuid '41b8326a-1bbc-48da-91e4-448462595799'
+	option enabled '0'
 

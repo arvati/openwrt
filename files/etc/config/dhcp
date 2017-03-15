@@ -6,8 +6,8 @@ config dnsmasq
 	option localise_queries '1'
 	option rebind_protection '1'
 	option rebind_localhost '1'
-	option local '/lan/'
-	option domain 'lan'
+	option local '/kimax/'
+	option domain 'kimax'
 	option expandhosts '1'
 	option nonegcache '0'
 	option authoritative '1'
@@ -18,25 +18,19 @@ config dnsmasq
 
 config dhcp 'lan'
 	option interface 'lan'
-	option start '100'
-	option limit '150'
-	option leasetime '12h'
-	option dhcpv6 'disabled'
-	option ra 'disabled'
-        option ignore '1'
+	option ignore '1'
+
 config dhcp 'service'
 	option interface 'service'
 	option ignore '0'
-	option start 10
-	option limit 15
-	option leasetime 1h
-	option ra disabled
-	option dhcpv6 disabled
-
+	option start '10'
+	option limit '15'
+	option leasetime '1h'
+	option ra 'disabled'
+	option dhcpv6 'disabled'
 
 config odhcpd 'odhcpd'
 	option maindhcp '0'
 	option leasefile '/tmp/hosts/odhcpd'
 	option leasetrigger '/usr/sbin/odhcpd-update'
-
 
