@@ -1189,7 +1189,7 @@ CONFIG_BUSYBOX_DEFAULT_FEATURE_IPC_SYSLOG_BUFFER_SIZE=0
 # CONFIG_BUSYBOX_DEFAULT_KLOGD is not set
 # CONFIG_BUSYBOX_DEFAULT_FEATURE_KLOGD_KLOGCTL is not set
 CONFIG_BUSYBOX_DEFAULT_LOGGER=y
-# CONFIG_PACKAGE_ca-certificates is not set
+CONFIG_PACKAGE_ca-certificates=y
 CONFIG_PACKAGE_dnsmasq=y
 # CONFIG_PACKAGE_dnsmasq-dhcpv6 is not set
 # CONFIG_PACKAGE_dnsmasq-full is not set
@@ -1663,21 +1663,13 @@ CONFIG_PACKAGE_kmod-ipv6=y
 # CONFIG_PACKAGE_kmod-netem is not set
 # CONFIG_PACKAGE_kmod-openvswitch is not set
 # CONFIG_PACKAGE_kmod-pktgen is not set
-CONFIG_PACKAGE_kmod-ppp=y
-# CONFIG_PACKAGE_kmod-mppe is not set
-# CONFIG_PACKAGE_kmod-ppp-synctty is not set
-# CONFIG_PACKAGE_kmod-pppoa is not set
-CONFIG_PACKAGE_kmod-pppoe=y
-# CONFIG_PACKAGE_kmod-pppol2tp is not set
-CONFIG_PACKAGE_kmod-pppox=y
-# CONFIG_PACKAGE_kmod-pptp is not set
+# CONFIG_PACKAGE_kmod-ppp is not set
 # CONFIG_PACKAGE_kmod-sched is not set
 # CONFIG_PACKAGE_kmod-sched-connmark is not set
 # CONFIG_PACKAGE_kmod-sched-core is not set
 # CONFIG_PACKAGE_kmod-sched-esfq is not set
 # CONFIG_PACKAGE_kmod-sctp is not set
 # CONFIG_PACKAGE_kmod-sit is not set
-CONFIG_PACKAGE_kmod-slhc=y
 # CONFIG_PACKAGE_kmod-slip is not set
 # CONFIG_PACKAGE_kmod-stp is not set
 # CONFIG_PACKAGE_kmod-trelay is not set
@@ -2408,7 +2400,7 @@ CONFIG_PACKAGE_libnl-tiny=y
 # CONFIG_PACKAGE_libp11 is not set
 # CONFIG_PACKAGE_libpam is not set
 # CONFIG_PACKAGE_libpcap is not set
-# CONFIG_PACKAGE_libpcre is not set
+CONFIG_PACKAGE_libpcre=y
 # CONFIG_PACKAGE_libpcre16 is not set
 # CONFIG_PACKAGE_libpcrecpp is not set
 # CONFIG_PACKAGE_libpcsclite is not set
@@ -2416,7 +2408,7 @@ CONFIG_PACKAGE_libnl-tiny=y
 # CONFIG_PACKAGE_libplist is not set
 # CONFIG_PACKAGE_libplistcxx is not set
 # CONFIG_PACKAGE_libpng is not set
-# CONFIG_PACKAGE_libpopt is not set
+CONFIG_PACKAGE_libpopt=y
 # CONFIG_PACKAGE_libpri is not set
 # CONFIG_PACKAGE_libprotobuf-c is not set
 # CONFIG_PACKAGE_libqrencode is not set
@@ -2878,8 +2870,8 @@ CONFIG_POSTFIX_CDB=y
 # CONFIG_PACKAGE_rtorrent-rpc is not set
 CONFIG_PACKAGE_transmission-daemon=y
 # CONFIG_PACKAGE_transmission-cli is not set
-CONFIG_PACKAGE_transmission-remote=y
-CONFIG_PACKAGE_transmission-web=y
+# CONFIG_PACKAGE_transmission-remote is not set
+# CONFIG_PACKAGE_transmission-web is not set
 
 #
 # Captive Portals
@@ -2895,11 +2887,14 @@ CONFIG_PACKAGE_transmission-web=y
 # CONFIG_PACKAGE_aria2 is not set
 # CONFIG_PACKAGE_curl is not set
 # CONFIG_PACKAGE_lftp is not set
-# CONFIG_PACKAGE_rsync is not set
-# CONFIG_PACKAGE_rsyncd is not set
+CONFIG_PACKAGE_rsync=y
+# CONFIG_RSYNC_xattr is not set
+# CONFIG_RSYNC_acl is not set
+CONFIG_RSYNC_zlib=y
+CONFIG_PACKAGE_rsyncd=y
 # CONFIG_PACKAGE_vsftpd is not set
 # CONFIG_PACKAGE_vsftpd-tls is not set
-# CONFIG_PACKAGE_wget is not set
+CONFIG_PACKAGE_wget=y
 # CONFIG_PACKAGE_wget-nossl is not set
 
 #
@@ -2907,7 +2902,8 @@ CONFIG_PACKAGE_transmission-web=y
 #
 # CONFIG_PACKAGE_davfs2 is not set
 # CONFIG_PACKAGE_netatalk is not set
-# CONFIG_PACKAGE_nfs-kernel-server is not set
+CONFIG_PACKAGE_nfs-kernel-server=y
+CONFIG_PACKAGE_nfs-kernel-server-utils=y
 # CONFIG_PACKAGE_owftpd is not set
 # CONFIG_PACKAGE_owhttpd is not set
 # CONFIG_PACKAGE_owserver is not set
@@ -2921,9 +2917,7 @@ CONFIG_PACKAGE_transmission-web=y
 # CONFIG_PACKAGE_ebtables is not set
 # CONFIG_PACKAGE_fwknop is not set
 # CONFIG_PACKAGE_fwknopd is not set
-CONFIG_PACKAGE_ip6tables=y
-# CONFIG_PACKAGE_ip6tables-extra is not set
-# CONFIG_PACKAGE_ip6tables-mod-nat is not set
+# CONFIG_PACKAGE_ip6tables is not set
 CONFIG_PACKAGE_iptables=y
 # CONFIG_PACKAGE_iptables-mod-account is not set
 # CONFIG_PACKAGE_iptables-mod-chaos is not set
@@ -3321,12 +3315,12 @@ CONFIG_PACKAGE_ntpclient=y
 # CONFIG_PACKAGE_uanytun-sslcrypt is not set
 # CONFIG_PACKAGE_vpnc is not set
 # CONFIG_PACKAGE_vpnc-scripts is not set
-# CONFIG_PACKAGE_xl2tpd is not set
 
 #
 # Version Control Systems
 #
-# CONFIG_PACKAGE_git is not set
+CONFIG_PACKAGE_git=y
+CONFIG_PACKAGE_git-http=y
 
 #
 # Web Servers/Proxies
@@ -3445,29 +3439,20 @@ CONFIG_PACKAGE_iw=y
 # CONFIG_PACKAGE_netperf is not set
 # CONFIG_PACKAGE_noping is not set
 # CONFIG_PACKAGE_nut is not set
-CONFIG_PACKAGE_odhcp6c=y
-CONFIG_PACKAGE_odhcp6c_ext_cer_id=0
-CONFIG_PACKAGE_odhcpd=y
-CONFIG_PACKAGE_odhcpd_ext_cer_id=0
+# CONFIG_PACKAGE_odhcp6c is not set
+# CONFIG_PACKAGE_odhcpd is not set
 # CONFIG_PACKAGE_openldap-server is not set
 # CONFIG_PACKAGE_openvswitch is not set
 # CONFIG_PACKAGE_oping is not set
 # CONFIG_PACKAGE_pen is not set
-# CONFIG_PACKAGE_portmap is not set
-CONFIG_PACKAGE_ppp=y
-# CONFIG_PACKAGE_ppp-mod-pppoa is not set
-CONFIG_PACKAGE_ppp-mod-pppoe=y
-# CONFIG_PACKAGE_ppp-mod-pppol2tp is not set
-# CONFIG_PACKAGE_ppp-mod-pptp is not set
-# CONFIG_PACKAGE_ppp-mod-radius is not set
+CONFIG_PACKAGE_portmap=y
+# CONFIG_PACKAGE_ppp is not set
 # CONFIG_PACKAGE_ppp-multilink is not set
-# CONFIG_PACKAGE_pppdump is not set
-# CONFIG_PACKAGE_pppstats is not set
 # CONFIG_PACKAGE_radsecproxy is not set
 # CONFIG_PACKAGE_redsocks is not set
 # CONFIG_PACKAGE_remserial is not set
 # CONFIG_PACKAGE_rssileds is not set
-# CONFIG_PACKAGE_samba36-client is not set
+CONFIG_PACKAGE_samba36-client=y
 CONFIG_PACKAGE_samba36-server=y
 CONFIG_PACKAGE_SAMBA_MAX_DEBUG_LEVEL=-1
 # CONFIG_PACKAGE_sctp is not set
