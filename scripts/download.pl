@@ -178,6 +178,7 @@ foreach my $mirror (@ARGV) {
 		}		
 		foreach my $dir (@extra) {
 			push @mirrors, "https://all.kernel.org/pub/$dir";
+			push @mirrors, "https://www.kernel.org/pub/$dir";
 			push @mirrors, "ftp://ftp.all.kernel.org/pub/$dir";
 			push @mirrors, "http://ftp.all.kernel.org/pub/$dir";
 		}
@@ -203,6 +204,7 @@ foreach my $mirror (@ARGV) {
 #push @mirrors, 'http://mirror1.openwrt.org';
 push @mirrors, 'http://mirror2.openwrt.org/sources';
 push @mirrors, 'http://downloads.openwrt.org/sources';
+push @mirrors, 'http://sources.lede-project.org';
 
 while (!$ok) {
 	my $mirror = shift @mirrors;
